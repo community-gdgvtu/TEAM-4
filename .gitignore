@@ -1,15 +1,24 @@
-.venv/
+# Secrets / local environment
 .env
 .env.*
 !.env.example
 
+# Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.venv/
+venv/
 
+# Runtime persistence
+/data/demo/runtime_store.json
+*.runtime.json
+
+# Frontend generated output
+frontend/dist/
+
+# OS / editor
 .DS_Store
-
-*.pyc
-*.pyo
-
+__MACOSX/
 .vscode/
 .idea/

@@ -1,0 +1,16 @@
+course_id,course_name,primary_skill
+CRS001,Python Programming,Python
+CRS002,Object Oriented Programming,Java
+CRS003,Web Development,JavaScript
+CRS004,Frontend Development,React
+CRS005,Backend Development,Node.js
+CRS006,Database Management Systems,SQL
+CRS007,Machine Learning,Machine Learning
+CRS008,Data Analytics,Data Science
+CRS009,API Development,FastAPI
+CRS010,Software Engineering,Git
+CRS011,Cloud Computing,Docker
+CRS012,Advanced Programming,C++
+CRS013,UI Development,HTML/CSS
+CRS014,NoSQL Databases,MongoDB
+CRS015,Cloud Application Development,Firebase

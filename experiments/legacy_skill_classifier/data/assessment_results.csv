@@ -1,0 +1,1501 @@
+assessment_id,student_id,skill,knowledge_score,problem_solving_score,coding_score,final_score,proficiency,assessment_type
+ASM00001,STU0195,Python,90,65,92,83.3,Intermediate,proctored
+ASM00002,STU0428,MongoDB,100,100,64,85.6,Advanced,practice
+ASM00003,STU0363,React,83,98,40,70.3,Intermediate,practice
+ASM00004,STU0314,SQL,81,48,52,59.5,Beginner,practice
+ASM00005,STU0225,FastAPI,96,65,60,72.3,Intermediate,proctored
+ASM00006,STU0307,Node.js,45,48,72,56.7,Beginner,practice
+ASM00007,STU0125,Data Science,85,93,43,70.6,Intermediate,proctored
+ASM00008,STU0403,Machine Learning,95,100,56,80.9,Intermediate,practice
+ASM00009,STU0272,Firebase,92,75,61,74.5,Intermediate,practice
+ASM00010,STU0273,Data Science,89,100,61,81.1,Intermediate,proctored
+ASM00011,STU0055,Java,77,80,88,82.3,Intermediate,proctored
+ASM00012,STU0132,JavaScript,63,62,59,61.1,Beginner,proctored
+ASM00013,STU0272,HTML/CSS,40,60,55,52.0,Beginner,practice
+ASM00014,STU0211,HTML/CSS,59,48,63,57.3,Beginner,practice
+ASM00015,STU0410,Python,70,75,95,81.5,Intermediate,practice
+ASM00016,STU0282,FastAPI,80,68,74,74.0,Intermediate,practice
+ASM00017,STU0015,Docker,51,42,54,49.5,Not Verified,proctored
+ASM00018,STU0087,Java,55,96,44,62.9,Beginner,practice
+ASM00019,STU0018,Firebase,97,45,79,74.2,Intermediate,practice
+ASM00020,STU0287,Machine Learning,66,99,53,70.7,Intermediate,proctored
+ASM00021,STU0277,HTML/CSS,70,76,73,73.0,Intermediate,practice
+ASM00022,STU0082,Firebase,96,73,71,79.1,Intermediate,proctored
+ASM00023,STU0424,HTML/CSS,84,44,56,60.8,Beginner,proctored
+ASM00024,STU0413,Node.js,76,63,91,78.1,Intermediate,practice
+ASM00025,STU0089,Git,92,47,70,69.7,Beginner,practice
+ASM00026,STU0159,Node.js,47,67,40,50.2,Beginner,proctored
+ASM00027,STU0100,HTML/CSS,51,74,75,67.5,Beginner,proctored
+ASM00028,STU0242,Python,41,60,45,48.3,Not Verified,proctored
+ASM00029,STU0092,FastAPI,71,59,61,63.4,Beginner,proctored
+ASM00030,STU0077,Python,49,83,50,59.6,Beginner,proctored
+ASM00031,STU0043,C++,96,71,63,75.3,Intermediate,practice
+ASM00032,STU0188,Node.js,44,65,57,55.5,Beginner,practice
+ASM00033,STU0318,JavaScript,82,95,84,86.7,Advanced,proctored
+ASM00034,STU0029,MongoDB,96,57,65,71.9,Intermediate,practice
+ASM00035,STU0068,MongoDB,69,60,81,71.1,Intermediate,proctored
+ASM00036,STU0400,Java,62,50,65,59.6,Beginner,practice
+ASM00037,STU0130,Node.js,50,92,43,59.8,Beginner,proctored
+ASM00038,STU0445,C++,65,43,70,60.4,Beginner,practice
+ASM00039,STU0150,C++,74,99,100,91.9,Advanced,proctored
+ASM00040,STU0104,Python,76,63,72,70.5,Intermediate,practice
+ASM00041,STU0073,Firebase,55,84,75,71.7,Intermediate,proctored
+ASM00042,STU0204,FastAPI,85,81,40,65.8,Beginner,practice
+ASM00043,STU0026,HTML/CSS,45,95,56,64.4,Beginner,practice
+ASM00044,STU0229,Git,49,54,48,50.1,Beginner,practice
+ASM00045,STU0249,Java,57,87,82,76.0,Intermediate,practice
+ASM00046,STU0257,C++,46,79,80,69.5,Beginner,practice
+ASM00047,STU0004,Java,63,42,86,65.9,Beginner,proctored
+ASM00048,STU0290,Machine Learning,71,78,94,82.3,Intermediate,practice
+ASM00049,STU0343,JavaScript,41,79,48,55.2,Beginner,practice
+ASM00050,STU0038,Git,48,42,47,45.8,Not Verified,proctored
+ASM00051,STU0282,C++,86,62,48,63.6,Beginner,proctored
+ASM00052,STU0117,C++,49,76,68,64.7,Beginner,proctored
+ASM00053,STU0426,Node.js,76,81,94,84.7,Intermediate,proctored
+ASM00054,STU0387,Data Science,77,61,72,70.2,Intermediate,proctored
+ASM00055,STU0304,Firebase,46,61,74,61.7,Beginner,practice
+ASM00056,STU0469,SQL,91,47,44,59.0,Beginner,practice
+ASM00057,STU0432,React,91,78,81,83.1,Intermediate,practice
+ASM00058,STU0043,Node.js,78,50,41,54.8,Beginner,practice
+ASM00059,STU0172,MongoDB,99,69,59,74.0,Intermediate,proctored
+ASM00060,STU0406,Node.js,98,51,59,68.3,Beginner,practice
+ASM00061,STU0424,React,77,66,50,62.9,Beginner,practice
+ASM00062,STU0067,SQL,78,45,73,66.1,Beginner,proctored
+ASM00063,STU0355,Java,51,59,81,65.4,Beginner,practice
+ASM00064,STU0373,Data Science,55,88,99,82.5,Intermediate,practice
+ASM00065,STU0363,HTML/CSS,69,70,50,61.7,Beginner,practice
+ASM00066,STU0153,React,80,59,52,62.5,Beginner,practice
+ASM00067,STU0441,Node.js,79,97,69,80.4,Intermediate,practice
+ASM00068,STU0085,Git,95,64,63,72.9,Intermediate,practice
+ASM00069,STU0057,SQL,97,65,88,83.8,Intermediate,practice
+ASM00070,STU0115,Firebase,73,95,83,83.6,Intermediate,proctored
+ASM00071,STU0428,JavaScript,79,98,76,83.5,Intermediate,proctored
+ASM00072,STU0391,HTML/CSS,54,57,99,72.9,Intermediate,proctored
+ASM00073,STU0329,Node.js,48,58,70,59.8,Beginner,practice
+ASM00074,STU0493,Python,80,41,86,70.7,Intermediate,proctored
+ASM00075,STU0291,Node.js,40,78,44,53.0,Beginner,practice
+ASM00076,STU0358,SQL,70,54,70,65.2,Beginner,practice
+ASM00077,STU0066,Node.js,96,50,65,69.8,Beginner,practice
+ASM00078,STU0356,HTML/CSS,84,93,48,72.3,Intermediate,proctored
+ASM00079,STU0188,Node.js,78,49,99,77.7,Intermediate,proctored
+ASM00080,STU0114,Machine Learning,90,78,54,72.0,Intermediate,proctored
+ASM00081,STU0305,HTML/CSS,45,85,57,61.8,Beginner,proctored
+ASM00082,STU0468,Java,83,61,49,62.8,Beginner,practice
+ASM00083,STU0124,Java,100,85,47,74.3,Intermediate,practice
+ASM00084,STU0095,MongoDB,51,65,59,58.4,Beginner,proctored
+ASM00085,STU0133,Data Science,95,61,66,73.2,Intermediate,proctored
+ASM00086,STU0450,Python,80,44,73,66.4,Beginner,practice
+ASM00087,STU0065,Firebase,79,91,54,72.6,Intermediate,proctored
+ASM00088,STU0169,Git,73,87,57,70.8,Intermediate,practice
+ASM00089,STU0411,Node.js,50,50,76,60.4,Beginner,proctored
+ASM00090,STU0428,HTML/CSS,88,81,88,85.9,Advanced,practice
+ASM00091,STU0316,Machine Learning,83,66,98,83.9,Intermediate,practice
+ASM00092,STU0404,Data Science,91,99,45,75.0,Intermediate,practice
+ASM00093,STU0128,MongoDB,78,41,90,71.7,Intermediate,proctored
+ASM00094,STU0086,Machine Learning,89,98,50,76.1,Intermediate,practice
+ASM00095,STU0239,C++,89,55,65,69.2,Beginner,practice
+ASM00096,STU0006,Python,86,52,49,61.0,Beginner,proctored
+ASM00097,STU0295,Python,85,80,43,66.7,Beginner,practice
+ASM00098,STU0154,MongoDB,69,66,44,58.1,Beginner,practice
+ASM00099,STU0155,JavaScript,68,72,71,70.4,Intermediate,proctored
+ASM00100,STU0432,C++,85,60,60,67.5,Beginner,practice
+ASM00101,STU0338,Python,85,98,58,78.1,Intermediate,proctored
+ASM00102,STU0329,React,47,65,79,65.2,Beginner,practice
+ASM00103,STU0307,JavaScript,86,85,87,86.1,Advanced,proctored
+ASM00104,STU0377,Machine Learning,68,100,63,75.6,Intermediate,practice
+ASM00105,STU0485,Git,54,79,52,60.7,Beginner,practice
+ASM00106,STU0490,React,83,76,65,73.7,Intermediate,proctored
+ASM00107,STU0142,SQL,94,53,87,78.9,Intermediate,proctored
+ASM00108,STU0406,C++,62,51,72,62.7,Beginner,practice
+ASM00109,STU0286,C++,54,61,69,62.1,Beginner,proctored
+ASM00110,STU0128,MongoDB,91,92,72,83.7,Intermediate,proctored
+ASM00111,STU0457,React,55,41,99,68.4,Beginner,practice
+ASM00112,STU0120,Node.js,61,55,80,66.8,Beginner,proctored
+ASM00113,STU0026,JavaScript,54,67,59,59.9,Beginner,proctored
+ASM00114,STU0433,JavaScript,49,58,88,67.3,Beginner,practice
+ASM00115,STU0478,Node.js,41,80,76,66.7,Beginner,practice
+ASM00116,STU0098,C++,92,69,50,68.3,Beginner,proctored
+ASM00117,STU0124,React,62,42,60,55.2,Beginner,proctored
+ASM00118,STU0205,Python,48,55,92,67.7,Beginner,proctored
+ASM00119,STU0168,Java,92,41,71,68.3,Beginner,proctored
+ASM00120,STU0188,SQL,60,74,94,77.8,Intermediate,practice
+ASM00121,STU0028,HTML/CSS,77,57,80,72.2,Intermediate,proctored
+ASM00122,STU0140,JavaScript,49,97,81,76.2,Intermediate,practice
+ASM00123,STU0485,SQL,65,59,44,54.8,Beginner,proctored
+ASM00124,STU0304,Git,50,63,92,70.7,Intermediate,practice
+ASM00125,STU0439,Java,48,60,54,54.0,Beginner,proctored
+ASM00126,STU0482,Data Science,89,73,44,66.2,Beginner,proctored
+ASM00127,STU0433,React,92,86,96,91.8,Advanced,practice
+ASM00128,STU0463,Python,62,85,87,78.9,Intermediate,proctored
+ASM00129,STU0374,C++,59,79,56,63.8,Beginner,proctored
+ASM00130,STU0316,C++,95,70,47,68.3,Beginner,practice
+ASM00131,STU0355,Data Science,94,88,60,78.6,Intermediate,practice
+ASM00132,STU0255,Java,97,99,65,84.8,Intermediate,practice
+ASM00133,STU0409,React,51,72,80,68.9,Beginner,proctored
+ASM00134,STU0143,Machine Learning,55,41,93,66.0,Beginner,practice
+ASM00135,STU0062,C++,66,48,94,71.8,Intermediate,proctored
+ASM00136,STU0344,Docker,95,74,82,83.5,Intermediate,practice
+ASM00137,STU0457,C++,67,55,60,60.6,Beginner,proctored
+ASM00138,STU0005,MongoDB,89,40,69,66.3,Beginner,practice
+ASM00139,STU0482,Java,60,42,58,53.8,Beginner,proctored
+ASM00140,STU0029,SQL,78,75,82,78.7,Intermediate,practice
+ASM00141,STU0257,HTML/CSS,62,82,81,75.6,Intermediate,practice
+ASM00142,STU0305,Data Science,69,96,44,67.1,Beginner,practice
+ASM00143,STU0098,Docker,53,84,67,67.9,Beginner,proctored
+ASM00144,STU0468,Firebase,72,42,87,69.0,Beginner,proctored
+ASM00145,STU0056,Python,45,98,58,66.1,Beginner,practice
+ASM00146,STU0376,Java,94,43,86,75.5,Intermediate,proctored
+ASM00147,STU0308,JavaScript,71,93,72,78.0,Intermediate,proctored
+ASM00148,STU0276,Git,53,42,57,51.3,Beginner,practice
+ASM00149,STU0337,Java,64,100,55,71.2,Intermediate,proctored
+ASM00150,STU0209,FastAPI,70,85,74,76.1,Intermediate,practice
+ASM00151,STU0046,FastAPI,92,83,62,77.3,Intermediate,practice
+ASM00152,STU0477,Git,42,62,80,63.2,Beginner,proctored
+ASM00153,STU0339,Git,64,61,65,63.5,Beginner,proctored
+ASM00154,STU0195,Data Science,51,73,42,54.0,Beginner,proctored
+ASM00155,STU0246,JavaScript,85,71,50,66.8,Beginner,proctored
+ASM00156,STU0371,Docker,75,47,83,69.8,Beginner,practice
+ASM00157,STU0230,JavaScript,80,52,69,67.2,Beginner,proctored
+ASM00158,STU0181,Machine Learning,58,41,69,57.3,Beginner,proctored
+ASM00159,STU0373,C++,85,89,41,68.6,Beginner,proctored
+ASM00160,STU0026,HTML/CSS,65,78,68,70.1,Intermediate,practice
+ASM00161,STU0053,Docker,56,62,58,58.6,Beginner,proctored
+ASM00162,STU0211,Data Science,97,45,56,65.0,Beginner,practice
+ASM00163,STU0247,Node.js,76,42,100,75.4,Intermediate,practice
+ASM00164,STU0195,FastAPI,72,86,66,73.8,Intermediate,practice
+ASM00165,STU0191,Java,95,75,61,75.4,Intermediate,practice
+ASM00166,STU0458,Java,45,67,59,57.2,Beginner,practice
+ASM00167,STU0221,Python,62,82,78,74.4,Intermediate,practice
+ASM00168,STU0421,Machine Learning,53,59,55,55.6,Beginner,proctored
+ASM00169,STU0258,Python,98,80,81,85.8,Advanced,practice
+ASM00170,STU0108,Git,99,49,41,60.8,Beginner,proctored
+ASM00171,STU0069,SQL,73,93,62,74.6,Intermediate,practice
+ASM00172,STU0170,HTML/CSS,90,53,55,64.9,Beginner,practice
+ASM00173,STU0361,Data Science,70,90,55,70.0,Intermediate,proctored
+ASM00174,STU0347,React,46,64,71,61.4,Beginner,practice
+ASM00175,STU0056,Git,90,50,93,79.2,Intermediate,practice
+ASM00176,STU0056,SQL,58,75,70,67.9,Beginner,proctored
+ASM00177,STU0007,MongoDB,46,49,56,50.9,Beginner,proctored
+ASM00178,STU0071,SQL,92,58,61,69.4,Beginner,practice
+ASM00179,STU0013,Docker,43,61,58,54.4,Beginner,proctored
+ASM00180,STU0260,C++,86,42,82,71.2,Intermediate,proctored
+ASM00181,STU0291,MongoDB,71,65,80,72.8,Intermediate,practice
+ASM00182,STU0122,FastAPI,72,70,48,61.8,Beginner,practice
+ASM00183,STU0194,Java,65,53,40,51.4,Beginner,proctored
+ASM00184,STU0409,HTML/CSS,89,58,55,66.1,Beginner,proctored
+ASM00185,STU0396,Docker,43,41,41,41.6,Not Verified,proctored
+ASM00186,STU0150,React,60,50,79,64.6,Beginner,practice
+ASM00187,STU0317,Firebase,54,41,71,56.9,Beginner,practice
+ASM00188,STU0055,Data Science,76,76,81,78.0,Intermediate,practice
+ASM00189,STU0161,Node.js,66,88,64,71.8,Intermediate,proctored
+ASM00190,STU0263,Git,71,84,52,67.3,Beginner,practice
+ASM00191,STU0052,FastAPI,78,91,64,76.3,Intermediate,proctored
+ASM00192,STU0075,SQL,49,68,89,70.7,Intermediate,practice
+ASM00193,STU0324,Machine Learning,43,40,50,44.9,Not Verified,proctored
+ASM00194,STU0128,Python,48,54,97,69.4,Beginner,practice
+ASM00195,STU0020,SQL,64,87,69,72.9,Intermediate,practice
+ASM00196,STU0437,MongoDB,46,51,63,54.3,Beginner,proctored
+ASM00197,STU0338,SQL,73,76,87,79.5,Intermediate,proctored
+ASM00198,STU0423,Node.js,46,99,73,72.7,Intermediate,proctored
+ASM00199,STU0396,MongoDB,72,96,98,89.6,Advanced,proctored
+ASM00200,STU0173,Java,66,65,67,66.1,Beginner,proctored
+ASM00201,STU0364,FastAPI,91,47,94,79.0,Intermediate,proctored
+ASM00202,STU0112,Git,48,71,73,64.9,Beginner,practice
+ASM00203,STU0395,Node.js,71,80,79,76.9,Intermediate,proctored
+ASM00204,STU0299,FastAPI,64,91,52,67.3,Beginner,practice
+ASM00205,STU0043,SQL,48,70,65,61.4,Beginner,practice
+ASM00206,STU0425,FastAPI,91,91,94,92.2,Advanced,practice
+ASM00207,STU0156,Node.js,49,40,49,46.3,Not Verified,proctored
+ASM00208,STU0410,Node.js,84,75,49,67.3,Beginner,practice
+ASM00209,STU0275,FastAPI,93,65,52,68.2,Beginner,proctored
+ASM00210,STU0126,MongoDB,69,55,69,64.8,Beginner,proctored
+ASM00211,STU0154,SQL,42,54,100,68.8,Beginner,proctored
+ASM00212,STU0429,MongoDB,95,47,98,81.8,Intermediate,proctored
+ASM00213,STU0357,JavaScript,64,83,64,69.7,Beginner,proctored
+ASM00214,STU0472,Node.js,90,47,78,72.3,Intermediate,proctored
+ASM00215,STU0343,Git,66,40,64,57.4,Beginner,proctored
+ASM00216,STU0013,Node.js,69,99,90,86.4,Advanced,proctored
+ASM00217,STU0448,FastAPI,76,93,87,85.5,Advanced,proctored
+ASM00218,STU0426,Java,92,77,91,87.1,Advanced,proctored
+ASM00219,STU0376,SQL,94,100,64,83.8,Intermediate,proctored
+ASM00220,STU0455,Node.js,86,71,66,73.5,Intermediate,proctored
+ASM00221,STU0149,Java,42,54,56,51.2,Beginner,proctored
+ASM00222,STU0144,Java,52,88,44,59.6,Beginner,proctored
+ASM00223,STU0057,MongoDB,94,75,80,82.7,Intermediate,proctored
+ASM00224,STU0160,Python,100,61,98,87.5,Advanced,proctored
+ASM00225,STU0358,C++,54,50,60,55.2,Beginner,proctored
+ASM00226,STU0228,MongoDB,77,82,40,63.7,Beginner,practice
+ASM00227,STU0160,Data Science,42,72,63,59.4,Beginner,practice
+ASM00228,STU0001,Git,87,57,90,79.2,Intermediate,proctored
+ASM00229,STU0414,Firebase,64,69,46,58.3,Beginner,practice
+ASM00230,STU0339,MongoDB,72,69,73,71.5,Intermediate,proctored
+ASM00231,STU0036,Python,52,46,56,51.8,Beginner,practice
+ASM00232,STU0391,Firebase,64,57,60,60.3,Beginner,practice
+ASM00233,STU0065,HTML/CSS,49,69,60,59.4,Beginner,practice
+ASM00234,STU0308,Node.js,90,43,69,67.5,Beginner,practice
+ASM00235,STU0014,React,53,94,99,83.7,Intermediate,practice
+ASM00236,STU0136,Node.js,79,80,77,78.5,Intermediate,practice
+ASM00237,STU0002,Git,100,54,55,68.2,Beginner,proctored
+ASM00238,STU0363,React,65,87,79,77.2,Intermediate,practice
+ASM00239,STU0046,JavaScript,92,80,65,77.6,Intermediate,practice
+ASM00240,STU0037,Python,93,64,41,63.5,Beginner,proctored
+ASM00241,STU0086,Machine Learning,88,91,68,80.9,Intermediate,practice
+ASM00242,STU0120,Java,84,81,75,79.5,Intermediate,proctored
+ASM00243,STU0179,Data Science,99,100,65,85.7,Advanced,proctored
+ASM00244,STU0045,Docker,93,42,45,58.5,Beginner,proctored
+ASM00245,STU0274,Git,65,81,61,68.2,Beginner,practice
+ASM00246,STU0209,HTML/CSS,46,50,60,52.8,Beginner,proctored
+ASM00247,STU0203,Python,64,99,58,72.1,Intermediate,proctored
+ASM00248,STU0032,Node.js,68,58,100,77.8,Intermediate,practice
+ASM00249,STU0238,Git,59,96,75,76.5,Intermediate,practice
+ASM00250,STU0397,Docker,80,77,92,83.9,Intermediate,practice
+ASM00251,STU0261,Node.js,73,44,69,62.7,Beginner,proctored
+ASM00252,STU0460,Docker,55,65,91,72.4,Intermediate,proctored
+ASM00253,STU0013,Python,98,97,69,86.1,Advanced,practice
+ASM00254,STU0003,HTML/CSS,44,68,71,62.0,Beginner,proctored
+ASM00255,STU0335,Data Science,60,76,98,80.0,Intermediate,practice
+ASM00256,STU0305,React,91,52,92,79.7,Intermediate,proctored
+ASM00257,STU0228,FastAPI,46,47,99,67.5,Beginner,proctored
+ASM00258,STU0227,Java,76,85,88,83.5,Intermediate,practice
+ASM00259,STU0427,Python,42,57,79,61.3,Beginner,proctored
+ASM00260,STU0088,Firebase,45,57,58,53.8,Beginner,practice
+ASM00261,STU0045,HTML/CSS,62,61,94,74.5,Intermediate,practice
+ASM00262,STU0230,Node.js,54,54,54,54.0,Beginner,practice
+ASM00263,STU0340,Git,86,66,84,79.2,Intermediate,practice
+ASM00264,STU0192,JavaScript,54,76,46,57.4,Beginner,practice
+ASM00265,STU0398,Docker,41,92,53,61.1,Beginner,proctored
+ASM00266,STU0185,React,98,40,96,79.8,Intermediate,proctored
+ASM00267,STU0160,Git,84,91,77,83.3,Intermediate,proctored
+ASM00268,STU0197,Docker,65,62,53,59.3,Beginner,practice
+ASM00269,STU0368,Java,87,79,70,77.8,Intermediate,practice
+ASM00270,STU0121,Java,69,53,76,67.0,Beginner,practice
+ASM00271,STU0391,Machine Learning,84,98,49,74.2,Intermediate,practice
+ASM00272,STU0260,Data Science,85,86,49,70.9,Intermediate,proctored
+ASM00273,STU0406,C++,91,75,92,86.6,Advanced,practice
+ASM00274,STU0434,FastAPI,64,94,61,71.8,Intermediate,proctored
+ASM00275,STU0428,Git,49,95,70,71.2,Intermediate,practice
+ASM00276,STU0284,Data Science,82,45,56,60.5,Beginner,proctored
+ASM00277,STU0474,React,57,76,52,60.7,Beginner,proctored
+ASM00278,STU0459,HTML/CSS,70,98,78,81.6,Intermediate,practice
+ASM00279,STU0226,Firebase,42,67,40,48.7,Not Verified,practice
+ASM00280,STU0187,FastAPI,81,46,70,66.1,Beginner,proctored
+ASM00281,STU0423,SQL,69,78,48,63.3,Beginner,proctored
+ASM00282,STU0451,C++,47,64,48,52.5,Beginner,practice
+ASM00283,STU0013,Machine Learning,84,91,77,83.3,Intermediate,proctored
+ASM00284,STU0479,Firebase,63,88,56,67.7,Beginner,practice
+ASM00285,STU0155,Machine Learning,53,92,77,74.3,Intermediate,practice
+ASM00286,STU0008,Java,100,58,82,80.2,Intermediate,practice
+ASM00287,STU0185,Data Science,40,94,95,78.2,Intermediate,proctored
+ASM00288,STU0307,C++,55,56,82,66.1,Beginner,proctored
+ASM00289,STU0244,C++,93,46,86,76.1,Intermediate,practice
+ASM00290,STU0204,C++,77,49,63,63.0,Beginner,practice
+ASM00291,STU0065,Git,93,94,81,88.5,Advanced,proctored
+ASM00292,STU0169,Python,79,99,51,73.8,Intermediate,practice
+ASM00293,STU0028,Python,43,82,45,55.5,Beginner,proctored
+ASM00294,STU0342,HTML/CSS,87,43,45,57.0,Beginner,practice
+ASM00295,STU0218,Java,66,44,94,70.6,Intermediate,practice
+ASM00296,STU0099,FastAPI,56,90,56,66.2,Beginner,proctored
+ASM00297,STU0072,Java,94,54,40,60.4,Beginner,proctored
+ASM00298,STU0345,C++,75,72,48,63.3,Beginner,proctored
+ASM00299,STU0272,MongoDB,59,82,64,67.9,Beginner,proctored
+ASM00300,STU0392,Docker,83,100,96,93.3,Advanced,practice
+ASM00301,STU0245,JavaScript,52,83,99,80.1,Intermediate,proctored
+ASM00302,STU0038,Python,56,82,56,63.8,Beginner,proctored
+ASM00303,STU0253,Docker,96,100,69,86.4,Advanced,proctored
+ASM00304,STU0322,Machine Learning,94,97,100,97.3,Advanced,practice
+ASM00305,STU0497,SQL,86,66,44,63.2,Beginner,proctored
+ASM00306,STU0065,Java,89,73,75,78.6,Intermediate,proctored
+ASM00307,STU0450,JavaScript,41,66,53,53.3,Beginner,proctored
+ASM00308,STU0270,C++,65,92,58,70.3,Intermediate,proctored
+ASM00309,STU0247,Machine Learning,44,80,80,69.2,Beginner,proctored
+ASM00310,STU0425,Python,49,52,66,56.7,Beginner,practice
+ASM00311,STU0392,Java,84,80,67,76.0,Intermediate,proctored
+ASM00312,STU0217,FastAPI,52,60,98,72.8,Intermediate,proctored
+ASM00313,STU0212,MongoDB,69,67,57,63.6,Beginner,proctored
+ASM00314,STU0429,React,49,54,90,66.9,Beginner,proctored
+ASM00315,STU0366,Git,86,54,82,74.8,Intermediate,proctored
+ASM00316,STU0176,JavaScript,90,97,74,85.7,Advanced,proctored
+ASM00317,STU0454,Firebase,80,91,65,77.3,Intermediate,practice
+ASM00318,STU0467,Java,51,64,96,72.9,Intermediate,proctored
+ASM00319,STU0237,Git,56,78,94,77.8,Intermediate,practice
+ASM00320,STU0433,MongoDB,50,99,51,65.1,Beginner,practice
+ASM00321,STU0095,Firebase,79,66,88,78.7,Intermediate,practice
+ASM00322,STU0133,Node.js,83,73,57,69.6,Beginner,proctored
+ASM00323,STU0411,Firebase,87,80,67,76.9,Intermediate,practice
+ASM00324,STU0260,Java,95,96,47,76.1,Intermediate,proctored
+ASM00325,STU0159,HTML/CSS,54,54,42,49.2,Not Verified,practice
+ASM00326,STU0132,Python,78,85,73,78.1,Intermediate,proctored
+ASM00327,STU0165,FastAPI,71,70,45,60.3,Beginner,practice
+ASM00328,STU0163,C++,62,78,83,75.2,Intermediate,proctored
+ASM00329,STU0395,Docker,98,64,84,82.2,Intermediate,proctored
+ASM00330,STU0400,Data Science,73,70,99,82.5,Intermediate,proctored
+ASM00331,STU0088,Firebase,62,76,46,59.8,Beginner,proctored
+ASM00332,STU0009,C++,86,57,64,68.5,Beginner,proctored
+ASM00333,STU0240,JavaScript,47,66,51,54.3,Beginner,practice
+ASM00334,STU0203,C++,41,53,49,47.8,Not Verified,proctored
+ASM00335,STU0166,FastAPI,59,44,74,60.5,Beginner,proctored
+ASM00336,STU0090,Git,60,62,82,69.4,Beginner,practice
+ASM00337,STU0240,HTML/CSS,54,86,69,69.6,Beginner,proctored
+ASM00338,STU0309,MongoDB,62,71,94,77.5,Intermediate,practice
+ASM00339,STU0391,SQL,44,76,81,68.4,Beginner,proctored
+ASM00340,STU0131,C++,68,57,83,70.7,Intermediate,proctored
+ASM00341,STU0038,Java,70,83,53,67.1,Beginner,practice
+ASM00342,STU0494,Firebase,69,40,53,53.9,Beginner,practice
+ASM00343,STU0076,SQL,65,81,69,71.4,Intermediate,practice
+ASM00344,STU0054,Java,50,63,100,73.9,Intermediate,practice
+ASM00345,STU0374,MongoDB,50,53,53,52.1,Beginner,proctored
+ASM00346,STU0408,Python,74,42,63,60.0,Beginner,practice
+ASM00347,STU0490,React,42,87,100,78.7,Intermediate,proctored
+ASM00348,STU0296,JavaScript,80,56,80,72.8,Intermediate,proctored
+ASM00349,STU0262,Data Science,54,98,93,82.8,Intermediate,proctored
+ASM00350,STU0410,Java,42,96,70,69.4,Beginner,proctored
+ASM00351,STU0043,JavaScript,80,68,54,66.0,Beginner,practice
+ASM00352,STU0181,HTML/CSS,98,58,74,76.4,Intermediate,practice
+ASM00353,STU0077,JavaScript,40,70,48,52.2,Beginner,proctored
+ASM00354,STU0033,Git,68,94,41,65.0,Beginner,practice
+ASM00355,STU0071,FastAPI,70,56,93,75.0,Intermediate,proctored
+ASM00356,STU0224,Docker,85,50,71,68.9,Beginner,practice
+ASM00357,STU0391,Firebase,53,80,65,65.9,Beginner,practice
+ASM00358,STU0034,JavaScript,79,86,86,83.9,Intermediate,practice
+ASM00359,STU0181,SQL,45,83,85,72.4,Intermediate,proctored
+ASM00360,STU0010,SQL,96,45,42,59.1,Beginner,proctored
+ASM00361,STU0317,Node.js,84,74,89,83.0,Intermediate,practice
+ASM00362,STU0364,JavaScript,48,67,96,72.9,Intermediate,proctored
+ASM00363,STU0107,C++,43,40,53,46.1,Not Verified,practice
+ASM00364,STU0006,Data Science,48,48,55,50.8,Beginner,practice
+ASM00365,STU0020,JavaScript,87,81,73,79.6,Intermediate,proctored
+ASM00366,STU0002,C++,97,52,82,77.5,Intermediate,practice
+ASM00367,STU0350,JavaScript,96,92,80,88.4,Advanced,practice
+ASM00368,STU0102,Data Science,61,91,53,66.8,Beginner,proctored
+ASM00369,STU0223,HTML/CSS,76,49,94,75.1,Intermediate,proctored
+ASM00370,STU0443,Git,47,95,66,69.0,Beginner,practice
+ASM00371,STU0114,Java,67,93,97,86.8,Advanced,practice
+ASM00372,STU0314,Machine Learning,93,75,70,78.4,Intermediate,practice
+ASM00373,STU0005,React,53,94,40,60.1,Beginner,practice
+ASM00374,STU0192,Node.js,98,56,44,63.8,Beginner,proctored
+ASM00375,STU0200,Java,67,65,56,62.0,Beginner,practice
+ASM00376,STU0003,Python,83,74,58,70.3,Intermediate,practice
+ASM00377,STU0404,C++,61,75,41,57.2,Beginner,proctored
+ASM00378,STU0169,C++,81,46,71,66.5,Beginner,practice
+ASM00379,STU0154,JavaScript,77,100,66,79.5,Intermediate,proctored
+ASM00380,STU0265,Python,77,48,58,60.7,Beginner,proctored
+ASM00381,STU0061,SQL,40,60,92,66.8,Beginner,proctored
+ASM00382,STU0335,Git,91,66,79,78.7,Intermediate,practice
+ASM00383,STU0051,C++,86,89,52,73.3,Intermediate,proctored
+ASM00384,STU0169,MongoDB,50,85,61,64.9,Beginner,practice
+ASM00385,STU0082,C++,55,84,50,61.7,Beginner,proctored
+ASM00386,STU0339,HTML/CSS,75,99,43,69.4,Beginner,practice
+ASM00387,STU0258,MongoDB,75,52,69,65.7,Beginner,practice
+ASM00388,STU0326,Node.js,55,62,98,74.3,Intermediate,practice
+ASM00389,STU0379,Python,84,94,85,87.4,Advanced,practice
+ASM00390,STU0255,Machine Learning,51,100,61,69.7,Beginner,proctored
+ASM00391,STU0306,SQL,42,89,46,57.7,Beginner,proctored
+ASM00392,STU0060,Firebase,61,89,50,65.0,Beginner,practice
+ASM00393,STU0164,FastAPI,83,67,93,82.2,Intermediate,proctored
+ASM00394,STU0238,Data Science,85,74,75,77.7,Intermediate,proctored
+ASM00395,STU0206,Python,54,45,68,56.9,Beginner,practice
+ASM00396,STU0273,Git,41,55,41,45.2,Not Verified,practice
+ASM00397,STU0466,SQL,91,97,74,86.0,Advanced,proctored
+ASM00398,STU0362,HTML/CSS,77,70,47,62.9,Beginner,practice
+ASM00399,STU0035,HTML/CSS,96,94,93,94.2,Advanced,practice
+ASM00400,STU0424,Firebase,48,51,78,60.9,Beginner,proctored
+ASM00401,STU0189,C++,61,84,89,79.1,Intermediate,practice
+ASM00402,STU0339,C++,63,78,96,80.7,Intermediate,proctored
+ASM00403,STU0024,SQL,87,90,62,77.9,Intermediate,practice
+ASM00404,STU0227,SQL,68,71,78,72.9,Intermediate,proctored
+ASM00405,STU0055,Docker,52,90,68,69.8,Beginner,proctored
+ASM00406,STU0010,C++,59,88,61,68.5,Beginner,practice
+ASM00407,STU0211,JavaScript,68,95,56,71.3,Intermediate,practice
+ASM00408,STU0393,MongoDB,83,46,45,56.7,Beginner,practice
+ASM00409,STU0001,FastAPI,76,97,94,89.5,Advanced,practice
+ASM00410,STU0496,FastAPI,76,69,98,82.7,Intermediate,proctored
+ASM00411,STU0409,HTML/CSS,46,96,62,67.4,Beginner,proctored
+ASM00412,STU0093,Java,89,53,52,63.4,Beginner,practice
+ASM00413,STU0364,FastAPI,78,89,64,75.7,Intermediate,proctored
+ASM00414,STU0004,Firebase,72,52,57,60.0,Beginner,practice
+ASM00415,STU0222,Docker,87,44,48,58.5,Beginner,proctored
+ASM00416,STU0004,Docker,98,71,57,73.5,Intermediate,practice
+ASM00417,STU0463,Java,87,47,87,75.0,Intermediate,proctored
+ASM00418,STU0375,MongoDB,76,78,88,81.4,Intermediate,practice
+ASM00419,STU0296,Firebase,95,94,78,87.9,Advanced,proctored
+ASM00420,STU0239,Java,80,98,99,93.0,Advanced,practice
+ASM00421,STU0357,Machine Learning,99,43,98,81.8,Intermediate,proctored
+ASM00422,STU0109,FastAPI,83,71,87,81.0,Intermediate,practice
+ASM00423,STU0452,MongoDB,49,72,63,61.5,Beginner,practice
+ASM00424,STU0263,Docker,46,74,89,71.6,Intermediate,practice
+ASM00425,STU0398,React,76,69,65,69.5,Beginner,proctored
+ASM00426,STU0027,C++,98,97,76,88.9,Advanced,proctored
+ASM00427,STU0331,Python,70,55,71,65.9,Beginner,practice
+ASM00428,STU0316,Git,79,94,90,87.9,Advanced,practice
+ASM00429,STU0401,Node.js,60,69,83,71.9,Intermediate,practice
+ASM00430,STU0446,HTML/CSS,59,57,47,53.6,Beginner,proctored
+ASM00431,STU0232,Machine Learning,77,97,93,89.4,Advanced,proctored
+ASM00432,STU0381,Machine Learning,48,64,80,65.6,Beginner,practice
+ASM00433,STU0146,Docker,54,59,89,69.5,Beginner,practice
+ASM00434,STU0426,SQL,76,46,84,70.2,Intermediate,practice
+ASM00435,STU0016,Firebase,91,86,56,75.5,Intermediate,proctored
+ASM00436,STU0175,Git,81,98,72,82.5,Intermediate,proctored
+ASM00437,STU0472,Git,73,61,80,72.2,Intermediate,proctored
+ASM00438,STU0237,HTML/CSS,78,85,90,84.9,Intermediate,practice
+ASM00439,STU0187,FastAPI,94,60,68,73.4,Intermediate,proctored
+ASM00440,STU0473,Docker,71,61,66,66.0,Beginner,proctored
+ASM00441,STU0194,Data Science,73,59,92,76.4,Intermediate,proctored
+ASM00442,STU0157,Docker,42,71,93,71.1,Intermediate,proctored
+ASM00443,STU0030,Data Science,81,82,46,67.3,Beginner,practice
+ASM00444,STU0239,Machine Learning,46,96,98,81.8,Intermediate,proctored
+ASM00445,STU0162,Docker,41,81,80,68.6,Beginner,proctored
+ASM00446,STU0252,FastAPI,74,53,64,63.7,Beginner,proctored
+ASM00447,STU0077,React,52,85,85,75.1,Intermediate,practice
+ASM00448,STU0145,Python,55,97,52,66.4,Beginner,practice
+ASM00449,STU0298,Git,78,61,48,60.9,Beginner,practice
+ASM00450,STU0350,HTML/CSS,42,86,51,58.8,Beginner,proctored
+ASM00451,STU0045,HTML/CSS,48,99,92,80.9,Intermediate,practice
+ASM00452,STU0162,React,50,69,55,57.7,Beginner,practice
+ASM00453,STU0356,Docker,85,61,91,80.2,Intermediate,proctored
+ASM00454,STU0146,Git,68,49,56,57.5,Beginner,proctored
+ASM00455,STU0097,JavaScript,48,55,57,53.7,Beginner,practice
+ASM00456,STU0250,Java,58,67,90,73.5,Intermediate,practice
+ASM00457,STU0454,Python,77,55,85,73.6,Intermediate,practice
+ASM00458,STU0161,SQL,62,84,68,71.0,Intermediate,proctored
+ASM00459,STU0468,JavaScript,42,42,66,51.6,Beginner,proctored
+ASM00460,STU0241,Node.js,44,52,66,55.2,Beginner,practice
+ASM00461,STU0136,Firebase,99,90,63,81.9,Intermediate,practice
+ASM00462,STU0410,Data Science,91,65,47,65.6,Beginner,proctored
+ASM00463,STU0056,FastAPI,76,55,99,78.9,Intermediate,proctored
+ASM00464,STU0490,Docker,49,70,83,68.9,Beginner,proctored
+ASM00465,STU0432,Machine Learning,60,41,68,57.5,Beginner,practice
+ASM00466,STU0053,Firebase,49,50,95,67.7,Beginner,proctored
+ASM00467,STU0465,FastAPI,81,55,81,73.2,Intermediate,proctored
+ASM00468,STU0187,Machine Learning,58,58,66,61.2,Beginner,practice
+ASM00469,STU0128,Docker,40,99,56,64.1,Beginner,practice
+ASM00470,STU0190,SQL,91,100,61,81.7,Intermediate,practice
+ASM00471,STU0027,JavaScript,66,53,85,69.7,Beginner,practice
+ASM00472,STU0220,Python,71,71,71,71.0,Intermediate,practice
+ASM00473,STU0473,HTML/CSS,53,54,81,64.5,Beginner,proctored
+ASM00474,STU0250,Machine Learning,94,52,76,74.2,Intermediate,proctored
+ASM00475,STU0135,Docker,92,66,42,64.2,Beginner,proctored
+ASM00476,STU0267,JavaScript,84,87,92,88.1,Advanced,proctored
+ASM00477,STU0205,Git,64,86,82,77.8,Intermediate,proctored
+ASM00478,STU0486,Machine Learning,96,99,76,88.9,Advanced,proctored
+ASM00479,STU0095,Docker,51,49,43,47.2,Not Verified,practice
+ASM00480,STU0192,SQL,83,41,65,63.2,Beginner,proctored
+ASM00481,STU0235,HTML/CSS,78,42,67,62.8,Beginner,practice
+ASM00482,STU0013,Firebase,86,44,61,63.4,Beginner,proctored
+ASM00483,STU0089,Python,43,53,77,59.6,Beginner,proctored
+ASM00484,STU0130,Node.js,79,42,69,63.9,Beginner,practice
+ASM00485,STU0307,Data Science,97,50,98,83.3,Intermediate,proctored
+ASM00486,STU0196,JavaScript,86,44,75,69.0,Beginner,proctored
+ASM00487,STU0352,React,88,83,92,88.1,Advanced,proctored
+ASM00488,STU0302,C++,80,94,93,89.4,Advanced,proctored
+ASM00489,STU0380,Git,50,76,98,77.0,Intermediate,practice
+ASM00490,STU0401,Docker,79,49,47,57.2,Beginner,proctored
+ASM00491,STU0436,SQL,54,41,70,56.5,Beginner,proctored
+ASM00492,STU0082,JavaScript,98,66,42,66.0,Beginner,proctored
+ASM00493,STU0460,FastAPI,48,96,49,62.8,Beginner,proctored
+ASM00494,STU0335,Data Science,68,87,57,69.3,Beginner,proctored
+ASM00495,STU0233,HTML/CSS,43,60,58,54.1,Beginner,practice
+ASM00496,STU0252,C++,74,74,96,82.8,Intermediate,practice
+ASM00497,STU0405,JavaScript,97,75,99,91.2,Advanced,proctored
+ASM00498,STU0032,Machine Learning,52,49,50,50.3,Beginner,proctored
+ASM00499,STU0492,Java,50,66,76,65.2,Beginner,proctored
+ASM00500,STU0462,Node.js,56,66,85,70.6,Intermediate,practice
+ASM00501,STU0188,FastAPI,77,60,48,60.3,Beginner,practice
+ASM00502,STU0252,Machine Learning,40,94,76,70.6,Intermediate,practice
+ASM00503,STU0420,C++,92,41,81,72.3,Intermediate,practice
+ASM00504,STU0454,MongoDB,100,56,68,74.0,Intermediate,proctored
+ASM00505,STU0356,Docker,56,98,92,83.0,Intermediate,practice
+ASM00506,STU0091,SQL,69,53,68,63.8,Beginner,practice
+ASM00507,STU0356,Node.js,70,71,75,72.3,Intermediate,practice
+ASM00508,STU0008,Data Science,40,91,84,72.9,Intermediate,practice
+ASM00509,STU0214,SQL,70,69,69,69.3,Beginner,proctored
+ASM00510,STU0223,Java,49,97,79,75.4,Intermediate,practice
+ASM00511,STU0489,Firebase,49,74,59,60.5,Beginner,proctored
+ASM00512,STU0205,FastAPI,43,90,78,71.1,Intermediate,proctored
+ASM00513,STU0263,HTML/CSS,49,97,65,69.8,Beginner,proctored
+ASM00514,STU0363,Docker,88,64,56,68.0,Beginner,proctored
+ASM00515,STU0225,Python,40,61,52,51.1,Beginner,practice
+ASM00516,STU0039,Docker,73,100,67,78.7,Intermediate,proctored
+ASM00517,STU0172,Machine Learning,86,85,65,77.3,Intermediate,proctored
+ASM00518,STU0407,React,44,84,93,75.6,Intermediate,practice
+ASM00519,STU0194,Node.js,70,95,76,79.9,Intermediate,practice
+ASM00520,STU0326,Java,49,69,77,66.2,Beginner,proctored
+ASM00521,STU0460,Java,96,51,88,79.3,Intermediate,practice
+ASM00522,STU0069,FastAPI,83,63,55,65.8,Beginner,practice
+ASM00523,STU0345,Docker,57,45,93,67.8,Beginner,practice
+ASM00524,STU0406,Python,45,76,78,67.5,Beginner,proctored
+ASM00525,STU0316,FastAPI,83,56,75,71.7,Intermediate,proctored
+ASM00526,STU0268,Data Science,40,99,84,75.3,Intermediate,proctored
+ASM00527,STU0242,Python,84,72,89,82.4,Intermediate,practice
+ASM00528,STU0249,MongoDB,97,46,63,68.1,Beginner,proctored
+ASM00529,STU0021,Data Science,69,81,46,63.4,Beginner,proctored
+ASM00530,STU0242,MongoDB,58,43,58,53.5,Beginner,proctored
+ASM00531,STU0116,Machine Learning,75,77,63,70.8,Intermediate,practice
+ASM00532,STU0306,Machine Learning,68,84,49,65.2,Beginner,practice
+ASM00533,STU0212,Java,82,43,60,61.5,Beginner,proctored
+ASM00534,STU0047,Python,99,93,76,88.0,Advanced,proctored
+ASM00535,STU0027,Docker,70,43,92,70.7,Intermediate,proctored
+ASM00536,STU0255,FastAPI,87,63,41,61.4,Beginner,proctored
+ASM00537,STU0007,SQL,43,49,62,52.4,Beginner,practice
+ASM00538,STU0290,Data Science,50,83,88,75.1,Intermediate,proctored
+ASM00539,STU0361,Docker,79,51,42,55.8,Beginner,proctored
+ASM00540,STU0007,Docker,51,79,97,77.8,Intermediate,practice
+ASM00541,STU0187,Firebase,79,90,78,81.9,Intermediate,practice
+ASM00542,STU0138,Docker,69,83,84,79.2,Intermediate,practice
+ASM00543,STU0328,React,95,78,67,78.7,Intermediate,practice
+ASM00544,STU0305,MongoDB,87,68,87,81.3,Intermediate,practice
+ASM00545,STU0131,MongoDB,88,50,62,66.2,Beginner,proctored
+ASM00546,STU0197,Docker,83,83,79,81.4,Intermediate,practice
+ASM00547,STU0343,Docker,50,43,58,51.1,Beginner,proctored
+ASM00548,STU0208,Node.js,47,62,89,68.3,Beginner,proctored
+ASM00549,STU0226,Node.js,42,100,90,78.6,Intermediate,practice
+ASM00550,STU0048,Firebase,97,52,55,66.7,Beginner,practice
+ASM00551,STU0480,HTML/CSS,79,89,54,72.0,Intermediate,practice
+ASM00552,STU0405,Machine Learning,90,88,65,79.4,Intermediate,practice
+ASM00553,STU0195,FastAPI,47,87,83,73.4,Intermediate,practice
+ASM00554,STU0393,Firebase,40,93,73,69.1,Beginner,practice
+ASM00555,STU0176,Data Science,89,45,91,76.6,Intermediate,practice
+ASM00556,STU0155,Git,82,42,91,73.6,Intermediate,practice
+ASM00557,STU0267,Node.js,79,86,65,75.5,Intermediate,proctored
+ASM00558,STU0141,Node.js,77,79,42,63.6,Beginner,proctored
+ASM00559,STU0109,MongoDB,91,61,72,74.4,Intermediate,practice
+ASM00560,STU0088,Node.js,87,42,83,71.9,Intermediate,practice
+ASM00561,STU0228,Node.js,56,61,41,51.5,Beginner,practice
+ASM00562,STU0108,JavaScript,56,63,88,70.9,Intermediate,proctored
+ASM00563,STU0163,JavaScript,68,87,77,77.3,Intermediate,proctored
+ASM00564,STU0050,Firebase,47,45,84,61.2,Beginner,proctored
+ASM00565,STU0467,C++,73,63,91,77.2,Intermediate,proctored
+ASM00566,STU0493,FastAPI,56,66,83,69.8,Beginner,practice
+ASM00567,STU0460,FastAPI,79,75,82,79.0,Intermediate,practice
+ASM00568,STU0306,React,92,50,44,60.2,Beginner,proctored
+ASM00569,STU0183,MongoDB,76,66,47,61.4,Beginner,proctored
+ASM00570,STU0027,MongoDB,82,69,86,79.7,Intermediate,proctored
+ASM00571,STU0334,Node.js,84,99,94,92.5,Advanced,proctored
+ASM00572,STU0450,HTML/CSS,42,96,49,61.0,Beginner,proctored
+ASM00573,STU0337,MongoDB,66,56,49,56.2,Beginner,practice
+ASM00574,STU0316,Data Science,82,99,48,73.5,Intermediate,proctored
+ASM00575,STU0172,MongoDB,61,58,74,65.3,Beginner,proctored
+ASM00576,STU0422,Git,73,95,96,88.8,Advanced,practice
+ASM00577,STU0472,HTML/CSS,75,95,46,69.4,Beginner,proctored
+ASM00578,STU0496,Java,94,88,91,91.0,Advanced,practice
+ASM00579,STU0241,Docker,56,78,86,74.6,Intermediate,practice
+ASM00580,STU0229,Node.js,64,40,58,54.4,Beginner,proctored
+ASM00581,STU0299,React,99,69,46,68.8,Beginner,practice
+ASM00582,STU0370,FastAPI,98,56,83,79.4,Intermediate,practice
+ASM00583,STU0407,Firebase,51,45,56,51.2,Beginner,practice
+ASM00584,STU0041,Data Science,51,71,61,61.0,Beginner,proctored
+ASM00585,STU0415,Node.js,62,91,49,65.5,Beginner,proctored
+ASM00586,STU0217,Data Science,95,100,93,95.7,Advanced,practice
+ASM00587,STU0318,Firebase,72,73,81,75.9,Intermediate,practice
+ASM00588,STU0302,FastAPI,73,69,100,82.6,Intermediate,practice
+ASM00589,STU0170,Node.js,57,61,72,64.2,Beginner,practice
+ASM00590,STU0453,Data Science,88,58,44,61.4,Beginner,proctored
+ASM00591,STU0143,Python,47,98,79,75.1,Intermediate,proctored
+ASM00592,STU0370,Firebase,77,84,53,69.5,Beginner,practice
+ASM00593,STU0456,Firebase,40,84,61,61.6,Beginner,practice
+ASM00594,STU0094,C++,69,61,82,71.8,Intermediate,proctored
+ASM00595,STU0358,Git,53,56,64,58.3,Beginner,proctored
+ASM00596,STU0265,Git,41,47,49,46.0,Not Verified,practice
+ASM00597,STU0431,FastAPI,58,90,58,67.6,Beginner,practice
+ASM00598,STU0310,React,67,86,90,81.9,Intermediate,practice
+ASM00599,STU0209,Java,98,96,44,75.8,Intermediate,practice
+ASM00600,STU0210,FastAPI,91,65,48,66.0,Beginner,proctored
+ASM00601,STU0360,Firebase,55,95,97,83.8,Intermediate,proctored
+ASM00602,STU0495,HTML/CSS,69,41,82,65.8,Beginner,practice
+ASM00603,STU0172,Git,56,73,41,55.1,Beginner,practice
+ASM00604,STU0496,React,46,64,42,49.8,Not Verified,proctored
+ASM00605,STU0362,JavaScript,68,80,99,84.0,Intermediate,practice
+ASM00606,STU0124,React,43,53,93,66.0,Beginner,practice
+ASM00607,STU0492,Docker,51,91,96,81.0,Intermediate,practice
+ASM00608,STU0035,FastAPI,66,80,81,76.2,Intermediate,proctored
+ASM00609,STU0146,Node.js,69,95,95,87.2,Advanced,practice
+ASM00610,STU0215,React,95,44,91,78.1,Intermediate,proctored
+ASM00611,STU0067,Docker,44,53,74,58.7,Beginner,proctored
+ASM00612,STU0252,FastAPI,94,51,75,73.5,Intermediate,practice
+ASM00613,STU0277,HTML/CSS,91,43,97,79.0,Intermediate,practice
+ASM00614,STU0214,Java,60,84,96,81.6,Intermediate,practice
+ASM00615,STU0178,Git,95,72,61,74.5,Intermediate,practice
+ASM00616,STU0193,React,62,67,60,62.7,Beginner,practice
+ASM00617,STU0041,FastAPI,99,41,50,62.0,Beginner,proctored
+ASM00618,STU0174,JavaScript,44,100,50,63.2,Beginner,practice
+ASM00619,STU0222,Git,42,98,99,81.6,Intermediate,practice
+ASM00620,STU0428,Git,57,64,77,67.1,Beginner,practice
+ASM00621,STU0090,FastAPI,72,96,50,70.4,Intermediate,practice
+ASM00622,STU0230,Firebase,42,61,49,50.5,Beginner,proctored
+ASM00623,STU0125,Java,82,54,93,78.0,Intermediate,proctored
+ASM00624,STU0418,Git,74,75,95,82.7,Intermediate,practice
+ASM00625,STU0047,HTML/CSS,86,88,95,90.2,Advanced,proctored
+ASM00626,STU0108,C++,50,98,41,60.8,Beginner,proctored
+ASM00627,STU0445,Machine Learning,100,64,73,78.4,Intermediate,practice
+ASM00628,STU0151,JavaScript,90,68,99,87.0,Advanced,practice
+ASM00629,STU0280,Machine Learning,48,67,100,74.5,Intermediate,practice
+ASM00630,STU0096,Data Science,49,73,69,64.2,Beginner,practice
+ASM00631,STU0015,C++,55,49,40,47.2,Not Verified,practice
+ASM00632,STU0230,FastAPI,54,93,57,66.9,Beginner,practice
+ASM00633,STU0497,Java,87,40,66,64.5,Beginner,proctored
+ASM00634,STU0341,FastAPI,54,92,54,65.4,Beginner,practice
+ASM00635,STU0327,Docker,62,92,95,84.2,Intermediate,practice
+ASM00636,STU0246,React,61,97,67,74.2,Intermediate,proctored
+ASM00637,STU0099,Docker,48,94,91,79.0,Intermediate,practice
+ASM00638,STU0256,Docker,85,89,42,69.0,Beginner,proctored
+ASM00639,STU0131,SQL,53,61,73,63.4,Beginner,practice
+ASM00640,STU0362,Git,70,53,43,54.1,Beginner,proctored
+ASM00641,STU0398,Data Science,54,87,80,74.3,Intermediate,proctored
+ASM00642,STU0088,FastAPI,62,92,99,85.8,Advanced,practice
+ASM00643,STU0473,Firebase,41,59,85,64.0,Beginner,proctored
+ASM00644,STU0404,Node.js,42,88,86,73.4,Intermediate,proctored
+ASM00645,STU0170,SQL,61,58,98,74.9,Intermediate,practice
+ASM00646,STU0267,Git,86,90,84,86.4,Advanced,proctored
+ASM00647,STU0297,HTML/CSS,68,97,98,88.7,Advanced,practice
+ASM00648,STU0333,Python,58,46,46,49.6,Not Verified,practice
+ASM00649,STU0245,FastAPI,74,94,44,68.0,Beginner,practice
+ASM00650,STU0404,Git,66,80,90,79.8,Intermediate,practice
+ASM00651,STU0205,MongoDB,81,69,54,66.6,Beginner,practice
+ASM00652,STU0431,HTML/CSS,95,61,64,72.4,Intermediate,proctored
+ASM00653,STU0153,Node.js,72,82,99,85.8,Advanced,practice
+ASM00654,STU0383,Docker,67,71,87,76.2,Intermediate,proctored
+ASM00655,STU0107,JavaScript,85,51,79,72.4,Intermediate,proctored
+ASM00656,STU0494,C++,50,58,74,62.0,Beginner,practice
+ASM00657,STU0181,FastAPI,69,98,84,83.7,Intermediate,practice
+ASM00658,STU0015,Python,82,94,67,79.6,Intermediate,proctored
+ASM00659,STU0123,Docker,79,56,100,80.5,Intermediate,practice
+ASM00660,STU0299,MongoDB,77,83,93,85.2,Advanced,practice
+ASM00661,STU0491,JavaScript,66,57,42,53.7,Beginner,practice
+ASM00662,STU0212,Python,80,75,78,77.7,Intermediate,practice
+ASM00663,STU0106,Python,45,48,100,67.9,Beginner,proctored
+ASM00664,STU0116,MongoDB,55,76,72,68.1,Beginner,proctored
+ASM00665,STU0356,Java,55,86,100,82.3,Intermediate,practice
+ASM00666,STU0047,MongoDB,88,64,49,65.2,Beginner,proctored
+ASM00667,STU0127,SQL,67,75,79,74.2,Intermediate,proctored
+ASM00668,STU0165,Firebase,96,75,89,86.9,Advanced,proctored
+ASM00669,STU0020,FastAPI,83,41,100,77.2,Intermediate,proctored
+ASM00670,STU0188,MongoDB,53,53,69,59.4,Beginner,practice
+ASM00671,STU0429,HTML/CSS,52,60,65,59.6,Beginner,practice
+ASM00672,STU0011,JavaScript,80,81,68,75.5,Intermediate,practice
+ASM00673,STU0085,FastAPI,89,69,44,65.0,Beginner,practice
+ASM00674,STU0475,Machine Learning,63,78,67,69.1,Beginner,practice
+ASM00675,STU0237,C++,98,77,82,85.3,Advanced,practice
+ASM00676,STU0181,Data Science,61,76,61,65.5,Beginner,practice
+ASM00677,STU0500,SQL,41,97,61,65.8,Beginner,practice
+ASM00678,STU0460,Docker,55,84,80,73.7,Intermediate,practice
+ASM00679,STU0069,Git,85,80,45,67.5,Beginner,practice
+ASM00680,STU0059,Node.js,72,63,96,78.9,Intermediate,practice
+ASM00681,STU0460,Java,75,54,79,70.3,Intermediate,practice
+ASM00682,STU0483,JavaScript,84,60,48,62.4,Beginner,practice
+ASM00683,STU0074,HTML/CSS,99,43,100,82.6,Intermediate,practice
+ASM00684,STU0458,Docker,89,73,81,81.0,Intermediate,proctored
+ASM00685,STU0397,HTML/CSS,44,65,81,65.1,Beginner,practice
+ASM00686,STU0050,MongoDB,44,79,80,68.9,Beginner,proctored
+ASM00687,STU0048,Node.js,93,98,63,82.5,Intermediate,practice
+ASM00688,STU0152,C++,58,60,49,55.0,Beginner,proctored
+ASM00689,STU0412,React,42,90,91,76.0,Intermediate,proctored
+ASM00690,STU0243,Docker,64,88,79,77.2,Intermediate,practice
+ASM00691,STU0238,React,41,72,86,68.3,Beginner,proctored
+ASM00692,STU0154,Python,52,92,86,77.6,Intermediate,practice
+ASM00693,STU0350,MongoDB,55,51,86,66.2,Beginner,proctored
+ASM00694,STU0403,JavaScript,87,58,96,81.9,Intermediate,practice
+ASM00695,STU0005,C++,84,51,77,71.3,Intermediate,proctored
+ASM00696,STU0396,Machine Learning,54,58,81,66.0,Beginner,proctored
+ASM00697,STU0295,Node.js,45,51,91,65.2,Beginner,proctored
+ASM00698,STU0422,FastAPI,97,42,63,66.9,Beginner,proctored
+ASM00699,STU0182,Data Science,76,60,77,71.6,Intermediate,proctored
+ASM00700,STU0363,Python,58,99,92,83.9,Intermediate,practice
+ASM00701,STU0312,Firebase,56,45,48,49.5,Not Verified,proctored
+ASM00702,STU0463,JavaScript,60,59,66,62.1,Beginner,proctored
+ASM00703,STU0045,FastAPI,97,78,45,70.5,Intermediate,proctored
+ASM00704,STU0105,HTML/CSS,59,87,86,78.2,Intermediate,proctored
+ASM00705,STU0135,HTML/CSS,72,85,63,72.3,Intermediate,practice
+ASM00706,STU0036,React,53,78,89,74.9,Intermediate,practice
+ASM00707,STU0355,JavaScript,97,69,67,76.6,Intermediate,practice
+ASM00708,STU0045,JavaScript,71,55,58,61.0,Beginner,proctored
+ASM00709,STU0060,HTML/CSS,47,49,41,45.2,Not Verified,proctored
+ASM00710,STU0318,Java,96,84,85,88.0,Advanced,proctored
+ASM00711,STU0258,Java,54,42,45,46.8,Not Verified,practice
+ASM00712,STU0304,MongoDB,59,75,42,57.0,Beginner,proctored
+ASM00713,STU0317,FastAPI,100,78,43,70.6,Intermediate,proctored
+ASM00714,STU0297,Machine Learning,83,66,59,68.3,Beginner,practice
+ASM00715,STU0081,React,47,92,76,72.1,Intermediate,proctored
+ASM00716,STU0347,Git,95,77,42,68.4,Beginner,proctored
+ASM00717,STU0036,Docker,53,52,60,55.5,Beginner,practice
+ASM00718,STU0494,FastAPI,86,92,84,87.0,Advanced,proctored
+ASM00719,STU0049,Data Science,49,54,88,66.1,Beginner,practice
+ASM00720,STU0452,MongoDB,80,65,71,71.9,Intermediate,proctored
+ASM00721,STU0154,Firebase,85,96,84,87.9,Advanced,proctored
+ASM00722,STU0467,Data Science,45,40,94,63.1,Beginner,proctored
+ASM00723,STU0354,FastAPI,97,76,45,69.9,Beginner,proctored
+ASM00724,STU0455,FastAPI,90,88,70,81.4,Intermediate,practice
+ASM00725,STU0019,SQL,92,95,41,72.5,Intermediate,proctored
+ASM00726,STU0123,C++,53,90,50,62.9,Beginner,proctored
+ASM00727,STU0391,Firebase,55,57,100,73.6,Intermediate,practice
+ASM00728,STU0304,SQL,67,41,71,60.8,Beginner,proctored
+ASM00729,STU0132,Firebase,73,70,89,78.5,Intermediate,practice
+ASM00730,STU0177,Python,92,85,71,81.5,Intermediate,practice
+ASM00731,STU0178,HTML/CSS,85,49,62,65.0,Beginner,practice
+ASM00732,STU0078,React,44,92,64,66.4,Beginner,proctored
+ASM00733,STU0061,Machine Learning,41,93,52,61.0,Beginner,practice
+ASM00734,STU0492,Docker,72,86,44,65.0,Beginner,proctored
+ASM00735,STU0334,MongoDB,82,87,89,86.3,Advanced,proctored
+ASM00736,STU0162,HTML/CSS,96,84,88,89.2,Advanced,practice
+ASM00737,STU0500,MongoDB,41,52,88,63.1,Beginner,practice
+ASM00738,STU0441,HTML/CSS,53,43,67,55.6,Beginner,practice
+ASM00739,STU0446,Data Science,41,40,62,49.1,Not Verified,practice
+ASM00740,STU0207,Firebase,78,95,93,89.1,Advanced,practice
+ASM00741,STU0204,Docker,78,55,95,77.9,Intermediate,proctored
+ASM00742,STU0393,React,53,84,69,68.7,Beginner,proctored
+ASM00743,STU0015,Data Science,46,87,83,73.1,Intermediate,practice
+ASM00744,STU0268,MongoDB,40,90,41,55.4,Beginner,practice
+ASM00745,STU0444,Firebase,44,57,81,62.7,Beginner,proctored
+ASM00746,STU0287,Machine Learning,52,55,51,52.5,Beginner,proctored
+ASM00747,STU0153,React,94,41,91,76.9,Intermediate,practice
+ASM00748,STU0173,Firebase,74,89,71,77.3,Intermediate,practice
+ASM00749,STU0147,Firebase,84,74,84,81.0,Intermediate,proctored
+ASM00750,STU0320,Firebase,81,50,55,61.3,Beginner,practice
+ASM00751,STU0172,Git,86,40,93,75.0,Intermediate,practice
+ASM00752,STU0096,JavaScript,73,94,96,88.5,Advanced,practice
+ASM00753,STU0468,FastAPI,93,84,49,72.7,Intermediate,practice
+ASM00754,STU0282,SQL,87,57,62,68.0,Beginner,practice
+ASM00755,STU0446,Java,53,79,89,75.2,Intermediate,proctored
+ASM00756,STU0458,Git,66,90,41,63.2,Beginner,proctored
+ASM00757,STU0471,Node.js,73,95,50,70.4,Intermediate,proctored
+ASM00758,STU0220,Data Science,74,75,98,83.9,Intermediate,proctored
+ASM00759,STU0281,C++,71,52,65,62.9,Beginner,proctored
+ASM00760,STU0075,React,74,41,42,51.3,Beginner,practice
+ASM00761,STU0356,React,66,56,68,63.8,Beginner,practice
+ASM00762,STU0266,Node.js,66,66,97,78.4,Intermediate,practice
+ASM00763,STU0265,Machine Learning,87,70,100,87.1,Advanced,practice
+ASM00764,STU0051,Machine Learning,54,71,89,73.1,Intermediate,proctored
+ASM00765,STU0067,Python,65,54,46,54.1,Beginner,practice
+ASM00766,STU0171,SQL,96,50,76,74.2,Intermediate,practice
+ASM00767,STU0247,Machine Learning,42,47,56,49.1,Not Verified,practice
+ASM00768,STU0263,Node.js,40,72,46,52.0,Beginner,proctored
+ASM00769,STU0384,HTML/CSS,57,56,91,70.3,Intermediate,proctored
+ASM00770,STU0190,Data Science,51,74,47,56.3,Beginner,practice
+ASM00771,STU0365,React,84,64,97,83.2,Intermediate,proctored
+ASM00772,STU0038,Machine Learning,74,64,47,60.2,Beginner,proctored
+ASM00773,STU0158,Machine Learning,98,41,95,79.7,Intermediate,proctored
+ASM00774,STU0450,Machine Learning,44,45,73,55.9,Beginner,proctored
+ASM00775,STU0205,C++,87,41,90,74.4,Intermediate,practice
+ASM00776,STU0175,SQL,85,80,57,72.3,Intermediate,practice
+ASM00777,STU0498,SQL,98,56,51,66.6,Beginner,practice
+ASM00778,STU0257,React,64,72,88,76.0,Intermediate,practice
+ASM00779,STU0474,MongoDB,100,89,94,94.3,Advanced,proctored
+ASM00780,STU0256,Data Science,45,57,91,67.0,Beginner,proctored
+ASM00781,STU0102,Node.js,96,91,83,89.3,Advanced,practice
+ASM00782,STU0324,Docker,60,57,61,59.5,Beginner,practice
+ASM00783,STU0346,Machine Learning,90,67,41,63.5,Beginner,proctored
+ASM00784,STU0119,Python,94,45,45,59.7,Beginner,practice
+ASM00785,STU0330,JavaScript,49,71,89,71.6,Intermediate,proctored
+ASM00786,STU0490,React,73,64,91,77.5,Intermediate,practice
+ASM00787,STU0465,Node.js,83,48,84,72.9,Intermediate,proctored
+ASM00788,STU0334,MongoDB,86,89,68,79.7,Intermediate,proctored
+ASM00789,STU0200,HTML/CSS,73,54,74,67.7,Beginner,practice
+ASM00790,STU0337,HTML/CSS,95,43,100,81.4,Intermediate,practice
+ASM00791,STU0429,Docker,80,68,41,60.8,Beginner,proctored
+ASM00792,STU0133,Python,89,85,78,83.4,Intermediate,proctored
+ASM00793,STU0209,Docker,98,98,63,84.0,Intermediate,proctored
+ASM00794,STU0279,Java,44,52,66,55.2,Beginner,practice
+ASM00795,STU0439,Firebase,88,89,100,93.1,Advanced,proctored
+ASM00796,STU0124,Node.js,92,73,80,81.5,Intermediate,practice
+ASM00797,STU0288,Node.js,52,95,87,78.9,Intermediate,practice
+ASM00798,STU0417,Data Science,42,40,84,58.2,Beginner,practice
+ASM00799,STU0089,HTML/CSS,71,99,76,81.4,Intermediate,practice
+ASM00800,STU0365,Docker,76,61,96,79.5,Intermediate,proctored
+ASM00801,STU0157,HTML/CSS,51,78,62,63.5,Beginner,practice
+ASM00802,STU0146,Git,87,64,67,72.1,Intermediate,practice
+ASM00803,STU0151,JavaScript,93,45,87,76.2,Intermediate,practice
+ASM00804,STU0432,C++,84,62,94,81.4,Intermediate,practice
+ASM00805,STU0067,Data Science,61,50,72,62.1,Beginner,proctored
+ASM00806,STU0496,Python,47,66,99,73.5,Intermediate,proctored
+ASM00807,STU0332,Data Science,53,57,59,56.6,Beginner,practice
+ASM00808,STU0297,Docker,90,58,84,78.0,Intermediate,practice
+ASM00809,STU0300,JavaScript,54,60,83,67.4,Beginner,proctored
+ASM00810,STU0418,Machine Learning,85,53,75,71.4,Intermediate,proctored
+ASM00811,STU0422,JavaScript,67,57,98,76.4,Intermediate,practice
+ASM00812,STU0368,Java,83,83,94,87.4,Advanced,proctored
+ASM00813,STU0028,Java,68,40,69,60.0,Beginner,proctored
+ASM00814,STU0065,Docker,85,79,58,72.4,Intermediate,practice
+ASM00815,STU0230,Machine Learning,100,44,87,78.0,Intermediate,proctored
+ASM00816,STU0021,MongoDB,57,95,89,81.2,Intermediate,practice
+ASM00817,STU0287,Node.js,45,84,98,77.9,Intermediate,practice
+ASM00818,STU0089,Docker,85,97,80,86.6,Advanced,proctored
+ASM00819,STU0161,C++,62,89,49,64.9,Beginner,proctored
+ASM00820,STU0328,React,70,50,83,69.2,Beginner,practice
+ASM00821,STU0366,SQL,95,65,82,80.8,Intermediate,practice
+ASM00822,STU0294,FastAPI,47,82,53,59.9,Beginner,proctored
+ASM00823,STU0471,JavaScript,66,96,60,72.6,Intermediate,practice
+ASM00824,STU0141,Docker,69,100,85,84.7,Intermediate,practice
+ASM00825,STU0050,MongoDB,45,61,73,61.0,Beginner,proctored
+ASM00826,STU0453,C++,86,44,93,76.2,Intermediate,practice
+ASM00827,STU0492,Python,83,96,73,82.9,Intermediate,practice
+ASM00828,STU0038,Firebase,86,99,40,71.5,Intermediate,practice
+ASM00829,STU0373,Git,47,47,66,54.6,Beginner,proctored
+ASM00830,STU0039,Node.js,99,65,56,71.6,Intermediate,practice
+ASM00831,STU0196,C++,81,45,46,56.2,Beginner,proctored
+ASM00832,STU0031,HTML/CSS,76,69,63,68.7,Beginner,practice
+ASM00833,STU0089,C++,89,59,95,82.4,Intermediate,practice
+ASM00834,STU0109,C++,92,89,82,87.1,Advanced,practice
+ASM00835,STU0497,C++,51,55,71,60.2,Beginner,practice
+ASM00836,STU0497,Node.js,75,83,93,84.6,Intermediate,practice
+ASM00837,STU0235,Python,43,70,75,63.9,Beginner,proctored
+ASM00838,STU0324,JavaScript,61,55,51,55.2,Beginner,practice
+ASM00839,STU0477,Java,50,45,88,63.7,Beginner,proctored
+ASM00840,STU0282,JavaScript,88,50,65,67.4,Beginner,practice
+ASM00841,STU0293,Git,43,79,66,63.0,Beginner,practice
+ASM00842,STU0211,C++,41,49,74,56.6,Beginner,practice
+ASM00843,STU0185,Firebase,86,93,53,74.9,Intermediate,proctored
+ASM00844,STU0425,Git,81,63,69,70.8,Intermediate,proctored
+ASM00845,STU0210,Node.js,65,88,92,82.7,Intermediate,proctored
+ASM00846,STU0500,Java,89,85,40,68.2,Beginner,proctored
+ASM00847,STU0097,Docker,87,70,40,63.1,Beginner,proctored
+ASM00848,STU0229,Python,91,55,71,72.2,Intermediate,proctored
+ASM00849,STU0271,Docker,72,88,86,82.4,Intermediate,practice
+ASM00850,STU0471,C++,85,88,67,78.7,Intermediate,proctored
+ASM00851,STU0085,Python,71,91,93,85.8,Advanced,proctored
+ASM00852,STU0293,Firebase,96,72,55,72.4,Intermediate,practice
+ASM00853,STU0259,Node.js,78,49,83,71.3,Intermediate,practice
+ASM00854,STU0252,C++,59,74,68,67.1,Beginner,practice
+ASM00855,STU0479,Docker,51,79,66,65.4,Beginner,practice
+ASM00856,STU0031,MongoDB,70,91,58,71.5,Intermediate,practice
+ASM00857,STU0416,SQL,65,60,68,64.7,Beginner,proctored
+ASM00858,STU0219,Data Science,65,63,83,71.6,Intermediate,practice
+ASM00859,STU0046,HTML/CSS,78,72,50,65.0,Beginner,proctored
+ASM00860,STU0229,Git,57,71,70,66.4,Beginner,practice
+ASM00861,STU0002,MongoDB,98,91,42,73.5,Intermediate,proctored
+ASM00862,STU0158,SQL,88,48,88,76.0,Intermediate,proctored
+ASM00863,STU0032,JavaScript,67,51,65,61.4,Beginner,proctored
+ASM00864,STU0030,React,48,94,87,77.4,Intermediate,practice
+ASM00865,STU0340,Firebase,56,62,50,55.4,Beginner,practice
+ASM00866,STU0488,Data Science,54,55,40,48.7,Not Verified,proctored
+ASM00867,STU0237,HTML/CSS,89,92,56,76.7,Intermediate,proctored
+ASM00868,STU0376,Machine Learning,54,61,45,52.5,Beginner,practice
+ASM00869,STU0264,SQL,49,81,49,58.6,Beginner,practice
+ASM00870,STU0239,Machine Learning,87,70,63,72.3,Intermediate,proctored
+ASM00871,STU0065,SQL,85,75,52,68.8,Beginner,practice
+ASM00872,STU0390,Docker,76,77,41,62.3,Beginner,proctored
+ASM00873,STU0369,HTML/CSS,62,93,93,83.7,Intermediate,proctored
+ASM00874,STU0205,C++,99,89,66,82.8,Intermediate,proctored
+ASM00875,STU0100,JavaScript,71,67,54,63.0,Beginner,proctored
+ASM00876,STU0133,JavaScript,49,74,100,76.9,Intermediate,practice
+ASM00877,STU0357,Machine Learning,50,89,100,81.7,Intermediate,proctored
+ASM00878,STU0239,JavaScript,97,90,93,93.3,Advanced,proctored
+ASM00879,STU0255,Docker,51,51,61,55.0,Beginner,proctored
+ASM00880,STU0053,Python,54,91,54,65.1,Beginner,practice
+ASM00881,STU0423,HTML/CSS,86,84,85,85.0,Advanced,proctored
+ASM00882,STU0004,FastAPI,84,77,59,71.9,Intermediate,proctored
+ASM00883,STU0336,React,56,99,97,85.3,Advanced,proctored
+ASM00884,STU0105,C++,68,40,57,55.2,Beginner,proctored
+ASM00885,STU0098,React,96,88,52,76.0,Intermediate,proctored
+ASM00886,STU0324,Docker,74,96,91,87.4,Advanced,proctored
+ASM00887,STU0274,Node.js,63,65,80,70.4,Intermediate,proctored
+ASM00888,STU0066,SQL,81,71,97,84.4,Intermediate,proctored
+ASM00889,STU0138,Data Science,54,68,46,55.0,Beginner,practice
+ASM00890,STU0386,Firebase,83,83,47,68.6,Beginner,practice
+ASM00891,STU0487,Machine Learning,76,82,64,73.0,Intermediate,proctored
+ASM00892,STU0458,Docker,80,64,58,66.4,Beginner,practice
+ASM00893,STU0433,C++,62,59,59,59.9,Beginner,proctored
+ASM00894,STU0050,SQL,71,82,84,79.5,Intermediate,proctored
+ASM00895,STU0238,Git,82,50,67,66.4,Beginner,practice
+ASM00896,STU0016,SQL,53,85,49,61.0,Beginner,practice
+ASM00897,STU0102,Docker,78,67,73,72.7,Intermediate,practice
+ASM00898,STU0316,React,56,86,48,61.8,Beginner,proctored
+ASM00899,STU0326,HTML/CSS,76,42,54,57.0,Beginner,practice
+ASM00900,STU0315,Firebase,78,69,98,83.3,Intermediate,proctored
+ASM00901,STU0347,React,45,84,63,63.9,Beginner,proctored
+ASM00902,STU0122,JavaScript,46,78,72,66.0,Beginner,practice
+ASM00903,STU0388,Git,92,83,66,78.9,Intermediate,practice
+ASM00904,STU0409,SQL,89,45,83,73.4,Intermediate,proctored
+ASM00905,STU0066,SQL,40,65,67,58.3,Beginner,practice
+ASM00906,STU0449,Firebase,87,81,73,79.6,Intermediate,practice
+ASM00907,STU0327,Docker,89,42,65,65.3,Beginner,practice
+ASM00908,STU0115,Node.js,71,66,70,69.1,Beginner,proctored
+ASM00909,STU0446,Node.js,93,76,76,81.1,Intermediate,practice
+ASM00910,STU0127,JavaScript,75,77,62,70.4,Intermediate,proctored
+ASM00911,STU0456,C++,40,54,73,57.4,Beginner,practice
+ASM00912,STU0095,Node.js,49,94,70,70.9,Intermediate,practice
+ASM00913,STU0087,JavaScript,46,60,62,56.6,Beginner,practice
+ASM00914,STU0124,Firebase,83,68,58,68.5,Beginner,proctored
+ASM00915,STU0294,Docker,66,54,78,67.2,Beginner,practice
+ASM00916,STU0315,SQL,98,78,58,76.0,Intermediate,proctored
+ASM00917,STU0103,FastAPI,76,62,60,65.4,Beginner,practice
+ASM00918,STU0213,SQL,67,89,82,79.6,Intermediate,practice
+ASM00919,STU0102,Java,70,43,72,62.7,Beginner,practice
+ASM00920,STU0112,Python,43,49,87,62.4,Beginner,proctored
+ASM00921,STU0009,Docker,49,87,91,77.2,Intermediate,practice
+ASM00922,STU0482,React,64,82,64,69.4,Beginner,proctored
+ASM00923,STU0350,C++,50,62,87,68.4,Beginner,practice
+ASM00924,STU0337,HTML/CSS,69,53,86,71.0,Intermediate,proctored
+ASM00925,STU0088,C++,53,58,98,72.5,Intermediate,practice
+ASM00926,STU0138,Git,53,78,44,56.9,Beginner,practice
+ASM00927,STU0342,Machine Learning,40,91,46,57.7,Beginner,proctored
+ASM00928,STU0018,Git,40,59,75,59.7,Beginner,practice
+ASM00929,STU0203,C++,86,41,87,72.9,Intermediate,practice
+ASM00930,STU0107,MongoDB,87,49,66,67.2,Beginner,practice
+ASM00931,STU0156,Firebase,88,68,89,82.4,Intermediate,proctored
+ASM00932,STU0341,Data Science,72,62,79,71.8,Intermediate,practice
+ASM00933,STU0323,Node.js,45,70,67,61.3,Beginner,proctored
+ASM00934,STU0403,MongoDB,79,82,41,64.7,Beginner,proctored
+ASM00935,STU0254,Java,98,66,58,72.4,Intermediate,practice
+ASM00936,STU0327,FastAPI,46,40,58,49.0,Not Verified,practice
+ASM00937,STU0385,Data Science,92,55,85,78.1,Intermediate,practice
+ASM00938,STU0215,Machine Learning,76,93,59,74.3,Intermediate,practice
+ASM00939,STU0469,Data Science,90,53,84,76.5,Intermediate,proctored
+ASM00940,STU0277,Data Science,89,75,96,87.6,Advanced,proctored
+ASM00941,STU0382,HTML/CSS,90,97,100,96.1,Advanced,practice
+ASM00942,STU0067,FastAPI,100,76,41,69.2,Beginner,practice
+ASM00943,STU0200,Machine Learning,62,98,45,66.0,Beginner,proctored
+ASM00944,STU0227,FastAPI,91,97,59,80.0,Intermediate,practice
+ASM00945,STU0227,Java,77,73,99,84.6,Intermediate,proctored
+ASM00946,STU0228,Node.js,55,92,56,66.5,Beginner,practice
+ASM00947,STU0023,Git,92,65,72,75.9,Intermediate,practice
+ASM00948,STU0317,React,72,42,65,60.2,Beginner,proctored
+ASM00949,STU0383,SQL,43,49,55,49.6,Not Verified,proctored
+ASM00950,STU0262,MongoDB,76,81,77,77.9,Intermediate,practice
+ASM00951,STU0144,Machine Learning,91,78,100,90.7,Advanced,proctored
+ASM00952,STU0136,Firebase,54,59,89,69.5,Beginner,proctored
+ASM00953,STU0184,Node.js,73,65,78,72.6,Intermediate,practice
+ASM00954,STU0091,Java,51,92,46,61.3,Beginner,practice
+ASM00955,STU0200,Python,92,55,72,72.9,Intermediate,practice
+ASM00956,STU0033,Python,73,74,42,60.9,Beginner,proctored
+ASM00957,STU0170,MongoDB,59,66,79,69.1,Beginner,practice
+ASM00958,STU0196,Machine Learning,40,97,59,64.7,Beginner,proctored
+ASM00959,STU0109,Data Science,65,56,68,63.5,Beginner,practice
+ASM00960,STU0236,Machine Learning,87,98,77,86.3,Advanced,proctored
+ASM00961,STU0337,C++,96,45,67,69.1,Beginner,proctored
+ASM00962,STU0096,JavaScript,47,91,61,65.8,Beginner,proctored
+ASM00963,STU0387,React,86,76,92,85.4,Advanced,practice
+ASM00964,STU0358,SQL,62,75,90,77.1,Intermediate,practice
+ASM00965,STU0364,FastAPI,85,99,84,88.8,Advanced,proctored
+ASM00966,STU0327,Git,97,80,42,69.9,Beginner,proctored
+ASM00967,STU0404,MongoDB,59,47,60,55.8,Beginner,proctored
+ASM00968,STU0111,React,63,48,94,70.9,Intermediate,practice
+ASM00969,STU0366,C++,82,65,40,60.1,Beginner,proctored
+ASM00970,STU0418,React,72,60,60,63.6,Beginner,proctored
+ASM00971,STU0393,MongoDB,41,50,77,58.1,Beginner,practice
+ASM00972,STU0403,MongoDB,70,52,90,72.6,Intermediate,proctored
+ASM00973,STU0055,Firebase,96,41,44,58.7,Beginner,proctored
+ASM00974,STU0439,Node.js,91,62,94,83.5,Intermediate,practice
+ASM00975,STU0049,FastAPI,45,98,63,68.1,Beginner,proctored
+ASM00976,STU0198,C++,98,81,91,90.1,Advanced,proctored
+ASM00977,STU0307,Node.js,78,76,89,81.8,Intermediate,proctored
+ASM00978,STU0098,Firebase,65,80,90,79.5,Intermediate,practice
+ASM00979,STU0019,Firebase,62,61,47,55.7,Beginner,proctored
+ASM00980,STU0344,MongoDB,87,91,77,84.2,Intermediate,proctored
+ASM00981,STU0427,Firebase,76,66,74,72.2,Intermediate,practice
+ASM00982,STU0042,FastAPI,67,90,82,79.9,Intermediate,practice
+ASM00983,STU0040,Data Science,40,74,40,50.2,Beginner,practice
+ASM00984,STU0313,JavaScript,78,94,53,72.8,Intermediate,proctored
+ASM00985,STU0385,MongoDB,100,94,75,88.2,Advanced,practice
+ASM00986,STU0009,Data Science,98,98,84,92.4,Advanced,proctored
+ASM00987,STU0308,Machine Learning,45,49,77,59.0,Beginner,proctored
+ASM00988,STU0107,MongoDB,48,44,88,62.8,Beginner,proctored
+ASM00989,STU0144,Git,62,50,48,52.8,Beginner,proctored
+ASM00990,STU0289,MongoDB,100,95,89,94.1,Advanced,practice
+ASM00991,STU0022,Docker,43,100,92,79.7,Intermediate,proctored
+ASM00992,STU0245,MongoDB,83,44,99,77.7,Intermediate,practice
+ASM00993,STU0254,SQL,73,75,62,69.2,Beginner,practice
+ASM00994,STU0080,C++,68,56,74,66.8,Beginner,proctored
+ASM00995,STU0199,Machine Learning,46,44,84,60.6,Beginner,proctored
+ASM00996,STU0464,Machine Learning,90,87,48,72.3,Intermediate,proctored
+ASM00997,STU0333,React,98,43,64,67.9,Beginner,practice
+ASM00998,STU0483,Java,67,60,71,66.5,Beginner,proctored
+ASM00999,STU0087,Java,47,75,67,63.4,Beginner,proctored
+ASM01000,STU0426,Docker,44,74,45,53.4,Beginner,proctored
+ASM01001,STU0342,C++,48,95,82,75.7,Intermediate,proctored
+ASM01002,STU0448,Docker,79,94,78,83.1,Intermediate,proctored
+ASM01003,STU0101,Python,51,60,62,58.1,Beginner,practice
+ASM01004,STU0298,C++,98,48,43,61.0,Beginner,practice
+ASM01005,STU0404,JavaScript,54,47,90,66.3,Beginner,practice
+ASM01006,STU0418,Docker,61,78,67,68.5,Beginner,proctored
+ASM01007,STU0434,Python,96,77,85,85.9,Advanced,practice
+ASM01008,STU0325,Java,76,88,65,75.2,Intermediate,proctored
+ASM01009,STU0496,Node.js,62,41,62,55.7,Beginner,proctored
+ASM01010,STU0046,Java,49,88,43,58.3,Beginner,proctored
+ASM01011,STU0406,Machine Learning,40,73,47,52.7,Beginner,practice
+ASM01012,STU0403,Node.js,89,46,100,80.5,Intermediate,proctored
+ASM01013,STU0130,Node.js,87,90,91,89.5,Advanced,practice
+ASM01014,STU0430,Python,96,74,84,84.6,Intermediate,proctored
+ASM01015,STU0355,Git,71,98,46,69.1,Beginner,practice
+ASM01016,STU0020,HTML/CSS,89,75,93,86.4,Advanced,proctored
+ASM01017,STU0140,Machine Learning,76,60,56,63.2,Beginner,practice
+ASM01018,STU0290,Firebase,62,41,92,67.7,Beginner,practice
+ASM01019,STU0006,Git,83,91,94,89.8,Advanced,practice
+ASM01020,STU0425,Firebase,98,72,42,67.8,Beginner,practice
+ASM01021,STU0424,JavaScript,84,100,69,82.8,Intermediate,practice
+ASM01022,STU0175,Machine Learning,67,78,75,73.5,Intermediate,proctored
+ASM01023,STU0351,Git,80,74,98,85.4,Advanced,practice
+ASM01024,STU0293,Docker,42,71,56,56.3,Beginner,proctored
+ASM01025,STU0312,Node.js,45,59,49,50.8,Beginner,proctored
+ASM01026,STU0149,Git,62,69,99,78.9,Intermediate,practice
+ASM01027,STU0465,Machine Learning,51,60,94,70.9,Intermediate,proctored
+ASM01028,STU0346,HTML/CSS,80,74,58,69.4,Beginner,practice
+ASM01029,STU0208,HTML/CSS,64,78,45,60.6,Beginner,practice
+ASM01030,STU0100,Python,46,65,100,73.3,Intermediate,practice
+ASM01031,STU0254,JavaScript,73,80,65,71.9,Intermediate,proctored
+ASM01032,STU0241,Node.js,83,85,64,76.0,Intermediate,practice
+ASM01033,STU0299,Firebase,40,48,90,62.4,Beginner,practice
+ASM01034,STU0067,Git,91,68,64,73.3,Intermediate,proctored
+ASM01035,STU0062,HTML/CSS,64,64,48,57.6,Beginner,practice
+ASM01036,STU0223,Python,89,52,59,65.9,Beginner,proctored
+ASM01037,STU0139,HTML/CSS,100,65,96,87.9,Advanced,practice
+ASM01038,STU0248,Docker,42,47,65,52.7,Beginner,practice
+ASM01039,STU0194,JavaScript,93,71,87,84.0,Intermediate,practice
+ASM01040,STU0421,Docker,58,42,50,50.0,Beginner,proctored
+ASM01041,STU0460,SQL,92,99,71,85.7,Advanced,proctored
+ASM01042,STU0106,Java,85,100,49,75.1,Intermediate,practice
+ASM01043,STU0076,Node.js,51,52,61,55.3,Beginner,proctored
+ASM01044,STU0175,MongoDB,87,64,93,82.5,Intermediate,proctored
+ASM01045,STU0001,FastAPI,60,87,93,81.3,Intermediate,practice
+ASM01046,STU0308,Machine Learning,96,44,68,69.2,Beginner,proctored
+ASM01047,STU0056,SQL,94,43,61,65.5,Beginner,proctored
+ASM01048,STU0005,Docker,63,98,86,82.7,Intermediate,proctored
+ASM01049,STU0170,React,89,45,52,61.0,Beginner,proctored
+ASM01050,STU0264,Node.js,63,98,66,74.7,Intermediate,proctored
+ASM01051,STU0169,Git,93,79,54,73.2,Intermediate,practice
+ASM01052,STU0340,JavaScript,55,49,48,50.4,Beginner,proctored
+ASM01053,STU0004,Git,45,96,49,61.9,Beginner,practice
+ASM01054,STU0470,Node.js,96,87,54,76.5,Intermediate,proctored
+ASM01055,STU0406,MongoDB,57,98,84,80.1,Intermediate,proctored
+ASM01056,STU0144,MongoDB,41,91,97,78.4,Intermediate,practice
+ASM01057,STU0263,React,56,84,98,81.2,Intermediate,proctored
+ASM01058,STU0349,MongoDB,80,69,96,83.1,Intermediate,practice
+ASM01059,STU0303,HTML/CSS,74,49,84,70.5,Intermediate,practice
+ASM01060,STU0024,HTML/CSS,49,46,99,68.1,Beginner,proctored
+ASM01061,STU0219,Firebase,73,49,54,58.2,Beginner,proctored
+ASM01062,STU0112,Data Science,79,100,76,84.1,Intermediate,proctored
+ASM01063,STU0258,Java,81,40,42,53.1,Beginner,practice
+ASM01064,STU0078,MongoDB,59,50,66,59.1,Beginner,practice
+ASM01065,STU0238,FastAPI,89,79,88,85.6,Advanced,practice
+ASM01066,STU0416,React,83,61,63,68.4,Beginner,practice
+ASM01067,STU0232,Node.js,89,100,95,94.7,Advanced,practice
+ASM01068,STU0444,JavaScript,66,53,89,71.3,Intermediate,practice
+ASM01069,STU0258,FastAPI,100,74,49,71.8,Intermediate,proctored
+ASM01070,STU0384,HTML/CSS,71,92,80,80.9,Intermediate,proctored
+ASM01071,STU0162,Node.js,58,87,51,63.9,Beginner,proctored
+ASM01072,STU0328,SQL,52,60,47,52.4,Beginner,proctored
+ASM01073,STU0461,Data Science,73,83,75,76.8,Intermediate,proctored
+ASM01074,STU0284,Python,61,42,55,52.9,Beginner,practice
+ASM01075,STU0173,SQL,54,75,87,73.5,Intermediate,proctored
+ASM01076,STU0262,Data Science,50,40,56,49.4,Not Verified,practice
+ASM01077,STU0204,Data Science,67,64,98,78.5,Intermediate,practice
+ASM01078,STU0363,Python,74,48,74,66.2,Beginner,practice
+ASM01079,STU0154,SQL,85,84,92,87.5,Advanced,practice
+ASM01080,STU0041,C++,82,48,43,56.2,Beginner,practice
+ASM01081,STU0161,React,44,83,93,75.3,Intermediate,proctored
+ASM01082,STU0367,Firebase,64,75,63,66.9,Beginner,proctored
+ASM01083,STU0053,SQL,89,88,85,87.1,Advanced,proctored
+ASM01084,STU0203,JavaScript,46,82,81,70.8,Intermediate,proctored
+ASM01085,STU0247,MongoDB,58,85,97,81.7,Intermediate,proctored
+ASM01086,STU0132,HTML/CSS,56,54,40,49.0,Not Verified,proctored
+ASM01087,STU0008,HTML/CSS,64,45,57,55.5,Beginner,practice
+ASM01088,STU0183,JavaScript,77,90,95,88.1,Advanced,practice
+ASM01089,STU0477,Node.js,62,85,69,71.7,Intermediate,practice
+ASM01090,STU0139,Firebase,53,53,44,49.4,Not Verified,practice
+ASM01091,STU0050,HTML/CSS,47,83,94,76.6,Intermediate,practice
+ASM01092,STU0117,React,92,55,96,82.5,Intermediate,practice
+ASM01093,STU0403,Git,99,68,50,70.1,Intermediate,practice
+ASM01094,STU0432,Git,69,41,45,51.0,Beginner,proctored
+ASM01095,STU0385,Python,87,53,90,78.0,Intermediate,practice
+ASM01096,STU0116,Node.js,59,78,78,72.3,Intermediate,practice
+ASM01097,STU0187,C++,85,74,84,81.3,Intermediate,practice
+ASM01098,STU0417,FastAPI,85,66,80,77.3,Intermediate,proctored
+ASM01099,STU0376,FastAPI,73,72,45,61.5,Beginner,practice
+ASM01100,STU0263,Machine Learning,43,100,85,76.9,Intermediate,proctored
+ASM01101,STU0060,SQL,76,77,49,65.5,Beginner,practice
+ASM01102,STU0311,Node.js,53,69,67,63.4,Beginner,proctored
+ASM01103,STU0264,JavaScript,71,97,58,73.6,Intermediate,proctored
+ASM01104,STU0488,Firebase,53,53,47,50.6,Beginner,proctored
+ASM01105,STU0086,JavaScript,54,95,78,75.9,Intermediate,practice
+ASM01106,STU0136,FastAPI,42,99,96,80.7,Intermediate,practice
+ASM01107,STU0008,Node.js,68,53,83,69.5,Beginner,proctored
+ASM01108,STU0160,C++,100,96,87,93.6,Advanced,proctored
+ASM01109,STU0409,Machine Learning,75,69,59,66.8,Beginner,practice
+ASM01110,STU0242,C++,94,71,56,71.9,Intermediate,proctored
+ASM01111,STU0236,Python,54,65,64,61.3,Beginner,practice
+ASM01112,STU0441,HTML/CSS,62,65,40,54.1,Beginner,proctored
+ASM01113,STU0345,Data Science,64,85,48,63.9,Beginner,proctored
+ASM01114,STU0438,FastAPI,94,49,47,61.7,Beginner,proctored
+ASM01115,STU0404,Docker,81,74,48,65.7,Beginner,proctored
+ASM01116,STU0298,MongoDB,99,53,94,83.2,Intermediate,practice
+ASM01117,STU0443,FastAPI,50,70,75,66.0,Beginner,practice
+ASM01118,STU0391,Data Science,48,67,56,56.9,Beginner,proctored
+ASM01119,STU0307,React,52,94,40,59.8,Beginner,practice
+ASM01120,STU0370,HTML/CSS,63,81,77,74.0,Intermediate,practice
+ASM01121,STU0292,JavaScript,82,88,42,67.8,Beginner,practice
+ASM01122,STU0206,Docker,65,42,96,70.5,Intermediate,practice
+ASM01123,STU0279,SQL,54,46,51,50.4,Beginner,proctored
+ASM01124,STU0130,Docker,98,56,53,67.4,Beginner,practice
+ASM01125,STU0267,HTML/CSS,86,57,77,73.7,Intermediate,proctored
+ASM01126,STU0058,FastAPI,82,59,95,80.3,Intermediate,practice
+ASM01127,STU0180,Java,49,56,51,51.9,Beginner,proctored
+ASM01128,STU0015,MongoDB,64,87,55,67.3,Beginner,practice
+ASM01129,STU0286,Docker,45,70,88,69.7,Beginner,proctored
+ASM01130,STU0158,FastAPI,85,86,100,91.3,Advanced,proctored
+ASM01131,STU0405,Machine Learning,56,80,100,80.8,Intermediate,proctored
+ASM01132,STU0043,C++,66,86,61,70.0,Intermediate,practice
+ASM01133,STU0474,SQL,87,92,75,83.7,Intermediate,practice
+ASM01134,STU0294,Firebase,56,50,44,49.4,Not Verified,proctored
+ASM01135,STU0256,Git,88,52,98,81.2,Intermediate,proctored
+ASM01136,STU0107,HTML/CSS,94,66,52,68.8,Beginner,practice
+ASM01137,STU0173,Git,71,51,71,65.0,Beginner,practice
+ASM01138,STU0237,Machine Learning,73,71,70,71.2,Intermediate,practice
+ASM01139,STU0188,Git,53,63,90,70.8,Intermediate,practice
+ASM01140,STU0037,React,93,89,59,78.2,Intermediate,proctored
+ASM01141,STU0249,Node.js,78,44,77,67.4,Beginner,practice
+ASM01142,STU0113,HTML/CSS,92,75,41,66.5,Beginner,practice
+ASM01143,STU0092,Machine Learning,90,71,94,85.9,Advanced,proctored
+ASM01144,STU0099,React,78,78,40,62.8,Beginner,practice
+ASM01145,STU0435,Machine Learning,47,63,95,71.0,Intermediate,proctored
+ASM01146,STU0017,Java,44,45,54,48.3,Not Verified,proctored
+ASM01147,STU0172,Node.js,73,40,59,57.5,Beginner,practice
+ASM01148,STU0094,C++,52,66,56,57.8,Beginner,practice
+ASM01149,STU0317,JavaScript,88,44,56,62.0,Beginner,proctored
+ASM01150,STU0045,Python,95,86,73,83.5,Intermediate,practice
+ASM01151,STU0050,HTML/CSS,99,64,89,84.5,Intermediate,practice
+ASM01152,STU0423,Data Science,85,78,41,65.3,Beginner,practice
+ASM01153,STU0430,Docker,91,82,78,83.1,Intermediate,proctored
+ASM01154,STU0176,Firebase,70,54,73,66.4,Beginner,proctored
+ASM01155,STU0196,Data Science,79,100,76,84.1,Intermediate,practice
+ASM01156,STU0237,Docker,54,64,68,62.6,Beginner,proctored
+ASM01157,STU0019,Git,83,65,47,63.2,Beginner,proctored
+ASM01158,STU0411,JavaScript,88,52,69,69.6,Beginner,proctored
+ASM01159,STU0222,Node.js,54,83,51,61.5,Beginner,proctored
+ASM01160,STU0187,FastAPI,91,64,76,76.9,Intermediate,practice
+ASM01161,STU0082,Firebase,57,98,63,71.7,Intermediate,practice
+ASM01162,STU0054,Docker,94,88,81,87.0,Advanced,practice
+ASM01163,STU0186,Firebase,83,68,79,76.9,Intermediate,proctored
+ASM01164,STU0081,HTML/CSS,96,71,69,77.7,Intermediate,proctored
+ASM01165,STU0061,Java,83,61,59,66.8,Beginner,proctored
+ASM01166,STU0427,Data Science,83,71,53,67.4,Beginner,proctored
+ASM01167,STU0374,MongoDB,94,66,40,64.0,Beginner,practice
+ASM01168,STU0261,SQL,66,72,75,71.4,Intermediate,practice
+ASM01169,STU0387,Java,42,99,88,77.5,Intermediate,practice
+ASM01170,STU0345,Git,70,52,100,76.6,Intermediate,practice
+ASM01171,STU0257,Machine Learning,70,95,93,86.7,Advanced,practice
+ASM01172,STU0425,React,100,84,98,94.4,Advanced,proctored
+ASM01173,STU0438,Machine Learning,57,57,96,72.6,Intermediate,practice
+ASM01174,STU0027,JavaScript,64,52,49,54.4,Beginner,practice
+ASM01175,STU0203,MongoDB,71,82,67,72.7,Intermediate,practice
+ASM01176,STU0305,Machine Learning,91,95,91,92.2,Advanced,practice
+ASM01177,STU0377,SQL,73,68,81,74.7,Intermediate,practice
+ASM01178,STU0198,Git,56,92,77,75.2,Intermediate,practice
+ASM01179,STU0498,Data Science,87,45,62,64.4,Beginner,practice
+ASM01180,STU0432,Docker,91,87,55,75.4,Intermediate,practice
+ASM01181,STU0438,Data Science,98,56,95,84.2,Intermediate,practice
+ASM01182,STU0332,Python,85,80,48,68.7,Beginner,practice
+ASM01183,STU0013,HTML/CSS,63,55,68,62.6,Beginner,practice
+ASM01184,STU0087,Git,81,40,75,66.3,Beginner,practice
+ASM01185,STU0348,MongoDB,87,73,79,79.6,Intermediate,practice
+ASM01186,STU0162,Firebase,54,81,79,72.1,Intermediate,practice
+ASM01187,STU0171,Firebase,41,55,68,56.0,Beginner,practice
+ASM01188,STU0144,FastAPI,95,100,42,75.3,Intermediate,practice
+ASM01189,STU0269,Python,63,54,74,64.7,Beginner,proctored
+ASM01190,STU0102,C++,74,63,99,80.7,Intermediate,practice
+ASM01191,STU0298,React,51,86,78,72.3,Intermediate,proctored
+ASM01192,STU0127,Machine Learning,78,64,59,66.2,Beginner,proctored
+ASM01193,STU0357,Firebase,57,91,89,80.0,Intermediate,proctored
+ASM01194,STU0244,React,69,53,43,53.8,Beginner,practice
+ASM01195,STU0045,SQL,40,86,96,76.2,Intermediate,practice
+ASM01196,STU0112,JavaScript,91,85,56,75.2,Intermediate,proctored
+ASM01197,STU0161,Java,42,91,87,74.7,Intermediate,proctored
+ASM01198,STU0209,SQL,73,54,95,76.1,Intermediate,practice
+ASM01199,STU0324,Git,67,53,52,56.8,Beginner,practice
+ASM01200,STU0474,Machine Learning,69,57,81,70.2,Intermediate,practice
+ASM01201,STU0137,C++,90,97,65,82.1,Intermediate,practice
+ASM01202,STU0382,Python,55,53,94,70.0,Intermediate,proctored
+ASM01203,STU0463,Data Science,52,92,90,79.2,Intermediate,practice
+ASM01204,STU0136,Java,61,78,49,61.3,Beginner,proctored
+ASM01205,STU0363,HTML/CSS,76,58,92,77.0,Intermediate,proctored
+ASM01206,STU0028,Firebase,45,41,51,46.2,Not Verified,practice
+ASM01207,STU0224,Python,70,91,74,77.9,Intermediate,proctored
+ASM01208,STU0350,MongoDB,78,60,47,60.2,Beginner,practice
+ASM01209,STU0154,FastAPI,56,77,96,78.3,Intermediate,practice
+ASM01210,STU0244,Git,80,70,52,65.8,Beginner,proctored
+ASM01211,STU0121,MongoDB,93,41,67,67.0,Beginner,proctored
+ASM01212,STU0135,Node.js,53,96,60,68.7,Beginner,practice
+ASM01213,STU0442,Docker,63,57,85,70.0,Intermediate,practice
+ASM01214,STU0271,Git,53,94,61,68.5,Beginner,proctored
+ASM01215,STU0485,HTML/CSS,98,62,82,80.8,Intermediate,proctored
+ASM01216,STU0210,Python,51,88,69,69.3,Beginner,proctored
+ASM01217,STU0372,Machine Learning,95,73,70,78.4,Intermediate,practice
+ASM01218,STU0222,HTML/CSS,70,43,70,61.9,Beginner,proctored
+ASM01219,STU0326,MongoDB,98,84,74,84.2,Intermediate,proctored
+ASM01220,STU0483,JavaScript,78,51,55,60.7,Beginner,practice
+ASM01221,STU0473,Java,95,53,76,74.8,Intermediate,proctored
+ASM01222,STU0066,React,71,69,56,64.4,Beginner,practice
+ASM01223,STU0307,Docker,77,73,59,68.6,Beginner,proctored
+ASM01224,STU0359,C++,53,98,98,84.5,Intermediate,proctored
+ASM01225,STU0256,Machine Learning,99,72,68,78.5,Intermediate,proctored
+ASM01226,STU0172,Firebase,84,72,89,82.4,Intermediate,proctored
+ASM01227,STU0251,Git,44,88,42,56.4,Beginner,practice
+ASM01228,STU0433,Docker,63,47,96,71.4,Intermediate,proctored
+ASM01229,STU0420,Machine Learning,57,42,71,58.1,Beginner,proctored
+ASM01230,STU0495,Data Science,73,53,88,73.0,Intermediate,practice
+ASM01231,STU0226,FastAPI,86,57,72,71.7,Intermediate,proctored
+ASM01232,STU0413,Python,54,56,73,62.2,Beginner,practice
+ASM01233,STU0237,React,67,99,95,87.8,Advanced,practice
+ASM01234,STU0338,Node.js,84,83,40,66.1,Beginner,practice
+ASM01235,STU0450,Node.js,79,48,70,66.1,Beginner,proctored
+ASM01236,STU0264,Python,79,40,52,56.5,Beginner,proctored
+ASM01237,STU0444,Data Science,75,95,92,87.8,Advanced,proctored
+ASM01238,STU0406,Docker,90,64,91,82.6,Intermediate,practice
+ASM01239,STU0126,C++,100,45,67,70.3,Intermediate,practice
+ASM01240,STU0382,FastAPI,60,87,79,75.7,Intermediate,practice
+ASM01241,STU0486,Node.js,57,96,42,62.7,Beginner,practice
+ASM01242,STU0381,Git,53,41,52,49.0,Not Verified,proctored
+ASM01243,STU0498,Docker,42,69,80,65.3,Beginner,practice
+ASM01244,STU0224,Python,94,85,92,90.5,Advanced,practice
+ASM01245,STU0080,Machine Learning,79,79,89,83.0,Intermediate,proctored
+ASM01246,STU0064,C++,63,50,53,55.1,Beginner,proctored
+ASM01247,STU0461,JavaScript,78,100,78,84.6,Intermediate,practice
+ASM01248,STU0196,React,54,41,78,59.7,Beginner,proctored
+ASM01249,STU0467,React,62,94,65,72.8,Intermediate,practice
+ASM01250,STU0136,Python,55,41,68,56.0,Beginner,proctored
+ASM01251,STU0412,SQL,57,91,90,80.4,Intermediate,proctored
+ASM01252,STU0412,JavaScript,83,69,53,66.8,Beginner,proctored
+ASM01253,STU0014,Java,49,95,80,75.2,Intermediate,practice
+ASM01254,STU0111,Java,75,98,60,75.9,Intermediate,proctored
+ASM01255,STU0012,Node.js,48,52,45,48.0,Not Verified,proctored
+ASM01256,STU0359,Python,88,84,94,89.2,Advanced,practice
+ASM01257,STU0478,FastAPI,48,91,98,80.9,Intermediate,proctored
+ASM01258,STU0155,FastAPI,95,47,90,78.6,Intermediate,proctored
+ASM01259,STU0291,React,98,43,98,81.5,Intermediate,practice
+ASM01260,STU0153,FastAPI,58,85,68,70.1,Intermediate,proctored
+ASM01261,STU0469,FastAPI,62,68,88,74.2,Intermediate,practice
+ASM01262,STU0308,Data Science,96,53,77,75.5,Intermediate,proctored
+ASM01263,STU0139,MongoDB,85,61,80,75.8,Intermediate,practice
+ASM01264,STU0122,FastAPI,93,46,63,66.9,Beginner,proctored
+ASM01265,STU0275,JavaScript,71,49,95,74.0,Intermediate,proctored
+ASM01266,STU0392,FastAPI,95,48,67,69.7,Beginner,practice
+ASM01267,STU0437,JavaScript,77,62,95,79.7,Intermediate,proctored
+ASM01268,STU0259,SQL,51,95,63,69.0,Beginner,practice
+ASM01269,STU0332,Data Science,83,66,89,80.3,Intermediate,proctored
+ASM01270,STU0173,Firebase,61,77,42,58.2,Beginner,proctored
+ASM01271,STU0028,Firebase,72,47,76,66.1,Beginner,practice
+ASM01272,STU0373,C++,94,93,79,87.7,Advanced,practice
+ASM01273,STU0433,Node.js,56,87,72,71.7,Intermediate,practice
+ASM01274,STU0199,Java,83,91,61,76.6,Intermediate,proctored
+ASM01275,STU0423,C++,88,58,72,72.6,Intermediate,practice
+ASM01276,STU0300,C++,47,96,85,76.9,Intermediate,practice
+ASM01277,STU0378,Python,72,76,48,63.6,Beginner,practice
+ASM01278,STU0148,Machine Learning,85,58,42,59.7,Beginner,proctored
+ASM01279,STU0470,SQL,41,68,99,72.3,Intermediate,practice
+ASM01280,STU0305,Firebase,63,62,90,73.5,Intermediate,practice
+ASM01281,STU0308,C++,91,89,99,93.6,Advanced,proctored
+ASM01282,STU0189,MongoDB,61,72,72,68.7,Beginner,proctored
+ASM01283,STU0440,Python,72,88,85,82.0,Intermediate,proctored
+ASM01284,STU0340,JavaScript,68,68,89,76.4,Intermediate,practice
+ASM01285,STU0154,Data Science,89,93,68,81.8,Intermediate,practice
+ASM01286,STU0479,Data Science,57,63,76,66.4,Beginner,proctored
+ASM01287,STU0190,Node.js,96,85,47,73.1,Intermediate,proctored
+ASM01288,STU0112,FastAPI,68,49,94,72.7,Intermediate,practice
+ASM01289,STU0378,Git,91,91,55,76.6,Intermediate,practice
+ASM01290,STU0306,Data Science,79,42,41,52.7,Beginner,practice
+ASM01291,STU0032,C++,58,95,61,70.3,Intermediate,practice
+ASM01292,STU0308,Node.js,75,93,59,74.0,Intermediate,practice
+ASM01293,STU0237,Firebase,56,99,86,80.9,Intermediate,proctored
+ASM01294,STU0224,Machine Learning,48,52,83,63.2,Beginner,practice
+ASM01295,STU0404,Machine Learning,82,94,71,81.2,Intermediate,proctored
+ASM01296,STU0079,SQL,63,77,54,63.6,Beginner,practice
+ASM01297,STU0462,Python,99,50,89,80.3,Intermediate,practice
+ASM01298,STU0221,Data Science,56,79,86,74.9,Intermediate,proctored
+ASM01299,STU0193,Node.js,47,90,49,60.7,Beginner,proctored
+ASM01300,STU0252,JavaScript,83,70,65,71.9,Intermediate,practice
+ASM01301,STU0102,HTML/CSS,44,100,58,66.4,Beginner,practice
+ASM01302,STU0486,Java,84,80,52,70.0,Intermediate,practice
+ASM01303,STU0053,Data Science,98,99,80,91.1,Advanced,proctored
+ASM01304,STU0029,SQL,58,63,61,60.7,Beginner,proctored
+ASM01305,STU0405,Node.js,62,62,79,68.8,Beginner,practice
+ASM01306,STU0455,MongoDB,63,99,67,75.4,Intermediate,proctored
+ASM01307,STU0491,Java,67,75,82,75.4,Intermediate,proctored
+ASM01308,STU0105,SQL,90,99,82,89.5,Advanced,practice
+ASM01309,STU0359,MongoDB,88,66,66,72.6,Intermediate,proctored
+ASM01310,STU0287,MongoDB,90,79,62,75.5,Intermediate,proctored
+ASM01311,STU0155,HTML/CSS,87,77,45,67.2,Beginner,proctored
+ASM01312,STU0258,Machine Learning,88,85,43,69.1,Beginner,practice
+ASM01313,STU0103,Java,70,45,63,59.7,Beginner,practice
+ASM01314,STU0349,Data Science,75,60,89,76.1,Intermediate,proctored
+ASM01315,STU0048,Docker,85,77,69,76.2,Intermediate,proctored
+ASM01316,STU0115,Machine Learning,75,64,96,80.1,Intermediate,proctored
+ASM01317,STU0399,Git,83,55,95,79.4,Intermediate,proctored
+ASM01318,STU0343,Docker,66,42,73,61.6,Beginner,practice
+ASM01319,STU0331,Docker,41,45,42,42.6,Not Verified,practice
+ASM01320,STU0191,HTML/CSS,88,75,52,69.7,Beginner,proctored
+ASM01321,STU0048,Java,63,93,53,68.0,Beginner,proctored
+ASM01322,STU0023,JavaScript,65,58,43,54.1,Beginner,proctored
+ASM01323,STU0313,C++,52,83,83,73.7,Intermediate,proctored
+ASM01324,STU0363,React,100,76,67,79.6,Intermediate,proctored
+ASM01325,STU0256,Git,42,51,98,67.1,Beginner,proctored
+ASM01326,STU0341,Docker,96,55,74,74.9,Intermediate,practice
+ASM01327,STU0266,JavaScript,100,81,100,94.3,Advanced,proctored
+ASM01328,STU0287,FastAPI,79,53,73,68.8,Beginner,practice
+ASM01329,STU0146,Data Science,73,46,88,70.9,Intermediate,practice
+ASM01330,STU0396,Data Science,67,65,55,61.6,Beginner,practice
+ASM01331,STU0451,MongoDB,91,48,87,76.5,Intermediate,proctored
+ASM01332,STU0279,React,59,72,84,72.9,Intermediate,proctored
+ASM01333,STU0096,Node.js,51,87,89,77.0,Intermediate,practice
+ASM01334,STU0223,Node.js,70,57,49,57.7,Beginner,practice
+ASM01335,STU0158,Node.js,94,41,56,62.9,Beginner,practice
+ASM01336,STU0332,FastAPI,52,89,83,75.5,Intermediate,proctored
+ASM01337,STU0390,Data Science,78,92,67,77.8,Intermediate,practice
+ASM01338,STU0123,Data Science,78,90,81,82.8,Intermediate,practice
+ASM01339,STU0266,Java,83,84,75,80.1,Intermediate,practice
+ASM01340,STU0228,MongoDB,94,59,57,68.7,Beginner,proctored
+ASM01341,STU0160,Machine Learning,73,68,82,75.1,Intermediate,proctored
+ASM01342,STU0157,Firebase,100,56,64,72.4,Intermediate,proctored
+ASM01343,STU0407,Git,79,85,61,73.6,Intermediate,proctored
+ASM01344,STU0048,HTML/CSS,60,61,91,72.7,Intermediate,practice
+ASM01345,STU0207,Node.js,81,49,52,59.8,Beginner,practice
+ASM01346,STU0006,JavaScript,80,64,90,79.2,Intermediate,proctored
+ASM01347,STU0434,FastAPI,100,76,91,89.2,Advanced,practice
+ASM01348,STU0138,HTML/CSS,77,64,64,67.9,Beginner,practice
+ASM01349,STU0342,HTML/CSS,73,44,97,73.9,Intermediate,proctored
+ASM01350,STU0339,FastAPI,51,93,48,62.4,Beginner,proctored
+ASM01351,STU0125,Docker,89,81,80,83.0,Intermediate,proctored
+ASM01352,STU0137,Machine Learning,75,71,48,63.0,Beginner,proctored
+ASM01353,STU0463,Python,54,69,53,58.1,Beginner,proctored
+ASM01354,STU0249,C++,75,89,57,72.0,Intermediate,proctored
+ASM01355,STU0199,Docker,85,44,53,59.9,Beginner,practice
+ASM01356,STU0252,Firebase,59,85,96,81.6,Intermediate,practice
+ASM01357,STU0254,FastAPI,55,43,99,69.0,Beginner,practice
+ASM01358,STU0404,SQL,60,77,64,66.7,Beginner,practice
+ASM01359,STU0346,HTML/CSS,68,82,65,71.0,Intermediate,practice
+ASM01360,STU0423,HTML/CSS,69,72,64,67.9,Beginner,proctored
+ASM01361,STU0028,Firebase,62,61,44,54.5,Beginner,proctored
+ASM01362,STU0470,Machine Learning,80,87,70,78.1,Intermediate,practice
+ASM01363,STU0134,Docker,56,100,78,78.0,Intermediate,practice
+ASM01364,STU0110,Machine Learning,98,54,50,65.6,Beginner,practice
+ASM01365,STU0019,SQL,66,46,56,56.0,Beginner,practice
+ASM01366,STU0182,React,96,56,91,82.0,Intermediate,practice
+ASM01367,STU0091,Python,43,58,49,49.9,Not Verified,proctored
+ASM01368,STU0351,FastAPI,67,68,56,62.9,Beginner,practice
+ASM01369,STU0367,Java,95,63,48,66.6,Beginner,proctored
+ASM01370,STU0128,SQL,45,80,76,67.9,Beginner,proctored
+ASM01371,STU0293,FastAPI,62,82,100,83.2,Intermediate,proctored
+ASM01372,STU0412,SQL,66,63,80,70.7,Intermediate,proctored
+ASM01373,STU0121,React,60,96,94,84.4,Intermediate,practice
+ASM01374,STU0026,FastAPI,45,80,56,59.9,Beginner,proctored
+ASM01375,STU0468,JavaScript,93,51,85,77.2,Intermediate,practice
+ASM01376,STU0461,Machine Learning,66,85,53,66.5,Beginner,proctored
+ASM01377,STU0438,Data Science,82,77,84,81.3,Intermediate,proctored
+ASM01378,STU0400,Node.js,48,53,53,51.5,Beginner,proctored
+ASM01379,STU0001,Machine Learning,42,98,87,76.8,Intermediate,proctored
+ASM01380,STU0378,MongoDB,71,42,42,50.7,Beginner,practice
+ASM01381,STU0078,JavaScript,78,45,73,66.1,Beginner,practice
+ASM01382,STU0179,Data Science,97,93,81,89.4,Advanced,practice
+ASM01383,STU0298,MongoDB,89,66,63,71.7,Intermediate,proctored
+ASM01384,STU0171,MongoDB,48,70,41,51.8,Beginner,proctored
+ASM01385,STU0180,Git,79,67,46,62.2,Beginner,proctored
+ASM01386,STU0411,Node.js,53,60,97,72.7,Intermediate,proctored
+ASM01387,STU0023,Node.js,100,95,40,74.5,Intermediate,practice
+ASM01388,STU0246,C++,97,87,86,89.6,Advanced,practice
+ASM01389,STU0064,React,42,67,44,50.3,Beginner,proctored
+ASM01390,STU0305,HTML/CSS,49,97,96,82.2,Intermediate,proctored
+ASM01391,STU0056,Machine Learning,75,77,69,73.2,Intermediate,practice
+ASM01392,STU0174,HTML/CSS,99,52,92,82.1,Intermediate,practice
+ASM01393,STU0057,Node.js,68,55,93,74.1,Intermediate,proctored
+ASM01394,STU0023,Node.js,55,45,79,61.6,Beginner,proctored
+ASM01395,STU0228,Node.js,55,91,45,61.8,Beginner,proctored
+ASM01396,STU0212,Machine Learning,66,62,65,64.4,Beginner,proctored
+ASM01397,STU0090,React,52,65,45,53.1,Beginner,practice
+ASM01398,STU0496,SQL,61,72,41,56.3,Beginner,practice
+ASM01399,STU0391,JavaScript,56,69,60,61.5,Beginner,practice
+ASM01400,STU0174,JavaScript,66,69,100,80.5,Intermediate,proctored
+ASM01401,STU0458,Python,83,55,65,67.4,Beginner,practice
+ASM01402,STU0383,Python,49,69,86,69.8,Beginner,practice
+ASM01403,STU0058,Python,40,96,62,65.6,Beginner,practice
+ASM01404,STU0282,Data Science,42,67,77,63.5,Beginner,proctored
+ASM01405,STU0164,Data Science,44,89,44,57.5,Beginner,proctored
+ASM01406,STU0043,C++,73,45,94,73.0,Intermediate,practice
+ASM01407,STU0233,MongoDB,84,78,52,69.4,Beginner,proctored
+ASM01408,STU0498,React,63,91,90,82.2,Intermediate,proctored
+ASM01409,STU0295,HTML/CSS,54,88,84,76.2,Intermediate,proctored
+ASM01410,STU0009,Docker,95,63,57,70.2,Intermediate,practice
+ASM01411,STU0376,Git,84,60,45,61.2,Beginner,practice
+ASM01412,STU0170,Data Science,92,43,97,79.3,Intermediate,practice
+ASM01413,STU0298,Node.js,52,49,95,68.3,Beginner,proctored
+ASM01414,STU0362,FastAPI,54,42,49,48.4,Not Verified,practice
+ASM01415,STU0091,Machine Learning,83,56,66,68.1,Beginner,practice
+ASM01416,STU0322,Firebase,83,61,87,78.0,Intermediate,proctored
+ASM01417,STU0294,Python,49,86,42,57.3,Beginner,practice
+ASM01418,STU0036,MongoDB,89,81,97,89.8,Advanced,proctored
+ASM01419,STU0166,C++,59,74,72,68.7,Beginner,proctored
+ASM01420,STU0399,SQL,46,43,78,57.9,Beginner,proctored
+ASM01421,STU0098,Node.js,65,89,63,71.4,Intermediate,proctored
+ASM01422,STU0115,Machine Learning,52,88,55,64.0,Beginner,proctored
+ASM01423,STU0162,Data Science,85,89,63,77.4,Intermediate,practice
+ASM01424,STU0100,Data Science,84,95,43,70.9,Intermediate,proctored
+ASM01425,STU0296,MongoDB,74,97,58,74.5,Intermediate,proctored
+ASM01426,STU0208,HTML/CSS,56,54,68,60.2,Beginner,practice
+ASM01427,STU0017,Docker,81,49,46,57.4,Beginner,practice
+ASM01428,STU0006,MongoDB,87,57,68,70.4,Intermediate,proctored
+ASM01429,STU0057,MongoDB,51,61,85,67.6,Beginner,proctored
+ASM01430,STU0283,Firebase,83,93,91,89.2,Advanced,proctored
+ASM01431,STU0442,React,98,98,80,90.8,Advanced,practice
+ASM01432,STU0048,Data Science,81,93,94,89.8,Advanced,practice
+ASM01433,STU0195,FastAPI,46,69,64,60.1,Beginner,practice
+ASM01434,STU0192,Python,62,78,46,60.4,Beginner,practice
+ASM01435,STU0488,C++,55,84,89,77.3,Intermediate,proctored
+ASM01436,STU0016,HTML/CSS,84,44,43,55.6,Beginner,practice
+ASM01437,STU0370,SQL,97,92,77,87.5,Advanced,proctored
+ASM01438,STU0397,Machine Learning,78,89,75,80.1,Intermediate,proctored
+ASM01439,STU0127,C++,81,44,71,65.9,Beginner,proctored
+ASM01440,STU0456,Machine Learning,58,81,71,70.1,Intermediate,proctored
+ASM01441,STU0266,Git,85,92,56,75.5,Intermediate,practice
+ASM01442,STU0023,Machine Learning,62,85,85,78.1,Intermediate,practice
+ASM01443,STU0476,MongoDB,62,92,49,65.8,Beginner,practice
+ASM01444,STU0293,React,99,93,63,82.8,Intermediate,practice
+ASM01445,STU0011,Docker,71,94,100,89.5,Advanced,practice
+ASM01446,STU0443,SQL,40,76,56,57.2,Beginner,practice
+ASM01447,STU0093,MongoDB,40,70,74,62.6,Beginner,practice
+ASM01448,STU0218,JavaScript,81,100,86,88.7,Advanced,proctored
+ASM01449,STU0231,Java,77,82,92,84.5,Intermediate,proctored
+ASM01450,STU0211,Python,88,48,99,80.4,Intermediate,practice
+ASM01451,STU0404,C++,92,44,47,59.6,Beginner,practice
+ASM01452,STU0263,MongoDB,95,41,87,75.6,Intermediate,proctored
+ASM01453,STU0014,Git,96,100,90,94.8,Advanced,proctored
+ASM01454,STU0224,MongoDB,40,77,81,67.5,Beginner,proctored
+ASM01455,STU0302,Node.js,94,76,40,67.0,Beginner,proctored
+ASM01456,STU0335,Data Science,43,43,95,63.8,Beginner,proctored
+ASM01457,STU0070,Data Science,84,65,82,77.5,Intermediate,proctored
+ASM01458,STU0271,Python,62,99,94,85.9,Advanced,practice
+ASM01459,STU0239,MongoDB,71,94,71,77.9,Intermediate,proctored
+ASM01460,STU0044,Node.js,82,77,69,75.3,Intermediate,proctored
+ASM01461,STU0358,Machine Learning,72,48,96,74.4,Intermediate,proctored
+ASM01462,STU0054,Git,61,67,81,70.8,Intermediate,practice
+ASM01463,STU0157,Machine Learning,41,71,68,60.8,Beginner,proctored
+ASM01464,STU0326,SQL,78,63,64,67.9,Beginner,proctored
+ASM01465,STU0304,MongoDB,50,49,42,46.5,Not Verified,practice
+ASM01466,STU0444,MongoDB,97,94,47,76.1,Intermediate,proctored
+ASM01467,STU0189,Machine Learning,55,94,99,84.3,Intermediate,practice
+ASM01468,STU0409,Node.js,86,73,90,83.7,Intermediate,proctored
+ASM01469,STU0181,Python,43,71,62,59.0,Beginner,proctored
+ASM01470,STU0218,Data Science,87,57,96,81.6,Intermediate,practice
+ASM01471,STU0328,Data Science,52,63,74,64.1,Beginner,proctored
+ASM01472,STU0283,JavaScript,86,47,71,68.3,Beginner,practice
+ASM01473,STU0135,FastAPI,68,100,58,73.6,Intermediate,practice
+ASM01474,STU0231,Git,55,63,95,73.4,Intermediate,practice
+ASM01475,STU0336,FastAPI,59,53,74,63.2,Beginner,proctored
+ASM01476,STU0191,Machine Learning,78,77,77,77.3,Intermediate,practice
+ASM01477,STU0385,Java,51,62,49,53.5,Beginner,proctored
+ASM01478,STU0432,Java,79,52,43,56.5,Beginner,practice
+ASM01479,STU0457,Node.js,67,80,76,74.5,Intermediate,proctored
+ASM01480,STU0077,Machine Learning,91,71,47,67.4,Beginner,proctored
+ASM01481,STU0292,Machine Learning,77,76,52,66.7,Beginner,proctored
+ASM01482,STU0190,React,83,42,53,58.7,Beginner,proctored
+ASM01483,STU0126,HTML/CSS,75,70,75,73.5,Intermediate,proctored
+ASM01484,STU0021,SQL,81,65,73,73.0,Intermediate,proctored
+ASM01485,STU0264,HTML/CSS,87,86,90,87.9,Advanced,practice
+ASM01486,STU0192,React,55,61,93,72.0,Intermediate,practice
+ASM01487,STU0092,Machine Learning,84,50,43,57.4,Beginner,proctored
+ASM01488,STU0307,Docker,57,89,75,73.8,Intermediate,practice
+ASM01489,STU0130,Data Science,72,47,47,54.5,Beginner,proctored
+ASM01490,STU0286,JavaScript,65,77,94,80.2,Intermediate,proctored
+ASM01491,STU0149,C++,63,47,68,60.2,Beginner,proctored
+ASM01492,STU0293,JavaScript,91,48,48,60.9,Beginner,proctored
+ASM01493,STU0043,Data Science,81,69,72,73.8,Intermediate,practice
+ASM01494,STU0172,Firebase,99,40,90,77.7,Intermediate,proctored
+ASM01495,STU0291,Docker,57,83,86,76.4,Intermediate,practice
+ASM01496,STU0192,MongoDB,88,81,81,83.1,Intermediate,proctored
+ASM01497,STU0162,SQL,70,84,82,79.0,Intermediate,practice
+ASM01498,STU0372,Data Science,89,94,76,85.3,Advanced,proctored
+ASM01499,STU0235,Node.js,53,44,98,68.3,Beginner,proctored
+ASM01500,STU0343,Node.js,53,59,81,66.0,Beginner,practice

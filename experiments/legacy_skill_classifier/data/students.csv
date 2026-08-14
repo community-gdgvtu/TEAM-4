@@ -1,0 +1,501 @@
+student_id,name,institution_id,department,year,cgpa,email
+STU0001,Erica Roberson,INS001,Computer Science,4,7.19,jessica75@example.com
+STU0002,Benjamin Watts,INS002,Information Science,4,6.57,tammyyoung@example.org
+STU0003,Juan Thomas,INS005,Computer Science,4,7.72,fellis@example.com
+STU0004,Dr. Carrie Edwards MD,INS001,Computer Science,2,7.04,rmurray@example.com
+STU0005,James Maxwell,INS005,Computer Science,4,6.92,rskinner@example.net
+STU0006,Frances Hogan,INS005,Data Science,2,7.82,pgarcia@example.com
+STU0007,Peter Smith,INS003,Computer Science,2,8.71,amckenzie@example.net
+STU0008,Andrew Bonilla,INS003,Artificial Intelligence,2,6.98,robertsmaria@example.net
+STU0009,Sara Alvarado,INS003,Computer Science,2,7.57,justin35@example.net
+STU0010,Jimmy Clark,INS003,Artificial Intelligence,4,7.15,kevinbaker@example.org
+STU0011,Kristine Kirk,INS001,Data Science,4,6.65,ehuff@example.com
+STU0012,Ryan Martin,INS004,Computer Science,4,7.26,hubbardsandra@example.org
+STU0013,Elizabeth Hines,INS005,Artificial Intelligence,4,6.89,nicolesmith@example.org
+STU0014,Mark Greene,INS001,Computer Science,4,7.02,christopherchristensen@example.net
+STU0015,Steven Pratt,INS003,Computer Science,2,9.32,grahamalicia@example.net
+STU0016,Anthony Conrad,INS004,Artificial Intelligence,3,8.49,sara00@example.com
+STU0017,Charles Morgan,INS003,Information Science,3,7.48,perrymichael@example.net
+STU0018,Nicholas Smith,INS003,Computer Science,4,8.49,lori15@example.net
+STU0019,Makayla Smith,INS005,Information Science,2,7.86,adam26@example.org
+STU0020,Rebecca Mueller,INS003,Electronics,2,8.66,marthastrong@example.org
+STU0021,John Ramsey,INS001,Information Science,2,9.1,martinezdylan@example.net
+STU0022,Cheryl Baxter,INS004,Artificial Intelligence,2,6.96,sayala@example.com
+STU0023,Kelli Serrano,INS005,Artificial Intelligence,2,8.56,alan53@example.org
+STU0024,Jonathan Rivera,INS004,Data Science,2,7.15,tlee@example.org
+STU0025,Bethany Anderson,INS002,Electronics,4,7.15,littlejackson@example.org
+STU0026,Sharon Thompson,INS005,Data Science,4,7.64,laurasutton@example.net
+STU0027,Jeffrey Collier,INS002,Information Science,4,7.98,pattersonheather@example.net
+STU0028,Lori Coleman,INS001,Computer Science,2,8.46,uhodges@example.org
+STU0029,Jose Harrington,INS004,Electronics,2,7.59,mckaydawn@example.net
+STU0030,Billy Guzman,INS005,Data Science,4,7.11,browngeorge@example.org
+STU0031,Carolyn Medina,INS005,Computer Science,4,8.79,wilcoxyolanda@example.com
+STU0032,Becky Fry,INS005,Artificial Intelligence,4,7.42,estephenson@example.net
+STU0033,Daniel Salas,INS003,Data Science,2,7.83,rachael04@example.org
+STU0034,Theresa Haley,INS003,Electronics,2,8.03,amy70@example.com
+STU0035,Dalton Henry,INS001,Artificial Intelligence,4,8.03,aayala@example.org
+STU0036,Heidi Garcia,INS002,Information Science,3,8.95,courtney36@example.net
+STU0037,Roger Avila,INS005,Electronics,2,8.36,catherinemoss@example.org
+STU0038,Juan Lee,INS004,Computer Science,2,9.54,wesleyodonnell@example.com
+STU0039,Tammy Ochoa,INS003,Information Science,2,7.07,debramiles@example.org
+STU0040,Kurt Ibarra,INS005,Computer Science,2,8.83,tommydecker@example.net
+STU0041,Michael Brown,INS001,Electronics,2,6.66,rdouglas@example.net
+STU0042,Beth Garcia,INS004,Electronics,2,7.15,sharon06@example.org
+STU0043,Justin Miller,INS005,Data Science,2,9.54,yhicks@example.com
+STU0044,Anthony Brewer,INS002,Artificial Intelligence,3,9.78,johnsonmargaret@example.org
+STU0045,Amber Ball,INS003,Data Science,4,7.83,hernandezashlee@example.net
+STU0046,Danielle King,INS002,Information Science,2,7.42,clarkcarla@example.net
+STU0047,Kevin Boyle DDS,INS005,Electronics,2,8.32,kelly80@example.com
+STU0048,Anna Frazier,INS001,Computer Science,4,8.47,natalie73@example.com
+STU0049,Michele Campbell,INS002,Computer Science,2,9.29,hunterturner@example.net
+STU0050,Jeffrey Sutton,INS001,Electronics,2,7.2,uboyd@example.com
+STU0051,Kelly Freeman,INS004,Information Science,4,6.68,hallsamantha@example.org
+STU0052,Dr. Christopher Ross,INS005,Electronics,3,7.07,mark82@example.com
+STU0053,Miguel Robertson,INS004,Data Science,2,6.54,jonesstephanie@example.com
+STU0054,Robert Wilson,INS004,Artificial Intelligence,3,7.68,carrietucker@example.net
+STU0055,Sheryl Garcia,INS001,Computer Science,2,7.65,samuel70@example.net
+STU0056,Dillon Dunn,INS003,Computer Science,2,6.89,phelpslindsey@example.org
+STU0057,Bridget Duncan,INS005,Data Science,2,7.72,tjones@example.com
+STU0058,Vanessa Aguilar,INS003,Data Science,2,9.35,andreahampton@example.com
+STU0059,Whitney Hernandez,INS001,Data Science,4,6.55,alisonhopkins@example.net
+STU0060,Dr. Christopher Berger,INS005,Computer Science,2,9.53,kathy01@example.org
+STU0061,Marissa Conner,INS002,Information Science,3,7.95,noblerobert@example.com
+STU0062,Chad Johnson,INS002,Data Science,2,6.79,andrea96@example.org
+STU0063,Kimberly Munoz,INS001,Data Science,3,9.54,edwardmendoza@example.com
+STU0064,Leslie Martin,INS004,Artificial Intelligence,3,8.71,mariashepherd@example.com
+STU0065,Peter Hughes,INS005,Data Science,2,6.88,fmitchell@example.com
+STU0066,Gary Hines,INS002,Computer Science,4,8.85,williamsthomas@example.com
+STU0067,Kimberly Davis,INS001,Artificial Intelligence,2,6.38,rickysimmons@example.net
+STU0068,Cassidy Aguirre,INS004,Electronics,4,6.77,larry22@example.com
+STU0069,Andrea Lopez,INS005,Computer Science,2,6.45,ericarmstrong@example.com
+STU0070,Ricky Moore,INS001,Information Science,3,6.63,ldixon@example.org
+STU0071,Colleen Davis,INS005,Information Science,4,8.34,sarahstark@example.net
+STU0072,Sean Simmons,INS005,Computer Science,3,8.57,landrydorothy@example.net
+STU0073,Jennifer Saunders,INS005,Electronics,3,9.56,brandon71@example.org
+STU0074,Evan Stark,INS002,Artificial Intelligence,2,7.16,danielsmith@example.org
+STU0075,Levi Peterson,INS002,Artificial Intelligence,3,7.34,westchristopher@example.net
+STU0076,Peter Jordan,INS001,Computer Science,3,8.44,allen77@example.net
+STU0077,Jose Thomas,INS005,Computer Science,2,8.14,brooksjoshua@example.com
+STU0078,Kelsey Robinson,INS005,Artificial Intelligence,2,9.56,kshields@example.org
+STU0079,Dennis Hanson,INS001,Information Science,3,7.23,richardrivera@example.org
+STU0080,Benjamin Watts,INS004,Electronics,4,7.29,bradymichael@example.net
+STU0081,Philip Lopez PhD,INS005,Computer Science,4,9.14,jonbaxter@example.com
+STU0082,Tamara Simon,INS003,Computer Science,2,7.15,jonathanroberts@example.net
+STU0083,Daniel Thompson,INS001,Electronics,2,7.18,jasmine71@example.com
+STU0084,Melissa Taylor,INS005,Information Science,4,7.43,jamie68@example.org
+STU0085,Robert Johnson,INS003,Electronics,3,7.1,fdoyle@example.org
+STU0086,Jesus Wood,INS001,Computer Science,4,7.72,emilyanderson@example.org
+STU0087,Leslie Doyle,INS003,Computer Science,2,7.4,yking@example.net
+STU0088,Michael Robinson,INS002,Artificial Intelligence,2,8.87,epeterson@example.org
+STU0089,Marc Graham,INS005,Data Science,4,6.23,lambertsharon@example.net
+STU0090,Pedro Hurst,INS001,Information Science,4,6.33,jeffreysmith@example.org
+STU0091,Joseph Nelson,INS003,Electronics,4,6.73,michaelboyd@example.com
+STU0092,Rebecca Adams,INS002,Computer Science,3,7.51,paullisa@example.com
+STU0093,Kevin Martin,INS001,Artificial Intelligence,2,8.66,gyoung@example.net
+STU0094,Karen Delgado,INS001,Artificial Intelligence,4,9.38,lesliemack@example.com
+STU0095,John Fitzpatrick,INS004,Electronics,4,6.76,medinajulian@example.com
+STU0096,Mrs. Kayla Stephens,INS002,Information Science,2,9.37,gina51@example.com
+STU0097,Thomas Hunt,INS001,Information Science,4,9.53,riverswalter@example.com
+STU0098,Cassandra Garrett,INS004,Information Science,3,6.77,michaelnorman@example.com
+STU0099,Crystal Perez,INS001,Data Science,2,9.29,coopergrace@example.net
+STU0100,Jill Huffman,INS002,Information Science,3,7.46,robinsontimothy@example.net
+STU0101,Elizabeth Martinez,INS002,Information Science,2,8.58,gardnercharles@example.com
+STU0102,William Cabrera,INS004,Artificial Intelligence,3,9.31,william48@example.com
+STU0103,Jennifer Ramos,INS003,Artificial Intelligence,4,8.03,david57@example.com
+STU0104,Tanya Johnson,INS005,Artificial Intelligence,2,6.62,bethanylopez@example.net
+STU0105,Amy Moore,INS003,Information Science,4,9.67,mallen@example.org
+STU0106,Robert Valdez,INS003,Computer Science,2,8.35,medinaallison@example.com
+STU0107,Natalie Anderson,INS003,Artificial Intelligence,3,8.38,rileyethan@example.net
+STU0108,Steven Copeland,INS005,Computer Science,3,9.44,gabrielamoore@example.com
+STU0109,Andrew Crawford,INS002,Artificial Intelligence,2,8.75,dwalker@example.org
+STU0110,Alison Rodriguez,INS001,Electronics,4,8.67,sherry67@example.org
+STU0111,Kim Dixon,INS002,Artificial Intelligence,3,6.45,klong@example.com
+STU0112,Bryan Benton,INS003,Electronics,3,8.59,gnguyen@example.net
+STU0113,Kelly Stewart,INS001,Artificial Intelligence,4,7.31,lsmith@example.com
+STU0114,Thomas Romero,INS004,Artificial Intelligence,3,8.71,usmith@example.org
+STU0115,Billy Hall,INS005,Information Science,2,7.71,nhawkins@example.net
+STU0116,Richard Sullivan,INS004,Information Science,4,8.25,gbennett@example.org
+STU0117,Benjamin Lambert,INS004,Electronics,2,7.29,mooreallison@example.com
+STU0118,Darren Logan,INS002,Data Science,4,8.38,jcarroll@example.net
+STU0119,Elizabeth Hall,INS003,Data Science,3,7.79,lauramorgan@example.net
+STU0120,Emily Smith,INS002,Electronics,3,9.06,michael00@example.com
+STU0121,Robert Doyle,INS002,Computer Science,3,8.06,scott42@example.net
+STU0122,Larry Brown,INS005,Artificial Intelligence,2,9.15,hamiltonstephen@example.com
+STU0123,Julie Thompson,INS002,Artificial Intelligence,2,9.1,bryanttammy@example.org
+STU0124,Samantha Boyd,INS002,Computer Science,2,7.08,lyonscharles@example.net
+STU0125,Johnny Smith,INS004,Electronics,2,7.84,alanjones@example.com
+STU0126,Marie Dixon,INS005,Information Science,4,8.71,charleszavala@example.org
+STU0127,Jose Houston,INS004,Data Science,2,6.73,bennettheather@example.org
+STU0128,Benjamin King,INS001,Computer Science,3,6.99,petersonjames@example.org
+STU0129,Katrina Davis,INS005,Data Science,2,8.21,douglasmiller@example.org
+STU0130,Lisa Watts,INS001,Data Science,2,9.09,mbrown@example.org
+STU0131,Alison Middleton,INS005,Electronics,4,7.34,jbauer@example.com
+STU0132,Mary Salinas,INS004,Electronics,4,9.41,kevinsmith@example.net
+STU0133,Cameron Gonzales,INS004,Electronics,3,9.43,karigarrison@example.net
+STU0134,Shane Serrano,INS004,Data Science,3,8.91,meghan71@example.com
+STU0135,Gina Schultz,INS003,Electronics,3,8.46,vlopez@example.com
+STU0136,Lee Lopez,INS003,Data Science,2,8.77,cmejia@example.org
+STU0137,Jacqueline Kelly,INS002,Artificial Intelligence,3,7.35,hickstimothy@example.net
+STU0138,Crystal Huynh,INS005,Computer Science,2,6.74,bianca31@example.com
+STU0139,Pamela Jennings,INS004,Information Science,4,6.97,xroth@example.com
+STU0140,Jacqueline Welch,INS004,Data Science,3,8.15,fmitchell@example.com
+STU0141,Michael Parker,INS004,Computer Science,2,9.2,benjamintaylor@example.com
+STU0142,Claire Pierce,INS004,Electronics,4,6.27,rogersjeffery@example.org
+STU0143,Erin Duncan,INS005,Data Science,3,6.22,rubioelizabeth@example.net
+STU0144,Phillip Brown,INS003,Artificial Intelligence,3,9.27,leslie86@example.com
+STU0145,Robert Murphy,INS004,Electronics,4,8.84,ortizmichael@example.org
+STU0146,Tara Williams,INS005,Information Science,3,6.99,christina45@example.net
+STU0147,Dr. Sean Anderson DDS,INS004,Data Science,2,7.6,laracarlos@example.com
+STU0148,Kristen Lloyd,INS004,Information Science,3,9.51,jmendoza@example.com
+STU0149,Rachel Murphy,INS005,Electronics,2,9.46,ewilliams@example.com
+STU0150,Nicholas Colon,INS005,Electronics,4,6.3,hopkinseric@example.org
+STU0151,Ashley Wright,INS004,Information Science,3,6.85,tarmstrong@example.com
+STU0152,Michael Simpson,INS003,Data Science,3,6.96,samantha69@example.net
+STU0153,Christopher Bell,INS003,Artificial Intelligence,3,7.2,daniellejones@example.com
+STU0154,Tiffany Moss,INS004,Artificial Intelligence,2,7.89,patrickproctor@example.org
+STU0155,Tina Patterson,INS005,Computer Science,3,7.01,annavaughn@example.net
+STU0156,Elizabeth Henry,INS001,Computer Science,2,9.62,thomas01@example.com
+STU0157,Melissa Pineda,INS002,Computer Science,4,6.75,johnalexander@example.org
+STU0158,Lori Downs,INS002,Data Science,4,6.61,xgreen@example.com
+STU0159,Christopher Galvan,INS002,Data Science,4,7.12,fredericklivingston@example.net
+STU0160,Kayla Brown,INS003,Information Science,4,8.39,robinsoncarmen@example.org
+STU0161,Michelle Hughes,INS001,Information Science,3,6.59,jessephillips@example.com
+STU0162,George Richardson,INS001,Artificial Intelligence,4,8.64,kellyrichard@example.com
+STU0163,Joshua Smith,INS004,Data Science,4,6.91,ohurley@example.org
+STU0164,Kathleen Barnes,INS005,Information Science,2,8.71,higginslisa@example.net
+STU0165,Jon Johnson,INS003,Electronics,2,9.07,paulbrown@example.net
+STU0166,Michael Kramer,INS005,Computer Science,3,8.12,karen19@example.net
+STU0167,Patrick Bryan,INS003,Computer Science,4,8.53,tanya54@example.org
+STU0168,Nicholas Lane,INS001,Data Science,3,6.58,amanda11@example.net
+STU0169,Tracy Curry,INS003,Data Science,4,6.75,stewartkathryn@example.org
+STU0170,Chad Moore,INS002,Electronics,4,7.17,paulevans@example.net
+STU0171,Roy Weber,INS005,Data Science,3,7.77,tbarr@example.org
+STU0172,Reginald Melton,INS005,Artificial Intelligence,3,9.27,wrightmarcia@example.org
+STU0173,Manuel Moon,INS001,Artificial Intelligence,3,7.08,scott62@example.com
+STU0174,James Evans,INS004,Electronics,4,8.61,robertlopez@example.org
+STU0175,Karen Johnson,INS003,Computer Science,3,9.26,llambert@example.com
+STU0176,Karen Moss,INS002,Data Science,2,7.48,walterlang@example.org
+STU0177,Susan Evans,INS003,Artificial Intelligence,3,9.37,fcardenas@example.net
+STU0178,Maria Melton,INS003,Electronics,2,8.06,laura65@example.net
+STU0179,Jordan Brown,INS002,Computer Science,2,8.79,trevorjohnson@example.com
+STU0180,Heather Perez,INS004,Electronics,2,8.69,weissheather@example.com
+STU0181,Catherine Clark,INS004,Data Science,2,6.53,sarahunt@example.com
+STU0182,Brandon Wood,INS002,Data Science,4,7.08,lori13@example.org
+STU0183,Miguel Perry,INS005,Artificial Intelligence,3,8.19,yhines@example.net
+STU0184,David Singleton,INS003,Data Science,4,8.18,pmiller@example.org
+STU0185,James Fernandez,INS003,Data Science,3,7.3,alexanderbaker@example.org
+STU0186,Harold Castro,INS002,Computer Science,4,6.89,michael01@example.net
+STU0187,Glen Mcguire,INS001,Electronics,4,6.87,andreafreeman@example.net
+STU0188,Courtney Butler,INS002,Data Science,3,8.81,michaellowery@example.com
+STU0189,Andrew Gomez,INS005,Electronics,3,9.73,boltonrichard@example.net
+STU0190,Michael Williams,INS002,Artificial Intelligence,2,7.5,deannawilliams@example.org
+STU0191,Joy Sellers,INS003,Computer Science,4,8.12,apeterson@example.com
+STU0192,Kelli Mathis,INS003,Computer Science,2,8.19,howardjeremy@example.com
+STU0193,Heather Thompson,INS002,Data Science,2,9.34,lross@example.net
+STU0194,Carl Holmes,INS005,Artificial Intelligence,3,7.92,terri83@example.org
+STU0195,Candice Hernandez,INS003,Information Science,2,7.11,daniel08@example.com
+STU0196,Kristin Nelson,INS004,Computer Science,2,7.64,michael95@example.org
+STU0197,Carrie Hughes,INS001,Electronics,4,8.67,okim@example.net
+STU0198,Andrea Ryan,INS002,Information Science,4,9.62,william07@example.org
+STU0199,Anthony Burton,INS001,Information Science,2,8.21,brookewyatt@example.com
+STU0200,Michelle Alexander,INS004,Electronics,4,9.05,curtisrodriguez@example.net
+STU0201,Diane Hale,INS002,Electronics,3,7.82,dawn55@example.com
+STU0202,James Cortez,INS004,Artificial Intelligence,4,9.76,pamelalopez@example.com
+STU0203,Linda Gallegos,INS003,Electronics,4,6.42,kylebennett@example.org
+STU0204,Michael Miles,INS001,Information Science,4,6.96,toddgilmore@example.com
+STU0205,Kayla Bennett,INS001,Information Science,2,6.83,kristen42@example.org
+STU0206,Jessica Pacheco,INS001,Information Science,2,7.67,greermichael@example.net
+STU0207,Stephanie Hampton,INS005,Data Science,3,6.32,molinanicole@example.org
+STU0208,Thomas Patterson,INS003,Artificial Intelligence,4,9.29,moniqueadams@example.org
+STU0209,Jamie Massey,INS001,Information Science,3,9.04,dwalton@example.net
+STU0210,Joseph Moore,INS005,Information Science,3,6.61,sbryant@example.org
+STU0211,Robert Mills,INS002,Information Science,3,9.18,morganmichael@example.com
+STU0212,Todd Jones,INS001,Computer Science,2,9.05,crystalwilson@example.net
+STU0213,Angela Mccall,INS005,Electronics,3,7.78,wzamora@example.org
+STU0214,Catherine Jones,INS004,Artificial Intelligence,4,7.65,turnermartin@example.net
+STU0215,Tracy Fuller,INS003,Electronics,4,7.98,christineblair@example.net
+STU0216,Lacey Evans,INS001,Electronics,2,9.4,meredith62@example.net
+STU0217,Matthew Williams MD,INS003,Electronics,3,6.29,pharrington@example.net
+STU0218,Rodney Love,INS002,Electronics,4,9.62,casey87@example.org
+STU0219,Michael Franklin,INS003,Electronics,2,8.95,lisaperry@example.com
+STU0220,Christopher Underwood,INS002,Data Science,4,8.55,marksstephanie@example.net
+STU0221,Jeffrey Brown,INS003,Information Science,4,7.77,wayneskinner@example.com
+STU0222,Erin Boyle,INS004,Computer Science,3,7.45,gmichael@example.com
+STU0223,Jane Stewart,INS003,Artificial Intelligence,4,6.58,julia97@example.com
+STU0224,Timothy Dunn,INS002,Artificial Intelligence,3,8.7,wgarcia@example.net
+STU0225,Elizabeth Sharp,INS003,Data Science,4,6.33,erika63@example.net
+STU0226,Stephen Turner,INS001,Artificial Intelligence,3,7.36,joshuaparker@example.org
+STU0227,Gene Green,INS004,Electronics,2,8.57,ccochran@example.com
+STU0228,Andrew Ingram,INS005,Data Science,3,6.4,thomasmartinez@example.org
+STU0229,Dana Orr,INS005,Artificial Intelligence,4,8.92,peter06@example.net
+STU0230,Lisa Kelley,INS004,Computer Science,2,7.16,cameronwilson@example.org
+STU0231,Jeffrey Lopez,INS002,Artificial Intelligence,3,9.37,mmcdaniel@example.org
+STU0232,Anthony Floyd,INS004,Computer Science,2,9.7,diana39@example.com
+STU0233,Nathan Vargas,INS005,Information Science,4,6.77,donnaweeks@example.com
+STU0234,Jessica Rose,INS005,Computer Science,4,7.67,pponce@example.org
+STU0235,Kyle Long,INS002,Computer Science,3,9.61,jackwagner@example.com
+STU0236,Jason Hernandez,INS002,Data Science,4,7.25,petersonamanda@example.net
+STU0237,Max Mitchell,INS003,Data Science,3,9.73,daniel58@example.com
+STU0238,Sara Norris,INS002,Data Science,4,6.72,christinacochran@example.net
+STU0239,Paul Morrison,INS002,Electronics,4,8.89,qanderson@example.net
+STU0240,Courtney Wagner,INS002,Computer Science,3,8.98,morganshannon@example.com
+STU0241,John Moore,INS004,Artificial Intelligence,4,7.16,plopez@example.com
+STU0242,Dylan Marquez,INS001,Artificial Intelligence,4,7.27,ledwards@example.net
+STU0243,Gregory Mckinney,INS005,Electronics,4,7.96,nicole01@example.org
+STU0244,Travis Stephens,INS002,Data Science,4,7.94,paynejulie@example.org
+STU0245,Edward Hodges,INS003,Electronics,4,7.56,jeromemcdonald@example.org
+STU0246,Steven Gonzales,INS003,Information Science,4,7.06,nbowers@example.net
+STU0247,Kristina Hudson,INS004,Information Science,3,6.36,georgeburnett@example.com
+STU0248,Patricia Gill,INS004,Data Science,3,9.76,shawn44@example.com
+STU0249,Stephanie Camacho,INS002,Data Science,2,6.65,mphillips@example.org
+STU0250,Alejandro Taylor,INS005,Artificial Intelligence,2,9.35,vwhite@example.com
+STU0251,Deborah Lee,INS004,Computer Science,4,9.48,garnerbryan@example.net
+STU0252,Chad Guerrero,INS001,Information Science,3,9.34,barrettsteven@example.org
+STU0253,Ashley Martinez,INS002,Computer Science,3,9.01,paulahodge@example.com
+STU0254,Chelsea Gutierrez,INS003,Artificial Intelligence,4,8.69,ukrueger@example.org
+STU0255,Terri Wilson,INS001,Artificial Intelligence,4,9.29,bankskylie@example.net
+STU0256,Emily Bowers,INS004,Artificial Intelligence,4,8.79,lindagarcia@example.org
+STU0257,Charles Golden,INS004,Electronics,2,8.42,nealpam@example.org
+STU0258,Denise Nguyen,INS002,Artificial Intelligence,2,8.89,johnsoncandace@example.net
+STU0259,Morgan Griffith,INS004,Computer Science,4,8.73,hinesmelanie@example.org
+STU0260,Yolanda Schroeder,INS001,Data Science,2,8.7,kmarsh@example.net
+STU0261,William Jenkins,INS001,Computer Science,3,9.07,hortonsteven@example.net
+STU0262,Ashley Schmidt,INS003,Artificial Intelligence,3,7.75,xwhite@example.net
+STU0263,Donna Johnson,INS002,Electronics,3,8.24,ybaldwin@example.org
+STU0264,Jocelyn Stephens,INS002,Information Science,2,6.48,matthew45@example.net
+STU0265,Katrina Palmer,INS004,Electronics,4,7.07,nmartin@example.com
+STU0266,Jacqueline Harris,INS005,Information Science,2,7.86,jacob98@example.org
+STU0267,Michael Turner,INS003,Data Science,3,8.6,david78@example.org
+STU0268,Shawn Ortiz,INS004,Artificial Intelligence,4,8.17,vickigonzalez@example.net
+STU0269,Shawn Ayala,INS001,Data Science,3,9.76,jillian33@example.net
+STU0270,Mrs. Sarah Hughes,INS003,Data Science,4,7.1,hramirez@example.org
+STU0271,Jacob Robinson,INS003,Information Science,3,9.27,jamieweber@example.net
+STU0272,Mr. Robert Small,INS001,Information Science,3,8.26,whoffman@example.org
+STU0273,Shannon Scott,INS005,Artificial Intelligence,4,7.26,sbrown@example.org
+STU0274,Deanna Steele,INS004,Artificial Intelligence,2,8.24,smaddox@example.net
+STU0275,Michael Cooper,INS001,Electronics,4,7.99,williamsmeredith@example.com
+STU0276,Elizabeth Cervantes,INS003,Information Science,4,9.09,rkrueger@example.com
+STU0277,Claudia Hanson,INS002,Information Science,4,7.1,odonnellshannon@example.net
+STU0278,Meredith Hinton,INS002,Computer Science,4,8.53,xwest@example.com
+STU0279,Lee Robbins,INS003,Data Science,2,8.29,molinastephanie@example.com
+STU0280,Whitney Davidson,INS002,Computer Science,3,7.38,waterschristopher@example.com
+STU0281,Robert Vaughn,INS004,Information Science,2,6.68,dluna@example.org
+STU0282,Bruce Sherman,INS005,Artificial Intelligence,4,8.01,hickmanbrittany@example.org
+STU0283,Steven Shelton,INS003,Information Science,3,9.49,susan35@example.com
+STU0284,Peter Orozco,INS004,Artificial Intelligence,4,9.33,rebeccaking@example.com
+STU0285,James Bailey,INS001,Data Science,2,6.71,heidi94@example.net
+STU0286,Brian Miller,INS002,Data Science,4,7.52,lauren84@example.org
+STU0287,Nathan Holder,INS004,Computer Science,3,8.13,james00@example.net
+STU0288,Dawn Vargas,INS004,Artificial Intelligence,4,8.9,erodriguez@example.org
+STU0289,Michelle Smith,INS003,Electronics,3,9.16,johnsonshannon@example.net
+STU0290,Dylan Murray,INS003,Computer Science,4,7.04,calvin57@example.com
+STU0291,Steven Sellers DVM,INS001,Electronics,4,7.38,jamesmoore@example.net
+STU0292,Courtney Wilson,INS005,Information Science,4,6.43,elizabeth66@example.org
+STU0293,Jennifer Gill,INS004,Artificial Intelligence,4,7.67,mosborn@example.com
+STU0294,Robert Anderson,INS002,Computer Science,2,7.3,qhunter@example.org
+STU0295,Crystal Gibson,INS004,Computer Science,2,7.05,leekaitlyn@example.com
+STU0296,Felicia Black,INS005,Information Science,3,7.83,cwilliams@example.com
+STU0297,Tracy Huff,INS005,Data Science,4,8.87,odavis@example.net
+STU0298,Jennifer Burnett,INS002,Data Science,4,6.56,lreynolds@example.net
+STU0299,Nicholas Peterson,INS004,Electronics,3,9.58,nwilliams@example.net
+STU0300,Luke Oliver,INS003,Computer Science,4,7.53,rodriguezrichard@example.net
+STU0301,Samuel Garrett,INS004,Data Science,2,9.28,rodriguezjerry@example.net
+STU0302,Ryan Lopez,INS001,Artificial Intelligence,4,9.45,sandra83@example.com
+STU0303,Brandon Diaz,INS003,Computer Science,3,7.19,kmeyers@example.net
+STU0304,Jonathon Gomez,INS001,Data Science,2,8.59,gyoung@example.net
+STU0305,Stephen Matthews,INS005,Computer Science,2,9.03,rogersbecky@example.com
+STU0306,Brenda Santiago,INS002,Information Science,4,6.94,ashleydelacruz@example.org
+STU0307,Isaac Sanders,INS005,Information Science,4,6.98,fostersummer@example.org
+STU0308,Daniel Brown,INS002,Artificial Intelligence,2,9.04,johnlopez@example.com
+STU0309,Robert Velazquez,INS005,Computer Science,3,9.29,brandi89@example.net
+STU0310,Adam Webster,INS002,Information Science,4,7.1,hillmark@example.net
+STU0311,Lisa Alexander,INS002,Computer Science,4,9.32,acarter@example.com
+STU0312,Daniel Peck,INS002,Computer Science,3,9.04,kellyford@example.net
+STU0313,Marc Schroeder,INS002,Electronics,3,6.26,meredithwilliamson@example.net
+STU0314,Alan Perkins,INS003,Computer Science,2,8.87,davischristopher@example.com
+STU0315,Mia Graham,INS005,Computer Science,4,6.43,bowens@example.net
+STU0316,Daniel Liu,INS004,Artificial Intelligence,4,8.34,rramirez@example.com
+STU0317,James Kennedy,INS004,Electronics,2,9.6,hornroy@example.com
+STU0318,Kyle Lee,INS001,Electronics,3,7.85,angiejackson@example.net
+STU0319,Adam Cook,INS001,Computer Science,3,9.25,smithsara@example.org
+STU0320,Ashley Smith,INS004,Computer Science,3,8.76,alyssagarza@example.com
+STU0321,Michelle Carter,INS004,Computer Science,2,7.36,hortonjames@example.org
+STU0322,Lindsey Walton,INS002,Computer Science,2,7.19,scottbailey@example.com
+STU0323,Morgan Greer,INS005,Electronics,4,7.37,richardmckee@example.org
+STU0324,Cameron Miller Jr.,INS005,Electronics,3,7.83,ljones@example.net
+STU0325,Joshua Soto,INS005,Data Science,2,9.06,brucesmith@example.net
+STU0326,Emily Anderson,INS001,Electronics,4,9.32,leepatrick@example.org
+STU0327,Donna Guerra,INS004,Data Science,2,7.69,baileystephanie@example.com
+STU0328,Mr. Joel Gallegos MD,INS004,Data Science,3,8.83,fwolfe@example.net
+STU0329,Carla Rodriguez,INS003,Data Science,3,8.59,dmcdaniel@example.org
+STU0330,Lindsey Kirby,INS003,Information Science,4,9.52,jack59@example.net
+STU0331,Bailey James,INS001,Computer Science,2,6.54,grahamadam@example.net
+STU0332,David Jones,INS001,Artificial Intelligence,2,8.2,franciscojohnson@example.net
+STU0333,Savannah Hendricks,INS005,Electronics,4,7.39,sara61@example.org
+STU0334,Cindy Wilson,INS001,Data Science,3,9.34,wrightjoshua@example.net
+STU0335,Sara Arnold,INS004,Computer Science,3,8.36,rodriguezcraig@example.com
+STU0336,Albert Mckenzie,INS003,Computer Science,4,8.03,lindsey67@example.com
+STU0337,Tiffany Morgan,INS002,Data Science,2,9.25,robertwarner@example.net
+STU0338,Amy Lester,INS003,Electronics,3,6.61,strongwilliam@example.net
+STU0339,Mary Adams,INS003,Electronics,2,9.11,robert61@example.com
+STU0340,Katie Hutchinson,INS005,Electronics,4,8.63,matthew94@example.org
+STU0341,Jeffrey Davis,INS005,Computer Science,4,9.54,anthonyduarte@example.org
+STU0342,Bryan Hansen,INS003,Computer Science,2,7.18,upage@example.com
+STU0343,Julie Irwin,INS003,Artificial Intelligence,3,6.22,rebeccabrock@example.org
+STU0344,Steven Clark,INS002,Electronics,4,7.64,zpierce@example.com
+STU0345,Mr. Joshua Wright Jr.,INS002,Computer Science,2,8.89,nelsonjoshua@example.net
+STU0346,Sandra Mccarthy,INS002,Data Science,3,7.83,cryan@example.org
+STU0347,Glenn Lopez,INS002,Artificial Intelligence,3,8.8,taylorroberts@example.org
+STU0348,Rebecca Martinez,INS005,Electronics,2,9.38,lisarobbins@example.org
+STU0349,Cheyenne Robbins,INS002,Information Science,4,6.38,sberry@example.net
+STU0350,Bethany Jones,INS001,Artificial Intelligence,3,8.58,mcguirebenjamin@example.net
+STU0351,Debbie Hubbard,INS004,Electronics,3,7.69,conradjoseph@example.com
+STU0352,Cynthia Clark,INS002,Electronics,2,7.44,pauldunn@example.org
+STU0353,Anna Salazar,INS001,Artificial Intelligence,4,8.64,amyfreeman@example.net
+STU0354,Patrick Haley,INS004,Electronics,4,7.31,sheppardmatthew@example.net
+STU0355,Michael Jones,INS002,Data Science,4,6.4,thomas16@example.org
+STU0356,Cheryl Morris,INS002,Artificial Intelligence,2,8.96,ejacobson@example.org
+STU0357,Heather Hernandez,INS003,Artificial Intelligence,3,6.63,douglas15@example.net
+STU0358,Julie Hill,INS004,Data Science,2,6.67,dtaylor@example.com
+STU0359,Evelyn Cox,INS005,Information Science,4,8.21,kevin66@example.com
+STU0360,Jennifer Palmer,INS003,Computer Science,3,9.3,ulong@example.org
+STU0361,Brandon Miller,INS001,Data Science,2,7.86,sheppardbradley@example.org
+STU0362,Monica Watts,INS001,Artificial Intelligence,4,7.75,joneseric@example.org
+STU0363,Shannon Golden,INS004,Data Science,3,6.61,morgan64@example.com
+STU0364,Emily Barrett,INS001,Artificial Intelligence,2,9.08,vazquezerik@example.org
+STU0365,Lisa Estes,INS005,Data Science,4,9.51,yingram@example.org
+STU0366,Timothy Tate,INS001,Data Science,2,7.08,jasontanner@example.net
+STU0367,Ian Wyatt,INS005,Data Science,4,6.48,allisonschmitt@example.com
+STU0368,Debbie Ramirez,INS003,Artificial Intelligence,2,7.4,anthonygarcia@example.net
+STU0369,Shari Buchanan,INS002,Computer Science,4,8.48,joshualloyd@example.org
+STU0370,Brandon Duarte,INS005,Electronics,2,9.46,charlessmith@example.org
+STU0371,Ryan Barry,INS003,Artificial Intelligence,4,9.65,barnettbrandon@example.net
+STU0372,Samantha Henderson,INS002,Information Science,2,6.73,debbiecortez@example.net
+STU0373,Tara Haas,INS002,Information Science,4,6.75,jonathanjimenez@example.net
+STU0374,Chad Anderson,INS001,Information Science,4,7.98,carolineweiss@example.net
+STU0375,Anthony Carter,INS005,Electronics,3,8.65,kristin71@example.org
+STU0376,Wendy Moon,INS005,Electronics,3,9.31,thomas41@example.org
+STU0377,Brandi Hood,INS003,Information Science,3,6.45,jane69@example.com
+STU0378,Lisa Terry,INS004,Artificial Intelligence,3,8.33,james32@example.org
+STU0379,Mark Ali,INS003,Electronics,2,7.32,michaelbyrd@example.net
+STU0380,Rebecca Rios,INS004,Computer Science,2,7.53,brian61@example.net
+STU0381,Michael Hernandez,INS003,Computer Science,4,9.31,jonathan19@example.com
+STU0382,Amy Marsh,INS001,Electronics,4,8.03,joannahernandez@example.net
+STU0383,Lauren Fernandez,INS004,Electronics,4,9.64,fleminggina@example.org
+STU0384,Chad Robinson,INS001,Data Science,4,8.55,donalddavid@example.net
+STU0385,William Lane,INS003,Electronics,3,8.0,xhood@example.org
+STU0386,Devin Mcdonald,INS001,Data Science,2,9.12,jonathan10@example.org
+STU0387,Michael Wallace,INS003,Computer Science,4,8.53,kristy31@example.org
+STU0388,Jacob Robinson,INS001,Information Science,4,7.78,valeriemorgan@example.net
+STU0389,Tyler Kennedy,INS004,Electronics,4,8.4,michael22@example.org
+STU0390,Doris Fields,INS003,Artificial Intelligence,3,7.59,joseph77@example.net
+STU0391,Rebecca Ramirez,INS003,Electronics,2,9.04,saundersmichael@example.com
+STU0392,Jennifer Berry,INS003,Computer Science,3,6.54,lisawhitaker@example.net
+STU0393,Gary Stout Jr.,INS004,Artificial Intelligence,3,8.81,murphypaula@example.org
+STU0394,Amber Petty,INS005,Information Science,3,6.49,amy45@example.org
+STU0395,James Hernandez,INS002,Artificial Intelligence,3,9.68,jameschambers@example.com
+STU0396,Lisa Reynolds,INS004,Information Science,4,8.75,nicholas80@example.com
+STU0397,Laura Day,INS001,Artificial Intelligence,4,7.56,owilliams@example.com
+STU0398,Michael Roberts,INS003,Information Science,4,8.73,michael96@example.net
+STU0399,Rachel Hinton,INS005,Computer Science,4,8.61,taylornicholas@example.net
+STU0400,Eric Fox,INS005,Artificial Intelligence,2,7.51,cyoung@example.org
+STU0401,James Richard,INS002,Information Science,3,9.61,vanessa82@example.org
+STU0402,Eddie Jackson,INS004,Information Science,2,9.8,davismichelle@example.com
+STU0403,Mr. Ronald Jimenez MD,INS002,Computer Science,3,9.24,leonardjones@example.org
+STU0404,Margaret Taylor,INS001,Electronics,4,9.21,kristinkhan@example.net
+STU0405,Juan Jones,INS005,Computer Science,4,7.41,kellycrystal@example.net
+STU0406,Wesley Fletcher,INS005,Information Science,4,7.56,pparker@example.org
+STU0407,Victoria Walker,INS002,Information Science,4,8.98,stevensonmelvin@example.net
+STU0408,Jason Lee,INS002,Data Science,2,7.68,richard44@example.net
+STU0409,Cynthia Wood,INS002,Data Science,4,7.23,kevinrivera@example.com
+STU0410,Kelli Schmidt,INS004,Information Science,4,7.06,julia80@example.org
+STU0411,Brianna Greene,INS004,Information Science,3,8.64,stacey66@example.org
+STU0412,Paul Lopez,INS005,Data Science,3,8.97,robertsamanda@example.com
+STU0413,Stacy Flynn,INS004,Electronics,4,7.71,sespinoza@example.com
+STU0414,Erik Adams,INS002,Information Science,4,6.7,jasonwoods@example.com
+STU0415,Sherri Booth,INS003,Computer Science,4,7.93,scott18@example.net
+STU0416,Brandon Landry,INS003,Electronics,2,8.76,jameswalker@example.net
+STU0417,David Kaufman,INS005,Computer Science,3,6.5,jim43@example.org
+STU0418,Lauren Anderson,INS002,Artificial Intelligence,3,9.46,royhernandez@example.com
+STU0419,Joshua Mccoy,INS002,Data Science,2,9.61,kristina52@example.com
+STU0420,Tara Miles,INS002,Data Science,3,9.55,gregoryharrison@example.net
+STU0421,Brenda Harris,INS004,Computer Science,3,8.01,michelle34@example.net
+STU0422,Danielle Elliott,INS002,Data Science,2,7.55,tammy24@example.com
+STU0423,Travis King,INS001,Artificial Intelligence,2,9.22,nancy53@example.net
+STU0424,Diana Ochoa,INS003,Information Science,2,6.34,nmoore@example.org
+STU0425,Christopher Paul,INS004,Information Science,4,7.89,kellypedro@example.com
+STU0426,Hannah Scott,INS005,Computer Science,2,6.27,scott06@example.org
+STU0427,Tamara Price,INS002,Information Science,4,9.58,rayjared@example.com
+STU0428,Mrs. Kristen Larson,INS005,Electronics,3,6.6,tracy13@example.org
+STU0429,Earl Graham,INS003,Information Science,3,6.64,kirkholder@example.net
+STU0430,Ms. Darlene Garza,INS002,Data Science,4,9.06,nsmith@example.org
+STU0431,David Bennett,INS004,Computer Science,2,9.21,murrayjonathan@example.org
+STU0432,Mark Smith,INS004,Electronics,4,6.26,iwells@example.com
+STU0433,Alex Bruce,INS005,Electronics,2,8.79,rosariojenna@example.org
+STU0434,Jeffrey Carter,INS003,Data Science,2,8.41,klong@example.net
+STU0435,Dennis Duffy,INS002,Electronics,3,6.87,kingjonathan@example.com
+STU0436,Jason Little,INS001,Electronics,3,6.44,michaelkrueger@example.com
+STU0437,Lynn Newman,INS005,Electronics,4,9.03,john77@example.org
+STU0438,Sydney Lane,INS005,Electronics,2,7.61,taylor12@example.org
+STU0439,Carmen Clark,INS004,Computer Science,4,7.59,nicholewilliams@example.com
+STU0440,Lindsay Jackson,INS003,Artificial Intelligence,4,6.26,derrickgomez@example.com
+STU0441,Courtney Briggs,INS001,Artificial Intelligence,2,8.84,milleramber@example.net
+STU0442,Brandon Collins,INS001,Electronics,4,8.92,lauren42@example.org
+STU0443,Sara Hall,INS002,Computer Science,3,8.17,annafreeman@example.com
+STU0444,Kerry Taylor,INS002,Data Science,4,7.92,kevingreene@example.org
+STU0445,Jessica Peterson,INS002,Information Science,2,8.78,paultracy@example.com
+STU0446,Crystal Smith,INS004,Computer Science,3,6.93,riveragregory@example.com
+STU0447,Daniel Hayes,INS002,Computer Science,3,9.56,david40@example.net
+STU0448,Sean Porter,INS005,Data Science,4,7.9,heatherdixon@example.org
+STU0449,Cody Curtis,INS001,Information Science,3,7.49,yvonneford@example.org
+STU0450,Theresa Allen,INS001,Artificial Intelligence,3,6.65,todd11@example.com
+STU0451,Amy Reynolds,INS003,Data Science,3,8.88,taylor35@example.net
+STU0452,Ian Snyder,INS004,Artificial Intelligence,2,7.99,angelica94@example.com
+STU0453,Antonio Richardson,INS004,Artificial Intelligence,4,7.16,jasmin05@example.net
+STU0454,Lisa Odom,INS001,Data Science,2,7.75,zwhite@example.com
+STU0455,Carol Coleman,INS002,Electronics,3,7.36,woodshoward@example.org
+STU0456,Karen Hill,INS001,Artificial Intelligence,4,7.26,jennifersteele@example.net
+STU0457,Rhonda Cross,INS004,Electronics,4,7.73,jose17@example.org
+STU0458,Jose Walsh,INS004,Artificial Intelligence,3,6.35,pamarnold@example.net
+STU0459,Jeffrey Golden,INS003,Electronics,3,7.19,lori90@example.com
+STU0460,Mark Brooks,INS001,Computer Science,4,8.5,dhoward@example.org
+STU0461,Teresa Stevens,INS003,Electronics,4,8.65,hansenzachary@example.com
+STU0462,Diana Rivera,INS001,Information Science,4,8.64,michael89@example.net
+STU0463,Amanda Wells,INS004,Computer Science,2,6.44,brianrowe@example.org
+STU0464,Joy Lee,INS003,Artificial Intelligence,3,9.62,benjamin55@example.net
+STU0465,Paul Walker,INS001,Electronics,2,8.64,nancyjohnson@example.com
+STU0466,Kimberly Gonzalez,INS003,Artificial Intelligence,3,8.95,bentleychristian@example.com
+STU0467,Sharon Durham,INS005,Information Science,4,7.52,buckemily@example.com
+STU0468,Ronald Myers,INS003,Artificial Intelligence,2,9.66,sarah47@example.com
+STU0469,Justin Jones,INS001,Information Science,3,8.06,rosemartinez@example.net
+STU0470,Marilyn Hodge,INS005,Computer Science,3,8.99,mariomurphy@example.org
+STU0471,Paula Good,INS004,Information Science,4,7.23,uadams@example.net
+STU0472,April Thomas,INS004,Information Science,2,6.69,dominicrush@example.com
+STU0473,Michael Jarvis,INS001,Data Science,2,9.44,canturicky@example.com
+STU0474,Tricia Vance MD,INS004,Computer Science,4,9.68,antonio87@example.org
+STU0475,Jeremy Hernandez,INS003,Artificial Intelligence,4,6.43,maddoxcrystal@example.org
+STU0476,Brian Shepherd,INS005,Artificial Intelligence,3,9.26,traciewilliams@example.net
+STU0477,Kyle Adams,INS002,Artificial Intelligence,4,7.01,bennettjennifer@example.org
+STU0478,Antonio Hawkins,INS002,Information Science,2,9.05,johnhenderson@example.com
+STU0479,Judith Jackson,INS001,Artificial Intelligence,4,8.26,xsingh@example.net
+STU0480,Calvin Massey,INS004,Electronics,2,8.4,heather36@example.com
+STU0481,Jamie Fisher,INS001,Computer Science,3,7.63,brent40@example.org
+STU0482,Cody Fox,INS004,Electronics,3,8.97,sherring@example.com
+STU0483,Holly Taylor,INS005,Computer Science,2,9.7,meadowssarah@example.org
+STU0484,John Smith,INS001,Data Science,3,8.65,joseph79@example.com
+STU0485,Diana Schaefer,INS003,Information Science,4,8.5,micheleturner@example.com
+STU0486,Justin Bailey,INS002,Information Science,3,8.01,kathleen43@example.net
+STU0487,Renee Cole,INS001,Computer Science,4,6.75,mhernandez@example.org
+STU0488,Alexis Nelson,INS002,Information Science,3,9.57,youngchelsea@example.com
+STU0489,Zachary Coleman,INS002,Artificial Intelligence,4,9.42,mackenziegarcia@example.org
+STU0490,Cheryl Miller,INS001,Artificial Intelligence,2,8.49,jsmith@example.com
+STU0491,James Vargas,INS005,Artificial Intelligence,2,8.45,triggs@example.com
+STU0492,Mr. Bradley Clark,INS005,Electronics,2,8.01,karenscott@example.net
+STU0493,Alexandra Silva,INS002,Electronics,4,6.76,jonathan55@example.com
+STU0494,Jeff Jones,INS005,Electronics,3,9.23,mmurray@example.com
+STU0495,Jerry Campbell,INS005,Computer Science,2,6.49,davidortega@example.org
+STU0496,Laura Green,INS005,Artificial Intelligence,4,6.96,lrodriguez@example.com
+STU0497,Melissa Rice,INS005,Data Science,4,8.5,cheryljones@example.net
+STU0498,Michael Miller,INS004,Electronics,3,8.51,lshields@example.org
+STU0499,Michael Fitzgerald,INS003,Data Science,2,9.1,jcharles@example.org
+STU0500,Bradley Henry,INS004,Artificial Intelligence,3,6.46,blawson@example.net

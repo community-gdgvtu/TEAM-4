@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: skillpassport
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python -m backend.start
+    healthCheckPath: /api/health
+    envVars:
+      - key: SKILLPASSPORT_STORE_PATH
+        value: /tmp/skillpassport/runtime_store.json
+      - key: MONGODB_DATABASE
+        value: skillpassport
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: MONGODB_URI
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false

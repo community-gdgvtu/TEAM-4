@@ -1,0 +1,9 @@
+job_id,job_title,required_skills,salary,country
+JOB001,Python Backend Developer,"Python, FastAPI, SQL, Git",832843,Canada
+JOB002,Frontend Developer,"JavaScript, React, HTML/CSS, Git",919328,UAE
+JOB003,Full Stack Developer,"JavaScript, React, Node.js, SQL, Git",560414,India
+JOB004,Machine Learning Engineer,"Python, Machine Learning, Data Science",1092952,Japan
+JOB005,Data Analyst,"Python, SQL, Data Science",1137606,India
+JOB006,Java Developer,"Java, SQL, Git",1632308,Germany
+JOB007,Cloud Developer,"Docker, Firebase, Git",1363488,Germany
+JOB008,AI Engineer,"Python, Machine Learning, FastAPI",505201,UAE

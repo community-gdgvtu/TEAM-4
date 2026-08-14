@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "demo_metadata": {
+    "label": "Bundled fictional judge demo",
+    "notice": "All people and academic records in this fixture are fictional demo data. Waseda University and Visvesvaraya Technological University systems are not connected.",
+    "reciprocal_context": "The beachhead connects inspectable student proof between VTU-affiliated learners in India and Waseda/Japan opportunities."
+  },
+  "institutions": [
+    {
+      "id": "INST-DEMO-VTU",
+      "name": "Visvesvaraya Technological University",
+      "country": "India",
+      "demo": true
+    },
+    {
+      "id": "INST-DEMO-WASEDA",
+      "name": "Waseda University",
+      "country": "Japan",
+      "demo": true
+    }
+  ],
+  "users": [
+    {
+      "id": "USER-DEMO-001",
+      "student_id": "STU-DEMO-IND-001",
+      "email": "ananya.demo@skillpassport.local",
+      "password_hash": "scrypt$16384$8$1$c2tpbGxwYXNzcG9ydC1kZW1vLXNhbHQ=$uv8DB7IBHPBA6rDiz9p1W1u5uMC0iw8qevoBjGjZIz9xpw6LC2MUf3INX8Cm2rzKtv1Eca4njneof597sFB50w==",
+      "demo": true
+    }
+  ],
+  "students": [
+    {
+      "id": "STU-DEMO-IND-001",
+      "display_name": "Ananya Rao (Fictional Demo)",
+      "email": "ananya.demo@skillpassport.local",
+      "institution": "Visvesvaraya Technological University",
+      "institution_id": "INST-DEMO-VTU",
+      "country": "India",
+      "study_area": "Computer Science and Engineering",
+      "headline": "Backend engineering student · India to Japan",
+      "github_username": "ananya-demo",
+      "repository_url": "https://github.com/skillpassport-demo/campus-api",
+      "academic_source": "demo",
+      "manual_coursework": [],
+      "demo": true
+    }
+  ],
+  "academic_records": [
+    {
+      "id": "ACAD-DEMO-001",
+      "student_id": "STU-DEMO-IND-001",
+      "course_name": "Programming and Data Structures",
+      "grade": "A",
+      "skills": ["Python"],
+      "institution": "Visvesvaraya Technological University",
+      "demo": true
+    },
+    {
+      "id": "ACAD-DEMO-002",
+      "student_id": "STU-DEMO-IND-001",
+      "course_name": "Web API Engineering",
+      "grade": "A",
+      "skills": ["FastAPI", "Python"],
+      "institution": "Visvesvaraya Technological University",
+      "demo": true
+    },
+    {
+      "id": "ACAD-DEMO-003",
+      "student_id": "STU-DEMO-IND-001",
+      "course_name": "Database Management Systems",
+      "grade": "A",
+      "skills": ["SQL"],
+      "institution": "Visvesvaraya Technological University",
+      "demo": true
+    },
+    {
+      "id": "ACAD-DEMO-004",
+      "student_id": "STU-DEMO-IND-001",
+      "course_name": "Japanese Communication I",
+      "grade": "B+",
+      "skills": ["Japanese B1"],
+      "institution": "Visvesvaraya Technological University",
+      "demo": true
+    }
+  ],
+  "repo_snapshots": [
+    {
+      "id": "REPO-DEMO-CAMPUS-API",
+      "student_id": "STU-DEMO-IND-001",
+      "repository_url": "https://github.com/skillpassport-demo/campus-api",
+      "owner": "skillpassport-demo",
+      "name": "campus-api",
+      "branch": "main",
+      "description": "Bounded offline snapshot of a fictional student-authored campus events API.",
+      "is_demo_snapshot": true,
+      "files": [
+        {
+          "path": "requirements.txt",
+          "content": "fastapi==0.128.0\nuvicorn==0.40.0\npydantic==2.12.5\n"
+        },
+        {
+          "path": "app/main.py",
+          "content": "from fastapi import FastAPI\nfrom app.routes.users import router as users_router\n\napp = FastAPI(title=\"Campus API\")\napp.include_router(users_router, prefix=\"/users\")\n"
+        },
+        {
+          "path": "app/routes/users.py",
+          "content": "from fastapi import APIRouter, status\nfrom pydantic import BaseModel, EmailStr\n\nrouter = APIRouter()\nusers: dict[str, dict] = {}\n\nclass UserCreate(BaseModel):\n    name: str\n    email: EmailStr\n\n@router.post(\"/\", status_code=status.HTTP_201_CREATED)\ndef create_user(payload: UserCreate):\n    users[payload.email] = payload.model_dump()\n    return users[payload.email]\n"
+        },
+        {
+          "path": "app/db/reporting.sql",
+          "content": "SELECT u.name, COUNT(e.id) AS event_count\nFROM users AS u\nLEFT JOIN registrations AS r ON r.user_id = u.id\nLEFT JOIN events AS e ON e.id = r.event_id\nGROUP BY u.id, u.name\nORDER BY event_count DESC, u.name ASC;\n"
+        },
+        {
+          "path": "app/db/schema.sql",
+          "content": "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT NOT NULL, email TEXT UNIQUE NOT NULL);\nCREATE TABLE events (id INTEGER PRIMARY KEY, title TEXT NOT NULL);\nCREATE TABLE registrations (user_id INTEGER NOT NULL, event_id INTEGER NOT NULL);\n"
+        },
+        {
+          "path": "tests/test_users.py",
+          "content": "from fastapi.testclient import TestClient\nfrom app.main import app\n\nclient = TestClient(app)\n\ndef test_create_user_returns_201():\n    payload = {\"name\": \"Asha\", \"email\": \"asha@example.com\"}\n    response = client.post(\"/users/\", json=payload)\n    assert response.status_code == 201\n    assert response.json()[\"email\"] == \"asha@example.com\"\n"
+        },
+        {
+          "path": "Dockerfile",
+          "content": "FROM python:3.12-slim\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install -r requirements.txt\nCOPY app app\nCMD [\"uvicorn\", \"app.main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"]\n"
+        }
+      ],
+      "commits": [
+        {
+          "sha": "7a91c2d",
+          "author_login": "ananya-demo",
+          "message": "Add typed user creation route and baseline API test",
+          "date": "2026-07-28T10:30:00Z",
+          "paths": ["app/routes/users.py", "tests/test_users.py"]
+        },
+        {
+          "sha": "3be812f",
+          "author_login": "ananya-demo",
+          "message": "Add reporting query and relational schema",
+          "date": "2026-07-21T09:00:00Z",
+          "paths": ["app/db/reporting.sql", "app/db/schema.sql"]
+        }
+      ]
+    }
+  ],
+  "prior_verifications": [
+    {
+      "student_id": "STU-DEMO-IND-001",
+      "skill": "Python",
+      "level": "INTERMEDIATE",
+      "template_id": "python-normalize-records-v1",
+      "template_version": "1.0",
+      "tests_passed": 5,
+      "tests_total": 5,
+      "verified_at": "2026-08-12T09:30:00Z",
+      "submission_hash": "d8dfe78152c10be4f68f9961a13b5f9e1346c166706ba9788b83bc2e7d38f24d"
+    }
+  ],
+  "evidence_items": [],
+  "claims": [],
+  "challenges": [],
+  "attempts": [],
+  "verification_events": [],
+  "opportunities": [
+    {
+      "id": "OPP-TOKYO-BACKEND-001",
+      "title": "Tokyo Backend Engineering Internship",
+      "company": "Sakura Systems (Fictional Demo)",
+      "country": "Japan",
+      "description": "東京のバックエンドインターン。Python、FastAPI、SQL は必須です。Docker と日本語 B1 は歓迎します。",
+      "original_language": "Japanese",
+      "demo": true,
+      "requirements": [
+        {"skill": "Python", "importance": "REQUIRED", "level": "INTERMEDIATE", "source_text": "Python は必須"},
+        {"skill": "FastAPI", "importance": "REQUIRED", "level": "INTERMEDIATE", "source_text": "FastAPI は必須"},
+        {"skill": "SQL", "importance": "REQUIRED", "level": "INTERMEDIATE", "source_text": "SQL は必須"},
+        {"skill": "Docker", "importance": "PREFERRED", "level": null, "source_text": "Docker は歓迎"},
+        {"skill": "Japanese B1", "importance": "PREFERRED", "level": null, "source_text": "日本語 B1 は歓迎"}
+      ]
+    },
+    {
+      "id": "OPP-BENGALURU-PLATFORM-001",
+      "title": "Backend Platform Intern",
+      "company": "Deccan Cloud Labs (Fictional Demo)",
+      "country": "India",
+      "description": "Build Python APIs in Bengaluru. Python and SQL are required; FastAPI and Docker are preferred.",
+      "original_language": "English",
+      "demo": true,
+      "requirements": [
+        {"skill": "Python", "importance": "REQUIRED", "level": "INTERMEDIATE", "source_text": "Python is required"},
+        {"skill": "SQL", "importance": "REQUIRED", "level": "FOUNDATION", "source_text": "SQL is required"},
+        {"skill": "FastAPI", "importance": "PREFERRED", "level": null, "source_text": "FastAPI is preferred"},
+        {"skill": "Docker", "importance": "PREFERRED", "level": null, "source_text": "Docker is preferred"}
+      ]
+    }
+  ],
+  "passports": [],
+  "sessions": []
+}

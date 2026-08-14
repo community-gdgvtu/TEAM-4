@@ -1,26 +1,32 @@
-from pathlib import Path
-import pandas as pd
+"""Compatibility helpers backed by the active persistence adapter.
 
-ROOT = Path(__file__).resolve().parents[2]
+New code should depend on the Store protocol directly. These functions replace
+the original dead CSV paths and are retained only for small integrations.
+"""
 
-def load_csv(path):
-    return pd.read_csv(ROOT / path).fillna("").to_dict(orient="records")
+from __future__ import annotations
 
-def get_students():
-    return load_csv("data/college/students.csv")
+from typing import Any
 
-def get_student(student_id):
-    rows = [x for x in get_students() if x["student_id"] == student_id]
-    return rows[0] if rows else None
+from backend.core.config import get_settings
+from backend.services.persistence import create_store
 
-def get_skills():
-    return load_csv("data/college/skills_master.csv")
 
-def get_jobs():
-    return load_csv("data/jobs/job_catalog.csv")
+def get_runtime_data() -> dict[str, Any]:
+    return create_store(get_settings()).read()
 
-def get_assessment_attempts():
-    return load_csv("data/assessments/assessment_attempts.csv")
 
-def get_evidence():
-    return load_csv("data/derived/evidence_records.csv")
+def get_students() -> list[dict[str, Any]]:
+    return get_runtime_data().get("students", [])
+
+
+def get_student(student_id: str) -> dict[str, Any] | None:
+    return next((item for item in get_students() if item.get("id") == student_id), None)
+
+
+def get_jobs() -> list[dict[str, Any]]:
+    return get_runtime_data().get("opportunities", [])
+
+
+def get_evidence() -> list[dict[str, Any]]:
+    return get_runtime_data().get("evidence_items", [])

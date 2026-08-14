@@ -1,0 +1,16 @@
+skill_id,skill_name,category
+SK001,Python,Programming
+SK002,Java,Programming
+SK003,JavaScript,Programming
+SK004,React,Frontend
+SK005,Node.js,Backend
+SK006,SQL,Database
+SK007,Machine Learning,AI/ML
+SK008,Data Science,AI/ML
+SK009,FastAPI,Backend
+SK010,Git,Tools
+SK011,Docker,DevOps
+SK012,C++,Programming
+SK013,HTML/CSS,Frontend
+SK014,MongoDB,Database
+SK015,Firebase,Backend
