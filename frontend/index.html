@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillPassport - Verified Professional Identity</title>
+    <style>
+        /* ============================================ */
+        /* RESET & BASE */
+        /* ============================================ */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f7f8fa;
+            color: #111827;
+            min-height: 100vh;
+        }
+
+        /* ============================================ */
+        /* SVG ICON STYLES */
+        /* ============================================ */
+        .icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+        }
+        .icon-lg {
+            width: 28px;
+            height: 28px;
+        }
+        .icon-white {
+            fill: white;
+            stroke: white;
+        }
+        .icon-dark {
+            fill: #111827;
+            stroke: #111827;
+        }
+        .icon-gray {
+            fill: #6b7280;
+            stroke: #6b7280;
+        }
+        .icon-green {
+            fill: #34d399;
+            stroke: #34d399;
+        }
+        .icon-blue {
+            fill: #3b82f6;
+            stroke: #3b82f6;
+        }
+
+        /* ============================================ */
+        /* AUTH SCREEN */
+        /* ============================================ */
+        .auth-screen {
+            display: none;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f7f8fa 0%, #e8ecf1 100%);
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .auth-screen.active {
+            display: flex;
+        }
+        .auth-container {
+            display: flex;
+            max-width: 1100px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            min-height: 560px;
+        }
+        .auth-left {
+            flex: 1;
+            padding: 3rem 3.5rem;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .auth-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+        .auth-brand .logo-mark {
+            width: 40px;
+            height: 40px;
+            background: white;
+            color: #111827;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .auth-brand span {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .auth-left h1 {
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.75rem;
+            letter-spacing: -1px;
+        }
+        .auth-subtitle {
+            color: #9ca3af;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .auth-features {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .auth-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #d1d5db;
+            font-size: 14px;
+        }
+        .feature-icon {
+            width: 22px;
+            height: 22px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #34d399;
+        }
+        .auth-right {
+            flex: 1;
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .auth-card {
+            width: 100%;
+            max-width: 380px;
+        }
+        .auth-card h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .auth-card-subtitle {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            font-size: 15px;
+        }
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .form-group label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #374151;
+        }
+        .form-group input {
+            padding: 10px 14px;
+            border: 1.5px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: 0.2s;
+            outline: none;
+        }
+        .form-group input:focus {
+            border-color: #111827;
+            box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08);
+        }
+        .auth-btn {
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .primary-btn {
+            background: #111827;
+            color: white;
+        }
+        .primary-btn:hover {
+            background: #000;
+            transform: translateY(-1px);
+        }
+        .auth-divider {
+            text-align: center;
+            margin: 1.25rem 0;
+            position: relative;
+        }
+        .auth-divider::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: #e5e7eb;
+        }
+        .auth-divider span {
+            background: white;
+            padding: 0 12px;
+            position: relative;
+            font-size: 12px;
+            color: #9ca3af;
+            font-weight: 600;
+        }
+        .demo-accounts {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .demo-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 10px;
+            background: white;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 13px;
+            font-weight: 500;
+            color: #374151;
+            text-align: left;
+        }
+        .demo-btn:hover {
+            border-color: #111827;
+            background: #f9fafb;
+        }
+        .demo-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        /* ============================================ */
+        /* APP SCREEN */
+        /* ============================================ */
+        .app-screen {
+            display: none;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .app-screen.active {
+            display: flex;
+        }
+
+        /* ============================================ */
+        /* NAVBAR */
+        /* ============================================ */
+        .navbar {
+            height: 64px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            background: white;
+            flex-shrink: 0;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .logo-mark {
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9px;
+            background: #111827;
+            color: white;
+            font-weight: 800;
+            font-size: 16px;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .badge {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 20px;
+            color: #6b7280;
+        }
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .user-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: #111827;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .user-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #111827;
+        }
+        .logout-btn {
+            padding: 4px 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background: transparent;
+            font-size: 12px;
+            font-weight: 600;
+            color: #6b7280;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .logout-btn:hover {
+            background: #f3f4f6;
+            color: #111827;
+        }
+
+        /* ============================================ */
+        /* MAIN CONTENT */
+        /* ============================================ */
+        main {
+            flex: 1;
+            padding: 1.5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+        .section-header h2 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .section-subtitle {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* ============================================ */
+        /* SECTIONS */
+        /* ============================================ */
+        .dashboard-section,
+        .evidence-section,
+        .skill-intelligence-section,
+        .verification-section,
+        .jobs-section,
+        .passport-section,
+        .combined-assessment-section {
+            display: none;
+        }
+        .dashboard-section.active,
+        .evidence-section.active,
+        .skill-intelligence-section.active,
+        .verification-section.active,
+        .jobs-section.active,
+        .passport-section.active,
+        .combined-assessment-section.active {
+            display: block;
+        }
+
+        /* ============================================ */
+        /* DASHBOARD */
+        /* ============================================ */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+        .welcome-card {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            color: white;
+            padding: 1.75rem 2rem;
+            border-radius: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .welcome-card h1 {
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 2px;
+        }
+        .welcome-card .subtitle {
+            color: #9ca3af;
+            font-size: 14px;
+            max-width: 420px;
+        }
+        .welcome-stats {
+            display: flex;
+            gap: 2rem;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            display: block;
+            font-size: 30px;
+            font-weight: 800;
+            color: #34d399;
+        }
+        .stat-label {
+            font-size: 11px;
+            color: #9ca3af;
+            font-weight: 500;
+        }
+
+        .quick-actions {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+        .quick-actions h3 {
+            font-size: 15px;
+            margin-bottom: 0.75rem;
+        }
+        .action-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .action-card {
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            transition: 0.2s;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .action-card:hover {
+            border-color: #111827;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+        .action-card .action-icon {
+            margin-bottom: 4px;
+        }
+        .action-card span:nth-child(2) {
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .action-sub {
+            font-size: 11px;
+            color: #6b7280;
+            font-weight: 400;
+        }
+
+        .status-card {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+        .status-card h3 {
+            font-size: 15px;
+            margin-bottom: 0.75rem;
+        }
+        .status-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 14px;
+            border-radius: 10px;
+            background: #f9fafb;
+        }
+        .timeline-item.completed {
+            background: #ecfdf5;
+        }
+        .timeline-item.active {
+            background: #eff6ff;
+        }
+        .timeline-item.pending {
+            background: #f9fafb;
+        }
+        .timeline-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+        .timeline-item.completed .timeline-icon {
+            background: #34d399;
+            color: white;
+        }
+        .timeline-item.active .timeline-icon {
+            background: #3b82f6;
+            color: white;
+        }
+        .timeline-item.pending .timeline-icon {
+            background: #e5e7eb;
+            color: #6b7280;
+        }
+        .timeline-item strong {
+            font-size: 13px;
+        }
+        .timeline-item p {
+            font-size: 11px;
+            color: #6b7280;
+        }
+
+        /* ============================================ */
+        /* EVIDENCE */
+        /* ============================================ */
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .evidence-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 1.25rem;
+        }
+        .evidence-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.75rem;
+        }
+        .evidence-card-header h3 {
+            font-size: 15px;
+            flex: 1;
+        }
+        .evidence-count {
+            background: #f3f4f6;
+            padding: 0 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .evidence-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            max-height: 280px;
+            overflow-y: auto;
+        }
+        .evidence-item {
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: #f9fafb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+        .evidence-item .name {
+            font-weight: 500;
+        }
+        .evidence-item .meta {
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .badge-grade {
+            padding: 1px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .badge-grade.A {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .badge-grade.B {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .badge-grade.C {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .evidence-actions,
+        .intelligence-actions,
+        .jobs-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        /* ============================================ */
+        /* SKILL CARDS */
+        /* ============================================ */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .skill-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 1.25rem;
+            transition: 0.2s;
+        }
+        .skill-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+        .skill-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .skill-name {
+            font-size: 19px;
+            font-weight: 700;
+        }
+        .confidence {
+            font-size: 19px;
+            font-weight: 800;
+        }
+        .confidence-label {
+            color: #9ca3af;
+            font-size: 10px;
+        }
+        .progress {
+            height: 5px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        .progress-bar {
+            height: 100%;
+            background: #111827;
+            border-radius: 10px;
+            transition: width 0.6s ease;
+        }
+        .evidence-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .evidence-tags span {
+            font-size: 10px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            background: #f3f4f6;
+            color: #4b5563;
+            font-weight: 600;
+        }
+        .proficiency-badge {
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .proficiency-badge.advanced {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .proficiency-badge.intermediate {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .proficiency-badge.beginner {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .proficiency-badge.insufficient {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+        .assessment-btn {
+            width: 100%;
+            padding: 9px;
+            border: 1.5px solid #111827;
+            background: white;
+            color: #111827;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .assessment-btn:hover {
+            background: #111827;
+            color: white;
+        }
+        .assessment-btn.verified {
+            border-color: #34d399;
+            background: #ecfdf5;
+            color: #065f46;
+            cursor: default;
+        }
+        .assessment-btn.verified:hover {
+            background: #ecfdf5;
+            color: #065f46;
+        }
+        .assessment-btn.primary {
+            background: #111827;
+            color: white;
+        }
+        .assessment-btn.primary:hover {
+            background: #000;
+        }
+        .not-ready {
+            width: 100%;
+            text-align: center;
+            padding: 9px;
+            border-radius: 10px;
+            background: #f9fafb;
+            color: #9ca3af;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* ============================================ */
+        /* VERIFICATION */
+        /* ============================================ */
+        .verification-grid {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 1.25rem;
+        }
+        .verification-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .info-card {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+        .info-card h4 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .info-card ol {
+            padding-left: 1.25rem;
+            font-size: 13px;
+            color: #4b5563;
+            line-height: 2;
+        }
+        .progress-stats {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+        .stat-row span:last-child {
+            font-weight: 700;
+        }
+
+        /* ============================================ */
+        /* COMBINED ASSESSMENT */
+        /* ============================================ */
+        .assessment-panel {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .assessment-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .assessment-panel-header h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .assessment-panel-header .assessment-status {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 20px;
+        }
+        .assessment-status.in-progress {
+            background: #eff6ff;
+            color: #1e40af;
+        }
+        .assessment-status.completed {
+            background: #ecfdf5;
+            color: #065f46;
+        }
+        .assessment-status.not-started {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .assessment-progress-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        .assessment-progress-bar .progress-track {
+            flex: 1;
+            height: 6px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .assessment-progress-bar .progress-track .progress-fill {
+            height: 100%;
+            background: #111827;
+            border-radius: 10px;
+            transition: width 0.4s ease;
+        }
+        .assessment-progress-bar .progress-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: #6b7280;
+            white-space: nowrap;
+        }
+
+        .assessment-questions {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .assessment-question {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 1.25rem;
+            border: 1.5px solid transparent;
+            transition: 0.2s;
+        }
+        .assessment-question.active {
+            border-color: #111827;
+            background: white;
+        }
+        .assessment-question.completed {
+            border-color: #34d399;
+            background: #ecfdf5;
+        }
+        .assessment-question .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .assessment-question .q-number {
+            font-weight: 700;
+            font-size: 13px;
+            color: #6b7280;
+        }
+        .assessment-question .q-status {
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .q-status.answered {
+            color: #34d399;
+        }
+        .q-status.unanswered {
+            color: #9ca3af;
+        }
+        .assessment-question .q-text {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .assessment-question .q-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .assessment-question .q-options .q-option {
+            padding: 8px 12px;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 13px;
+            background: white;
+        }
+        .assessment-question .q-options .q-option:hover {
+            border-color: #111827;
+        }
+        .assessment-question .q-options .q-option.selected {
+            border-color: #111827;
+            background: #f3f4f6;
+        }
+        .assessment-question .q-options .q-option.correct {
+            border-color: #34d399;
+            background: #ecfdf5;
+        }
+        .assessment-question .q-options .q-option.wrong {
+            border-color: #ef4444;
+            background: #fef2f2;
+        }
+
+        .assessment-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        .assessment-actions .left-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .assessment-actions .right-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .skill-selector {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 1.25rem;
+        }
+        .skill-selector .skill-tag {
+            padding: 6px 16px;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            background: white;
+        }
+        .skill-selector .skill-tag:hover {
+            border-color: #111827;
+        }
+        .skill-selector .skill-tag.active {
+            border-color: #111827;
+            background: #111827;
+            color: white;
+        }
+        .skill-selector .skill-tag.verified {
+            border-color: #34d399;
+            background: #ecfdf5;
+            color: #065f46;
+            cursor: default;
+        }
+        .skill-selector .skill-tag .check-mark {
+            margin-left: 4px;
+        }
+
+        /* ============================================ */
+        /* JOBS */
+        /* ============================================ */
+        .jobs-filters {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-end;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .filter-group label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #374151;
+        }
+        .filter-group select {
+            padding: 7px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 13px;
+            background: white;
+            outline: none;
+            min-width: 120px;
+        }
+        .filter-group select:focus {
+            border-color: #111827;
+        }
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .job-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.2s;
+        }
+        .job-card:hover {
+            border-color: #111827;
+        }
+        .job-info h4 {
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .job-info .job-meta {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+        .job-info .job-skills {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+        .job-info .job-skills span {
+            font-size: 11px;
+            padding: 2px 10px;
+            border-radius: 12px;
+            background: #f3f4f6;
+            color: #4b5563;
+            font-weight: 600;
+        }
+        .job-info .job-skills span.matched {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .job-compatibility {
+            text-align: center;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+        .job-compatibility .match-score {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111827;
+        }
+        .job-compatibility .match-label {
+            font-size: 10px;
+            color: #6b7280;
+            font-weight: 600;
+        }
+
+        /* ============================================ */
+        /* PASSPORT */
+        /* ============================================ */
+        .passport-container {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 1.75rem;
+        }
+        .passport-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .passport-user {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .passport-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #111827;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .passport-user h3 {
+            font-size: 19px;
+            font-weight: 700;
+        }
+        .passport-user p {
+            color: #6b7280;
+            font-size: 13px;
+        }
+        .passport-badge {
+            text-align: right;
+        }
+        .verified-badge {
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 12px;
+            background: #ecfdf5;
+            color: #065f46;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .passport-id {
+            display: block;
+            font-size: 11px;
+            color: #9ca3af;
+            margin-top: 2px;
+        }
+        .passport-skills {
+            margin-bottom: 1.25rem;
+        }
+        .passport-skills h4 {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .passport-evidence {
+            margin-bottom: 1.25rem;
+        }
+        .passport-evidence h4 {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .evidence-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+        .evidence-summary-item {
+            background: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .summary-icon {
+            display: block;
+            margin: 0 auto 2px;
+        }
+        .evidence-summary-item span:nth-child(2) {
+            display: block;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .evidence-summary-item span:last-child {
+            font-size: 11px;
+            color: #6b7280;
+        }
+        .passport-actions {
+            display: flex;
+            gap: 0.75rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* ============================================ */
+        /* BUTTONS */
+        /* ============================================ */
+        .secondary-btn {
+            padding: 7px 18px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            background: white;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .secondary-btn:hover {
+            background: #f3f4f6;
+        }
+        .btn-sm {
+            padding: 5px 14px;
+            font-size: 12px;
+        }
+
+        /* ============================================ */
+        /* FOOTER */
+        /* ============================================ */
+        footer {
+            margin-top: 2rem;
+            padding: 1rem 5%;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            color: #9ca3af;
+            font-size: 11px;
+            flex-shrink: 0;
+        }
+
+        /* ============================================ */
+        /* UTILITIES */
+        /* ============================================ */
+        .hidden {
+            display: none !important;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-muted {
+            color: #6b7280;
+        }
+        .mt-1 {
+            margin-top: 1rem;
+        }
+        .mb-1 {
+            margin-bottom: 1rem;
+        }
+        .gap-1 {
+            gap: 1rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* ============================================ */
+        /* RESPONSIVE */
+        /* ============================================ */
+        @media (max-width: 820px) {
+            .auth-container {
+                flex-direction: column;
+                min-height: auto;
+            }
+            .auth-left {
+                padding: 2rem;
+            }
+            .auth-right {
+                padding: 2rem;
+            }
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            .welcome-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.25rem;
+            }
+            .welcome-stats {
+                justify-content: center;
+                margin-top: 0.5rem;
+                flex-wrap: wrap;
+            }
+            .action-grid {
+                grid-template-columns: 1fr;
+            }
+            .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+            .verification-grid {
+                grid-template-columns: 1fr;
+            }
+            .passport-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .passport-badge {
+                text-align: left;
+            }
+            .evidence-summary-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .jobs-filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .job-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+            .job-compatibility {
+                margin-left: 0;
+                align-self: flex-start;
+            }
+            .assessment-question .q-options {
+                grid-template-columns: 1fr;
+            }
+            .assessment-actions {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+            .assessment-actions .left-actions,
+            .assessment-actions .right-actions {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .navbar {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 0.5rem 5%;
+                gap: 0.5rem;
+            }
+            .navbar-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .user-name {
+                display: none;
+            }
+            .evidence-summary-grid {
+                grid-template-columns: 1fr;
+            }
+            .welcome-stats {
+                gap: 1rem;
+            }
+            .auth-left h1 {
+                font-size: 26px;
+            }
+            .section-header h2 {
+                font-size: 22px;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-selector .skill-tag {
+                font-size: 12px;
+                padding: 4px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- LOGIN SCREEN -->
+    <!-- ============================================ -->
+    <div id="loginScreen" class="auth-screen active">
+        <div class="auth-container">
+            <div class="auth-left">
+                <div class="auth-brand">
+                    <span class="logo-mark">S</span>
+                    <span>SkillPassport</span>
+                </div>
+                <h1>Your Verified<br />Professional Identity</h1>
+                <p class="auth-subtitle">
+                    Connect academic and project evidence to verify<br />
+                    what you can actually prove.
+                </p>
+                <div class="auth-features">
+                    <div class="auth-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Evidence-based verification</span>
+                    </div>
+                    <div class="auth-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Intelligent skill assessment</span>
+                    </div>
+                    <div class="auth-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Global job matching</span>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-right">
+                <div class="auth-card">
+                    <h2>Welcome Back</h2>
+                    <p class="auth-card-subtitle">Sign in to access your SkillPassport</p>
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="emailInput">Email Address</label>
+                            <input type="email" id="emailInput" placeholder="you@example.com" value="rahul.sharma@example.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput">Password</label>
+                            <input type="password" id="passwordInput" placeholder="••••••••" value="password123" />
+                        </div>
+                        <button type="submit" class="auth-btn primary-btn full-width">Sign In →</button>
+                    </form>
+                    <div class="auth-divider"><span>Demo Accounts</span></div>
+                    <div class="demo-accounts">
+                        <button class="demo-btn" data-email="rahul.sharma@example.com" data-name="Rahul Sharma">
+                            <span class="demo-avatar">RS</span>
+                            <span>Rahul Sharma · Computer Science</span>
+                        </button>
+                        <button class="demo-btn" data-email="priya.patel@example.com" data-name="Priya Patel">
+                            <span class="demo-avatar">PP</span>
+                            <span>Priya Patel · Computer Science</span>
+                        </button>
+                        <button class="demo-btn" data-email="arjun.kumar@example.com" data-name="Arjun Kumar">
+                            <span class="demo-avatar">AK</span>
+                            <span>Arjun Kumar · Information Science</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- MAIN APPLICATION -->
+    <!-- ============================================ -->
+    <div id="appScreen" class="app-screen">
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-mark">S</span>
+                <span>SkillPassport</span>
+            </div>
+            <div class="navbar-right">
+                <span class="badge">VERIFIED</span>
+                <div class="user-profile">
+                    <span class="user-avatar" id="userAvatar">RS</span>
+                    <span class="user-name" id="userName">Rahul Sharma</span>
+                    <button class="logout-btn" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- DASHBOARD -->
+            <section id="dashboardSection" class="dashboard-section active">
+                <div class="dashboard-grid">
+                    <div class="welcome-card">
+                        <div>
+                            <p class="eyebrow">WELCOME BACK</p>
+                            <h1 id="dashboardUserName">Rahul</h1>
+                            <p class="subtitle">Your SkillPassport is ready for verification. Connect your evidence to unlock verified skills.</p>
+                        </div>
+                        <div class="welcome-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" id="statEvidence">0</span>
+                                <span class="stat-label">Evidence Items</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="statSkills">0</span>
+                                <span class="stat-label">Skills Detected</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="statVerified">0</span>
+                                <span class="stat-label">Verified Skills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-grid">
+                            <button class="action-card" id="analyzeEvidenceBtn">
+                                <span class="action-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                                </span>
+                                <span>Analyze Evidence</span>
+                                <span class="action-sub">Discover your skills</span>
+                            </button>
+                            <button class="action-card" id="startVerificationBtn">
+                                <span class="action-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <span>Start Verification</span>
+                                <span class="action-sub">Take skill assessments</span>
+                            </button>
+                            <button class="action-card" id="viewJobsBtn">
+                                <span class="action-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                                </span>
+                                <span>Find Jobs</span>
+                                <span class="action-sub">Match your verified skills</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="status-card">
+                        <h3>Your SkillPassport Status</h3>
+                        <div class="status-timeline">
+                            <div class="timeline-item completed">
+                                <span class="timeline-icon">✓</span>
+                                <div><strong>Evidence Connected</strong><p>Academic and project data linked</p></div>
+                            </div>
+                            <div class="timeline-item active">
+                                <span class="timeline-icon">⟳</span>
+                                <div><strong>Skill Analysis</strong><p>Detecting skills from your evidence</p></div>
+                            </div>
+                            <div class="timeline-item pending">
+                                <span class="timeline-icon">○</span>
+                                <div><strong>Verification</strong><p>Complete assessments to verify skills</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EVIDENCE -->
+            <section id="evidenceSection" class="evidence-section">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">EVIDENCE INTELLIGENCE</p>
+                        <h2>Your Evidence Profile</h2>
+                        <p class="section-subtitle">Connected academic records and project evidence</p>
+                    </div>
+                    <button class="secondary-btn" id="backToDashboard1">← Back</button>
+                </div>
+                <div class="evidence-grid">
+                    <div class="evidence-card">
+                        <div class="evidence-card-header">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                            <h3>Academic Evidence</h3>
+                            <span class="evidence-count" id="courseCount">0</span>
+                        </div>
+                        <div id="academicEvidenceList" class="evidence-list">
+                            <p class="text-muted" style="padding:0.5rem;">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="evidence-card">
+                        <div class="evidence-card-header">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            <h3>Project Evidence</h3>
+                            <span class="evidence-count" id="projectCount">0</span>
+                        </div>
+                        <div id="projectEvidenceList" class="evidence-list">
+                            <p class="text-muted" style="padding:0.5rem;">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="evidence-actions">
+                    <button class="primary-btn" id="runSkillIntelligenceBtn">Run Skill Intelligence →</button>
+                </div>
+            </section>
+
+            <!-- SKILL INTELLIGENCE -->
+            <section id="skillIntelligenceSection" class="skill-intelligence-section">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">SKILL INTELLIGENCE</p>
+                        <h2>Detected Skills</h2>
+                        <p class="section-subtitle">Skills identified from your evidence</p>
+                    </div>
+                    <button class="secondary-btn" id="backToDashboard2">← Back</button>
+                </div>
+                <div id="detectedSkillsContainer" class="skills-grid">
+                    <p class="text-muted" style="padding:2rem;text-align:center;grid-column:1/-1;">Loading...</p>
+                </div>
+                <div class="intelligence-actions">
+                    <button class="primary-btn" id="startVerificationFromIntelligence">Start SkillPassport Verification →</button>
+                </div>
+            </section>
+
+            <!-- COMBINED ASSESSMENT -->
+            <section id="combinedAssessmentSection" class="combined-assessment-section">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">SKILLPASSPORT VERIFICATION</p>
+                        <h2>Combined Skill Assessment</h2>
+                        <p class="section-subtitle">Complete the comprehensive assessment to verify all your skills at once</p>
+                    </div>
+                    <button class="secondary-btn" id="backToDashboard3">← Back</button>
+                </div>
+
+                <div class="assessment-panel">
+                    <div class="assessment-panel-header">
+                        <h3 id="assessmentPanelTitle">Skill Verification Assessment</h3>
+                        <span class="assessment-status not-started" id="assessmentStatus">Not Started</span>
+                    </div>
+
+                    <div class="assessment-progress-bar">
+                        <span style="font-size:13px;font-weight:600;">Progress</span>
+                        <div class="progress-track">
+                            <div class="progress-fill" id="assessmentOverallProgress" style="width:0%;"></div>
+                        </div>
+                        <span class="progress-text" id="assessmentProgressText">0 / 0</span>
+                    </div>
+
+                    <div class="skill-selector" id="skillSelector">
+                        <!-- Skills will be populated here -->
+                    </div>
+
+                    <div class="assessment-questions" id="assessmentQuestionsContainer">
+                        <!-- Questions will be populated here -->
+                    </div>
+
+                    <div class="assessment-actions">
+                        <div class="left-actions">
+                            <button class="secondary-btn btn-sm" id="resetAssessmentBtn">Reset All</button>
+                        </div>
+                        <div class="right-actions">
+                            <button class="secondary-btn btn-sm" id="prevSkillBtn">← Previous Skill</button>
+                            <button class="secondary-btn btn-sm" id="nextSkillBtn">Next Skill →</button>
+                            <button class="primary-btn btn-sm" id="submitAllBtn">Submit All Assessments</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="assessmentResultsContainer" class="skills-grid">
+                    <!-- Results will be shown here -->
+                </div>
+            </section>
+
+            <!-- JOBS -->
+            <section id="jobsSection" class="jobs-section">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">CAREER INTELLIGENCE</p>
+                        <h2>Job Recommendations</h2>
+                        <p class="section-subtitle">Opportunities matched to your verified skills</p>
+                    </div>
+                    <button class="secondary-btn" id="backToDashboard4">← Back</button>
+                </div>
+                <div class="jobs-filters">
+                    <div class="filter-group">
+                        <label>Minimum Proficiency</label>
+                        <select id="proficiencyFilter">
+                            <option value="all">All Levels</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Country</label>
+                        <select id="countryFilter">
+                            <option value="all">All Countries</option>
+                            <option value="India">India</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Japan">Japan</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                    </div>
+                    <button class="primary-btn" id="applyFiltersBtn">Apply Filters</button>
+                </div>
+                <div id="jobsContainer" class="jobs-grid">
+                    <p class="text-muted" style="padding:2rem;text-align:center;grid-column:1/-1;">Loading jobs...</p>
+                </div>
+                <div class="jobs-actions">
+                    <button class="secondary-btn" id="viewFullPassportBtn">View Full SkillPassport →</button>
+                </div>
+            </section>
+
+            <!-- PASSPORT -->
+            <section id="passportSection" class="passport-section">
+                <div class="section-header">
+                    <div>
+                        <p class="eyebrow">YOUR SKILLPASSPORT</p>
+                        <h2>Verified Professional Identity</h2>
+                        <p class="section-subtitle">Your portable, verified skill profile</p>
+                    </div>
+                    <button class="secondary-btn" id="backToJobs">← Back to Jobs</button>
+                </div>
+                <div class="passport-container">
+                    <div class="passport-header">
+                        <div class="passport-user">
+                            <div class="passport-avatar" id="passportAvatar">RS</div>
+                            <div>
+                                <h3 id="passportName">Rahul Sharma</h3>
+                                <p id="passportTitle">Computer Science · 4th Year</p>
+                            </div>
+                        </div>
+                        <div class="passport-badge">
+                            <span class="verified-badge">✓ VERIFIED</span>
+                            <span class="passport-id">#SP-2024-001</span>
+                        </div>
+                    </div>
+                    <div class="passport-skills">
+                        <h4>Verified Skills</h4>
+                        <div id="passportSkillsContainer" class="skills-grid">
+                            <p class="text-muted" style="padding:1rem;text-align:center;grid-column:1/-1;">No verified skills yet.</p>
+                        </div>
+                    </div>
+                    <div class="passport-evidence">
+                        <h4>Evidence Summary</h4>
+                        <div class="evidence-summary-grid">
+                            <div class="evidence-summary-item">
+                                <svg class="icon summary-icon" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                <span id="passportCourses">0</span>
+                                <span>Courses</span>
+                            </div>
+                            <div class="evidence-summary-item">
+                                <svg class="icon summary-icon" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                                <span id="passportProjects">0</span>
+                                <span>Projects</span>
+                            </div>
+                            <div class="evidence-summary-item">
+                                <svg class="icon summary-icon" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span id="passportVerified">0</span>
+                                <span>Verified Skills</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="passport-actions">
+                        <button class="primary-btn" id="downloadPassportBtn">Download Passport PDF</button>
+                        <button class="secondary-btn" id="sharePassportBtn">Share Passport</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>SkillPassport · Evidence → Verification → Opportunity</div>
+            <div>Synthetic MVP Dataset</div>
+        </footer>
+    </div>
+
+    <script>
+        // ============================================
+        // CONFIGURATION
+        // ============================================
+        const API_URL = "http://127.0.0.1:8000/api";
+
+        // ============================================
+        // STATE
+        // ============================================
+        const state = {
+            user: null,
+            studentId: null,
+            detectedSkills: [],
+            assessmentResults: [],
+            jobs: [],
+            allJobs: [],
+            currentSkillIndex: 0,
+            skillAnswers: {},
+            assessmentStarted: false
+        };
+
+        // ============================================
+        // ASSESSMENT QUESTIONS DATABASE
+        // ============================================
+        const ASSESSMENT_QUESTIONS = {
+            'Python': [
+                { question: 'What is the output of: print(2 ** 3)?', options: ['6', '8', '9', '12'], correct: 1 },
+                { question: 'Which of these is NOT a valid Python data type?', options: ['int', 'float', 'char', 'bool'],
+                    correct: 2 },
+                { question: 'What does the "len()" function do?', options: ['Returns length', 'Returns sum',
+                        'Returns max', 'Returns min'
+                    ], correct: 0 },
+                { question: 'Which keyword is used to define a function in Python?', options: ['function', 'def',
+                        'define', 'func'
+                    ], correct: 1 },
+                { question: 'What is the result of: "Hello" + "World"?', options: ['Hello World', 'HelloWorld',
+                        'Hello+World', 'Error'
+                    ], correct: 1 },
+                { question: 'What is a Python list?', options: ['Ordered collection', 'Unordered collection',
+                        'Key-value pairs', 'None'
+                    ], correct: 0 },
+                { question: 'Which method removes the last item from a list?', options: ['pop()', 'remove()',
+                        'delete()', 'clear()'
+                    ], correct: 0 },
+                { question: 'What is the correct way to create a dictionary?', options: ['{}', '[]', '()', '<>'],
+                    correct: 0 }
+            ],
+            'JavaScript': [
+                { question: 'What does "typeof null" return?', options: ['null', 'undefined', 'object', 'string'],
+                    correct: 2 },
+                { question: 'Which method adds an element to the end of an array?', options: ['push()', 'pop()',
+                        'shift()', 'unshift()'
+                    ], correct: 0 },
+                { question: 'What is the correct way to declare a variable in JavaScript?', options: ['var', 'let',
+                        'const', 'All of the above'
+                    ], correct: 3 },
+                { question: 'Which operator is used for strict equality?', options: ['==', '===', '=', '!='],
+                    correct: 1 },
+                { question: 'What is the DOM?', options: ['Document Object Model', 'Data Object Model',
+                        'Digital Object Model', 'None'
+                    ], correct: 0 },
+                { question: 'What is a closure in JavaScript?', options: ['Function with access to outer scope',
+                        'A type of loop', 'A data structure', 'None'
+                    ], correct: 0 },
+                { question: 'Which method is used to iterate over array elements?', options: ['forEach()', 'map()',
+                        'filter()', 'All of the above'
+                    ], correct: 3 },
+                { question: 'What does "this" refer to in a method?', options: ['Current object', 'Global object',
+                        'Parent object', 'None'
+                    ], correct: 0 }
+            ],
+            'SQL': [
+                { question: 'Which SQL statement is used to retrieve data?', options: ['INSERT', 'UPDATE', 'SELECT',
+                        'DELETE'
+                    ], correct: 2 },
+                { question: 'What does "WHERE" clause do?', options: ['Filters rows', 'Sorts rows', 'Groups rows',
+                        'Joins tables'
+                    ], correct: 0 },
+                { question: 'Which keyword is used to sort results?', options: ['GROUP BY', 'ORDER BY', 'HAVING',
+                        'WHERE'
+                    ], correct: 1 },
+                { question: 'What is a primary key?', options: ['Unique identifier', 'Foreign key', 'Index',
+                        'Constraint'
+                    ], correct: 0 },
+                { question: 'Which join returns only matching rows?', options: ['LEFT JOIN', 'RIGHT JOIN',
+                        'INNER JOIN', 'FULL JOIN'
+                    ], correct: 2 },
+                { question: 'What does "COUNT(*) " do?', options: ['Counts rows', 'Counts columns', 'Sum values',
+                        'Average values'
+                    ], correct: 0 },
+                { question: 'Which clause is used to group rows?', options: ['GROUP BY', 'ORDER BY', 'HAVING',
+                        'WHERE'
+                    ], correct: 0 },
+                { question: 'What is a foreign key?', options: ['References another table', 'Unique identifier',
+                        'Primary key', 'Index'
+                    ], correct: 0 }
+            ],
+            'React': [
+                { question: 'What is JSX?', options: ['JavaScript XML', 'JavaScript Extension', 'Java XML', 'None'],
+                    correct: 0 },
+                { question: 'Which hook is used for state in functional components?', options: ['useState', 'useEffect',
+                        'useContext', 'useReducer'
+                    ], correct: 0 },
+                { question: 'What does "props" stand for?', options: ['Properties', 'Protocols', 'Proposals', 'None'],
+                    correct: 0 },
+                { question: 'Which method is used to render a React component?', options: ['render()', 'return()',
+                        'display()', 'show()'
+                    ], correct: 0 },
+                { question: 'What is the virtual DOM?', options: ['Lightweight DOM copy', 'Real DOM', 'HTML parser',
+                        'CSS renderer'
+                    ], correct: 0 },
+                { question: 'What is a React component?', options: ['Reusable piece of UI', 'A function', 'A class',
+                        'All of the above'
+                    ], correct: 3 },
+                { question: 'Which hook is used for side effects?', options: ['useEffect', 'useState', 'useContext',
+                        'useReducer'
+                    ], correct: 0 },
+                { question: 'What is the purpose of keys in lists?', options: ['Identify items', 'Style items',
+                        'Sort items', 'Filter items'
+                    ], correct: 0 }
+            ],
+            'Node.js': [
+                { question: 'What is Node.js?', options: ['JavaScript runtime', 'Framework', 'Library', 'Database'],
+                    correct: 0 },
+                { question: 'Which module is used to create a server?', options: ['http', 'fs', 'path', 'os'],
+                    correct: 0 },
+                { question: 'What does "npm" stand for?', options: ['Node Package Manager', 'Node Program Manager',
+                        'New Package Manager', 'None'
+                    ], correct: 0 },
+                { question: 'Which method is used to read a file?', options: ['readFile()', 'writeFile()', 'openFile()',
+                        'getFile()'
+                    ], correct: 0 },
+                { question: 'What is Express.js?', options: ['Web framework', 'Database', 'Testing tool', 'Build tool'],
+                    correct: 0 },
+                { question: 'What is middleware in Express?', options: ['Function that processes requests',
+                        'Database connector', 'View engine', 'None'
+                    ], correct: 0 },
+                { question: 'Which module is used for path operations?', options: ['path', 'fs', 'http', 'os'],
+                    correct: 0 },
+                { question: 'What is a callback in Node.js?', options: ['Function called after async task',
+                        'A type of loop', 'A data structure', 'None'
+                    ], correct: 0 }
+            ],
+            'Machine Learning': [
+                { question: 'What is supervised learning?', options: ['Labeled data', 'Unlabeled data', 'Reinforcement',
+                        'None'
+                    ], correct: 0 },
+                { question: 'Which algorithm is used for classification?', options: ['Linear Regression',
+                        'Logistic Regression', 'K-Means', 'PCA'
+                    ], correct: 1 },
+                { question: 'What is overfitting?', options: ['Model too complex', 'Model too simple',
+                        'Model just right', 'None'
+                    ], correct: 0 },
+                { question: 'What is a confusion matrix?', options: ['Performance metric', 'Visualization',
+                        'Data structure', 'Algorithm'
+                    ], correct: 0 },
+                { question: 'Which library is commonly used for ML in Python?', options: ['scikit-learn', 'pandas',
+                        'numpy', 'matplotlib'
+                    ], correct: 0 },
+                { question: 'What is feature scaling?', options: ['Normalize data range', 'Remove features',
+                        'Add features', 'None'
+                    ], correct: 0 },
+                { question: 'What is a neural network?', options: ['Inspired by brain', 'A type of tree',
+                        'A regression model', 'None'
+                    ], correct: 0 },
+                { question: 'What is cross-validation?', options: ['Model validation technique', 'Data cleaning',
+                        'Feature selection', 'None'
+                    ], correct: 0 }
+            ],
+            'Data Science': [
+                { question: 'What is the most common data analysis library in Python?', options: ['pandas', 'numpy',
+                        'scipy', 'matplotlib'
+                    ], correct: 0 },
+                { question: 'What is a DataFrame?', options: ['2D labeled data structure', '1D array', '3D tensor',
+                        'None'
+                    ], correct: 0 },
+                { question: 'What is data cleaning?', options: ['Removing errors', 'Adding data', 'Sorting data',
+                        'Visualizing data'
+                    ], correct: 0 },
+                { question: 'Which is NOT a data visualization library?', options: ['matplotlib', 'seaborn', 'plotly',
+                        'scikit-learn'
+                    ], correct: 3 },
+                { question: 'What is EDA?', options: ['Exploratory Data Analysis', 'Electronic Data Analysis',
+                        'Enterprise Data Analysis', 'None'
+                    ], correct: 0 },
+                { question: 'What is a histogram?', options: ['Distribution visualization', 'Scatter plot',
+                        'Bar chart', 'Line chart'
+                    ], correct: 0 },
+                { question: 'What is a correlation?', options: ['Relationship between variables', 'Causation',
+                        'Randomness', 'None'
+                    ], correct: 0 },
+                { question: 'What is a pivot table?', options: ['Data summarization tool', 'Data cleaning tool',
+                        'Visualization tool', 'None'
+                    ], correct: 0 }
+            ]
+        };
+
+        // ============================================
+        // DOM REFERENCES
+        // ============================================
+        const loginScreen = document.getElementById('loginScreen');
+        const appScreen = document.getElementById('appScreen');
+        const loginForm = document.getElementById('loginForm');
+        const emailInput = document.getElementById('emailInput');
+        const passwordInput = document.getElementById('passwordInput');
+        const userAvatar = document.getElementById('userAvatar');
+        const userName = document.getElementById('userName');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const dashboardUserName = document.getElementById('dashboardUserName');
+        const passportName = document.getElementById('passportName');
+        const passportAvatar = document.getElementById('passportAvatar');
+        const passportTitle = document.getElementById('passportTitle');
+
+        const dashboardSection = document.getElementById('dashboardSection');
+        const evidenceSection = document.getElementById('evidenceSection');
+        const skillIntelligenceSection = document.getElementById('skillIntelligenceSection');
+        const combinedAssessmentSection = document.getElementById('combinedAssessmentSection');
+        const jobsSection = document.getElementById('jobsSection');
+        const passportSection = document.getElementById('passportSection');
+
+        const statEvidence = document.getElementById('statEvidence');
+        const statSkills = document.getElementById('statSkills');
+        const statVerified = document.getElementById('statVerified');
+
+        const academicEvidenceList = document.getElementById('academicEvidenceList');
+        const projectEvidenceList = document.getElementById('projectEvidenceList');
+        const courseCount = document.getElementById('courseCount');
+        const projectCount = document.getElementById('projectCount');
+
+        const detectedSkillsContainer = document.getElementById('detectedSkillsContainer');
+
+        // Combined Assessment
+        const assessmentPanelTitle = document.getElementById('assessmentPanelTitle');
+        const assessmentStatus = document.getElementById('assessmentStatus');
+        const assessmentOverallProgress = document.getElementById('assessmentOverallProgress');
+        const assessmentProgressText = document.getElementById('assessmentProgressText');
+        const skillSelector = document.getElementById('skillSelector');
+        const assessmentQuestionsContainer = document.getElementById('assessmentQuestionsContainer');
+        const resetAssessmentBtn = document.getElementById('resetAssessmentBtn');
+        const prevSkillBtn = document.getElementById('prevSkillBtn');
+        const nextSkillBtn = document.getElementById('nextSkillBtn');
+        const submitAllBtn = document.getElementById('submitAllBtn');
+        const assessmentResultsContainer = document.getElementById('assessmentResultsContainer');
+
+        // Jobs
+        const jobsContainer = document.getElementById('jobsContainer');
+        const proficiencyFilter = document.getElementById('proficiencyFilter');
+        const countryFilter = document.getElementById('countryFilter');
+        const applyFiltersBtn = document.getElementById('applyFiltersBtn');
+
+        // Passport
+        const passportSkillsContainer = document.getElementById('passportSkillsContainer');
+        const passportCourses = document.getElementById('passportCourses');
+        const passportProjects = document.getElementById('passportProjects');
+        const passportVerified = document.getElementById('passportVerified');
+
+        // Buttons
+        const analyzeEvidenceBtn = document.getElementById('analyzeEvidenceBtn');
+        const runSkillIntelligenceBtn = document.getElementById('runSkillIntelligenceBtn');
+        const startVerificationBtn = document.getElementById('startVerificationBtn');
+        const startVerificationFromIntelligence = document.getElementById('startVerificationFromIntelligence');
+        const viewJobsBtn = document.getElementById('viewJobsBtn');
+        const viewFullPassportBtn = document.getElementById('viewFullPassportBtn');
+
+        const backBtns = ['backToDashboard1', 'backToDashboard2', 'backToDashboard3', 'backToDashboard4', 'backToJobs'];
+        const demoBtns = document.querySelectorAll('.demo-btn');
+
+        // ============================================
+        // AUTHENTICATION
+        // ============================================
+        demoBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                loginUser(btn.dataset.email, btn.dataset.name);
+            });
+        });
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+            if (email) {
+                const name = email.split('@')[0].replace(/\./g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                loginUser(email, name);
+            }
+        });
+
+        function loginUser(email, name) {
+            state.user = { email, name };
+            state.studentId = getStudentIdFromEmail(email);
+
+            const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
+            userAvatar.textContent = initials;
+            userName.textContent = name;
+            dashboardUserName.textContent = name.split(' ')[0];
+            passportName.textContent = name;
+            passportAvatar.textContent = initials;
+
+            loginScreen.classList.remove('active');
+            appScreen.classList.add('active');
+
+            loadDashboard();
+        }
+
+        function getStudentIdFromEmail(email) {
+            const map = { 'rahul.sharma@example.com': 'STU0001', 'priya.patel@example.com': 'STU0002',
+                'arjun.kumar@example.com': 'STU0003' };
+            return map[email] || 'STU0001';
+        }
+
+        logoutBtn.addEventListener('click', () => {
+            state.user = null;
+            state.studentId = null;
+            appScreen.classList.remove('active');
+            loginScreen.classList.add('active');
+        });
+
+        // ============================================
+        // NAVIGATION
+        // ============================================
+        function showSection(sectionId) {
+            document.querySelectorAll(
+                    '.dashboard-section, .evidence-section, .skill-intelligence-section, .combined-assessment-section, .jobs-section, .passport-section'
+                    )
+                .forEach(s => s.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        analyzeEvidenceBtn.addEventListener('click', () => loadEvidence());
+        runSkillIntelligenceBtn.addEventListener('click', () => loadSkillIntelligence());
+        startVerificationBtn.addEventListener('click', () => loadCombinedAssessment());
+        startVerificationFromIntelligence.addEventListener('click', () => loadCombinedAssessment());
+        viewJobsBtn.addEventListener('click', () => loadJobs());
+        viewFullPassportBtn.addEventListener('click', () => loadPassport());
+
+        backBtns.forEach(id => {
+            document.getElementById(id).addEventListener('click', () => showSection('dashboardSection'));
+        });
+
+        // ============================================
+        // DASHBOARD
+        // ============================================
+        async function loadDashboard() {
+            showSection('dashboardSection');
+            await updateDashboardStats();
+        }
+
+        async function updateDashboardStats() {
+            try {
+                const response = await fetch(`${API_URL}/student/${state.studentId}/skills`);
+                if (!response.ok) throw new Error('Failed to load skills');
+                const data = await response.json();
+                state.detectedSkills = data.skills || [];
+
+                let totalEvidence = 0;
+                state.detectedSkills.forEach(s => {
+                    if (s.evidence) {
+                        totalEvidence += (s.evidence.courses?.length || 0) + (s.evidence.projects?.length || 0);
+                    }
+                });
+
+                statEvidence.textContent = totalEvidence;
+                statSkills.textContent = state.detectedSkills.length;
+                const verified = state.detectedSkills.filter(s => s.assessment_required === false && s.confidence >= 50);
+                statVerified.textContent = verified.length;
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+            }
+        }
+
+        // ============================================
+        // EVIDENCE
+        // ============================================
+        async function loadEvidence() {
+            showSection('evidenceSection');
+            courseCount.textContent = '0';
+            projectCount.textContent = '0';
+            academicEvidenceList.innerHTML = '<p class="text-muted" style="padding:0.5rem;">Loading evidence...</p>';
+            projectEvidenceList.innerHTML = '<p class="text-muted" style="padding:0.5rem;">Loading evidence...</p>';
+
+            try {
+                const response = await fetch(`${API_URL}/student/${state.studentId}/skills`);
+                if (!response.ok) throw new Error('Failed to load evidence');
+                const data = await response.json();
+                state.detectedSkills = data.skills || [];
+                renderEvidence();
+            } catch (error) {
+                console.error('Error loading evidence:', error);
+                academicEvidenceList.innerHTML = '<p style="color:#ef4444;padding:0.5rem;">Failed to load evidence</p>';
+                projectEvidenceList.innerHTML = '<p style="color:#ef4444;padding:0.5rem;">Failed to load evidence</p>';
+            }
+        }
+
+        function renderEvidence() {
+            let courses = [],
+                projects = [];
+            state.detectedSkills.forEach(skill => {
+                if (skill.evidence) {
+                    if (skill.evidence.courses) courses = courses.concat(skill.evidence.courses.map(c => ({ ...c,
+                        skill: skill.skill })));
+                    if (skill.evidence.projects) projects = projects.concat(skill.evidence.projects.map(p => ({ ...p,
+                        skill: skill.skill })));
+                }
+            });
+
+            courseCount.textContent = courses.length;
+            projectCount.textContent = projects.length;
+
+            if (courses.length === 0) {
+                academicEvidenceList.innerHTML = '<p class="text-muted" style="padding:0.5rem;">No academic evidence found</p>';
+            } else {
+                academicEvidenceList.innerHTML = courses.map(c =>
+                    `<div class="evidence-item"><span class="name">${c.course || 'Course'}</span><span class="meta">${c.skill} · ${c.marks || 0}%</span><span class="badge-grade ${c.grade || 'C'}">${c.grade || 'C'}</span></div>`
+                ).join('');
+            }
+
+            if (projects.length === 0) {
+                projectEvidenceList.innerHTML = '<p class="text-muted" style="padding:0.5rem;">No project evidence found</p>';
+            } else {
+                projectEvidenceList.innerHTML = projects.map(p =>
+                    `<div class="evidence-item"><span class="name">${p.project || 'Project'}</span><span class="meta">${p.skill} · ⭐${p.stars || 0}</span><span style="font-size:11px;color:#6b7280;">${p.complexity || 'beginner'}</span></div>`
+                ).join('');
+            }
+        }
+
+        // ============================================
+        // SKILL INTELLIGENCE
+        // ============================================
+        async function loadSkillIntelligence() {
+            showSection('skillIntelligenceSection');
+            detectedSkillsContainer.innerHTML =
+                '<p class="text-muted" style="padding:2rem;text-align:center;grid-column:1/-1;">Analyzing your evidence...</p>';
+
+            try {
+                const response = await fetch(`${API_URL}/student/${state.studentId}/skills`);
+                if (!response.ok) throw new Error('Failed to analyze skills');
+                const data = await response.json();
+                state.detectedSkills = data.skills || [];
+                renderDetectedSkills();
+            } catch (error) {
+                console.error('Error analyzing skills:', error);
+                detectedSkillsContainer.innerHTML =
+                    '<p style="color:#ef4444;padding:2rem;text-align:center;grid-column:1/-1;">Failed to analyze skills</p>';
+            }
+        }
+
+        function renderDetectedSkills() {
+            if (state.detectedSkills.length === 0) {
+                detectedSkillsContainer.innerHTML =
+                    '<p class="text-muted" style="padding:2rem;text-align:center;grid-column:1/-1;">No skills detected from your evidence</p>';
+                return;
+            }
+
+            detectedSkillsContainer.innerHTML = state.detectedSkills.map(skill => {
+                const confidence = skill.confidence || 0;
+                const proficiency = getProficiency(confidence);
+                const courseCount = skill.evidence?.courses?.length || 0;
+                const projectCount = skill.evidence?.projects?.length || 0;
+                const isVerified = skill.assessment_required === false && confidence >= 50;
+
+                return `<div class="skill-card">
+                        <div class="skill-top">
+                            <div><div class="skill-name">${skill.skill}</div><div class="confidence-label">DETECTION CONFIDENCE</div></div>
+                            <div class="confidence">${Math.round(confidence)}%</div>
+                        </div>
+                        <div class="progress"><div class="progress-bar" style="width:${Math.round(confidence)}%"></div></div>
+                        <div class="evidence-tags"><span>✓ ${courseCount} Academic</span><span>✓ ${projectCount} Projects</span></div>
+                        <div style="margin-bottom:10px;">
+                            <span class="proficiency-badge ${proficiency.toLowerCase()}">${proficiency}</span>
+                            ${isVerified ? '<span style="margin-left:8px;color:#34d399;font-weight:700;">✓ VERIFIED</span>' : ''}
+                        </div>
+                        ${skill.assessment_required !== false ? 
+                            `<button class="assessment-btn" onclick="startCombinedAssessment()">Verify All Skills →</button>` :
+                            `<button class="assessment-btn verified" disabled>✓ Verified</button>`
+                        }
+                    </div>`;
+            }).join('');
+        }
+
+        function getProficiency(score) {
+            if (score >= 85) return 'Advanced';
+            if (score >= 70) return 'Intermediate';
+            if (score >= 50) return 'Beginner';
+            return 'Insufficient';
+        }
+
+        // ============================================
+        // COMBINED ASSESSMENT
+        // ============================================
+        function loadCombinedAssessment() {
+            showSection('combinedAssessmentSection');
+            state.assessmentStarted = true;
+            state.skillAnswers = {};
+            state.currentSkillIndex = 0;
+
+            // Filter skills that need verification
+            const skillsToVerify = state.detectedSkills.filter(s => s.assessment_required !== false);
+
+            if (skillsToVerify.length === 0) {
+                assessmentQuestionsContainer.innerHTML =
+                    '<p style="text-align:center;padding:2rem;color:#34d399;font-weight:700;">🎉 All your skills are already verified!</p>';
+                skillSelector.innerHTML = '';
+                return;
+            }
+
+            renderSkillSelector(skillsToVerify);
+            renderAssessmentQuestions(skillsToVerify);
+            updateAssessmentProgress(skillsToVerify);
+        }
+
+        function renderSkillSelector(skills) {
+            skillSelector.innerHTML = skills.map((skill, idx) => {
+                const isActive = idx === state.currentSkillIndex;
+                const isVerified = state.assessmentResults.some(a => a.skill === skill.skill);
+                const isAnswered = state.skillAnswers[skill.skill] !== undefined;
+                let className = 'skill-tag';
+                if (isActive) className += ' active';
+                if (isVerified) className += ' verified';
+                const label = isVerified ? `${skill.skill} ✓` : isAnswered ? `${skill.skill} ●` : skill.skill;
+                return `<span class="${className}" data-index="${idx}" onclick="selectSkill(${idx})">${label}</span>`;
+            }).join('');
+        }
+
+        function selectSkill(index) {
+            const skills = state.detectedSkills.filter(s => s.assessment_required !== false);
+            if (index >= 0 && index < skills.length) {
+                state.currentSkillIndex = index;
+                renderSkillSelector(skills);
+                renderAssessmentQuestions(skills);
+                updateAssessmentProgress(skills);
+            }
+        }
+
+        function renderAssessmentQuestions(skills) {
+            if (skills.length === 0) return;
+
+            const currentSkill = skills[state.currentSkillIndex];
+            const questions = ASSESSMENT_QUESTIONS[currentSkill.skill];
+            const savedAnswers = state.skillAnswers[currentSkill.skill] || {};
+
+            if (!questions) {
+                assessmentQuestionsContainer.innerHTML =
+                    `<p class="text-muted" style="text-align:center;padding:1rem;">Assessment questions for ${currentSkill.skill} will be available soon.</p>`;
+                return;
+            }
+
+            assessmentQuestionsContainer.innerHTML = questions.map((q, qIdx) => {
+                const selected = savedAnswers[qIdx];
+                const isAnswered = selected !== undefined;
+                const className = `assessment-question ${isAnswered ? 'completed' : 'active'}`;
+
+                return `<div class="${className}">
+                        <div class="q-header">
+                            <span class="q-number">Question ${qIdx + 1} of ${questions.length}</span>
+                            <span class="q-status ${isAnswered ? 'answered' : 'unanswered'}">${isAnswered ? '✓ Answered' : '• Pending'}</span>
+                        </div>
+                        <div class="q-text">${q.question}</div>
+                        <div class="q-options">
+                            ${q.options.map((opt, oIdx) => {
+                                let className = 'q-option';
+                                if (selected === oIdx) className += ' selected';
+                                return `<div class="${className}" onclick="selectAnswer(${state.currentSkillIndex}, ${qIdx}, ${oIdx})">${String.fromCharCode(65 + oIdx)}. ${opt}</div>`;
+                            }).join('')}
+                        </div>
+                    </div>`;
+            }).join('');
+
+            // Update navigation buttons
+            prevSkillBtn.disabled = state.currentSkillIndex === 0;
+            nextSkillBtn.disabled = state.currentSkillIndex === skills.length - 1;
+        }
+
+        function selectAnswer(skillIndex, questionIndex, optionIndex) {
+            const skills = state.detectedSkills.filter(s => s.assessment_required !== false);
+            const skill = skills[skillIndex];
+
+            if (!state.skillAnswers[skill.skill]) {
+                state.skillAnswers[skill.skill] = {};
+            }
+            state.skillAnswers[skill.skill][questionIndex] = optionIndex;
+
+            renderSkillSelector(skills);
+            renderAssessmentQuestions(skills);
+            updateAssessmentProgress(skills);
+        }
+
+        function updateAssessmentProgress(skills) {
+            let totalQuestions = 0;
+            let answeredQuestions = 0;
+            let completedSkills = 0;
+
+            skills.forEach(skill => {
+                const questions = ASSESSMENT_QUESTIONS[skill.skill];
+                if (questions) {
+                    totalQuestions += questions.length;
+                    const answers = state.skillAnswers[skill.skill] || {};
+                    const answered = Object.keys(answers).length;
+                    answeredQuestions += answered;
+                    if (answered === questions.length) completedSkills++;
+                }
+            });
+
+            const progress = totalQuestions > 0 ? Math.round((answeredQuestions / totalQuestions) * 100) : 0;
+            assessmentOverallProgress.style.width = progress + '%';
+            assessmentProgressText.textContent = `${answeredQuestions} / ${totalQuestions}`;
+
+            // Update status
+            if (completedSkills === skills.length && skills.length > 0) {
+                assessmentStatus.textContent = 'All Skills Verified';
+                assessmentStatus.className = 'assessment-status completed';
+            } else if (answeredQuestions > 0) {
+                assessmentStatus.textContent = 'In Progress';
+                assessmentStatus.className = 'assessment-status in-progress';
+            } else {
+                assessmentStatus.textContent = 'Not Started';
+                assessmentStatus.className = 'assessment-status not-started';
+            }
+        }
+
+        // Assessment navigation
+        prevSkillBtn.addEventListener('click', () => {
+            if (state.currentSkillIndex > 0) {
+                state.currentSkillIndex--;
+                const skills = state.detectedSkills.filter(s => s.assessment_required !== false);
+                renderSkillSelector(skills);
+                renderAssessmentQuestions(skills);
+                updateAssessmentProgress(skills);
+            }
+        });
+
+        nextSkillBtn.addEventListener('click', () => {
+            const skills = state.detectedSkills.filter(s => s.assessment_required !== false);
+            if (state.currentSkillIndex < skills.length - 1) {
+                state.currentSkillIndex++;
+                renderSkillSelector(skills);
+                renderAssessmentQuestions(skills);
+                updateAssessmentProgress(skills);
+            }
+        });
+
+        resetAssessmentBtn.addEventListener('click', () => {
+            if (confirm('Reset all assessment answers?')) {
+                state.skillAnswers = {};
+                const skills = state.detectedSkills.filter(s => s.assessment_required !== false);
+                renderSkillSelector(skills);
+                renderAssessmentQuestions(skills);
+                updateAssessmentProgress(skills);
+            }
+        });
+
+        submitAllBtn.addEventListener('click', submitAllAssessments);
+
+        function submitAllAssessments() {
+            const skills = state.detectedSkills.filter(s => s.assessment_required !== false);
+            const unverifiedSkills = skills.filter(s => !state.assessmentResults.some(a => a.skill === s.skill));
+
+            if (unverifiedSkills.length === 0) {
+                alert('All skills are already verified!');
+                return;
+            }
+
+            let results = [];
+            unverifiedSkills.forEach(skill => {
+                const answers = state.skillAnswers[skill.skill] || {};
+                const questions = ASSESSMENT_QUESTIONS[skill.skill];
+                if (questions) {
+                    let correct = 0;
+                    Object.keys(answers).forEach(qIdx => {
+                        if (answers[qIdx] === questions[parseInt(qIdx)].correct) correct++;
+                    });
+                    const score = Math.round((correct / questions.length) * 100);
+                    results.push({ skill: skill.skill, score, correct, total: questions.length });
+
+                    // Update skill status
+                    const skillIndex = state.detectedSkills.findIndex(s => s.skill === skill.skill);
+                    if (skillIndex !== -1) {
+                        state.detectedSkills[skillIndex].assessment_required = false;
+                        state.detectedSkills[skillIndex].confidence = Math.max(state.detectedSkills[skillIndex].confidence ||
+                            0, score);
+                    }
+                    state.assessmentResults.push({ skill: skill.skill, score, date: new Date().toISOString() });
+                }
+            });
+
+            // Show results
+            renderAssessmentResults(results);
+
+            // Refresh stats
+            updateDashboardStats();
+            loadCombinedAssessment();
+        }
+
+        function renderAssessmentResults(results) {
+            if (results.length === 0) {
+                assessmentResultsContainer.innerHTML = '';
+                return;
+            }
+
+            assessmentResultsContainer.innerHTML = results.map(r => {
+                const proficiency = getProficiency(r.score);
+                return `<div class="skill-card" style="border-color:${r.score >= 50 ? '#34d399' : '#ef4444'};">
+                        <div class="skill-top">
+                            <div><div class="skill-name">${r.skill}</div><div class="confidence-label">ASSESSMENT RESULT</div></div>
+                            <div class="confidence" style="color:${r.score >= 50 ? '#34d399' : '#ef4444'};">${r.score}%</div>
+                        </div>
+                        <div class="progress"><div class="progress-bar" style="width:${r.score}%;background:${r.score >= 50 ? '#34d399' : '#ef4444'};"></div></div>
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;">
+                            <span class="proficiency-badge ${proficiency.toLowerCase()}">${proficiency}</span>
+                            <span style="font-size:13px;color:#6b7280;">${r.correct}/${r.total} correct</span>
+                            ${r.score >= 50 ? '<span style="color:#34d399;font-weight:700;">✓ Verified</span>' : '<span style="color:#ef4444;font-weight:700;">✗ Needs Improvement</span>'}
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        function startCombinedAssessment() {
+            loadCombinedAssessment();
+        }
+
+        // ============================================
+        // JOBS
+        // ============================================
+        async function loadJobs() {
+            showSection('jobsSection');
+            jobsContainer.innerHTML =
+                '<p class="text-muted" style="padding:2rem;text-align:center;grid-column:1/-1;">Loading job matches...</p>';
+
+            try {
+                const response = await fetch(`${API_URL}/jobs`);
+                if (!response.ok) throw new Error('Failed to load jobs');
+                state.allJobs = await response.json();
+
+                const verifiedSkills = state.detectedSkills
+                    .filter(s => s.assessment_required === false && s.confidence >= 50)
+                    .map(s => s.skill);
+
+                state.jobs = state.allJobs.map(job => {
+                    const requiredSkills = job.required_skills ? job.required_skills.split(',').map(s => s.trim()) : [];
+                    const matched = requiredSkills.filter(s => verifiedSkills.includes(s));
+                    const compatibility = requiredSkills.length > 0 ? Math.round((matched.length / requiredSkills.length) *
+                        100) : 0;
+                    return { ...job, compatibility, matched_skills: matched,
+                    missing_skills: requiredSkills.filter(s => !verifiedSkills.includes(s)) };
+                }).sort((a, b) => b.compatibility - a.compatibility);
+
+                renderJobs();
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+                jobsContainer.innerHTML =
+                    '<p style="color:#ef4444;padding:2rem;text-align:center;grid-column:1/-1;">Failed to load jobs</p>';
+            }
+        }
+
+        function renderJobs() {
+            const filterCountry = countryFilter.value;
+            const filterProficiency = proficiencyFilter.value;
+
+            let filtered = state.jobs;
+            if (filterCountry !== 'all') filtered = filtered.filter(j => j.country === filterCountry);
+            if (filterProficiency !== 'all') {
+                const minScore = filterProficiency === 'Advanced' ? 80 : filterProficiency === 'Intermediate' ? 50 : 0;
+                filtered = filtered.filter(j => j.compatibility >= minScore);
+            }
+
+            if (filtered.length === 0) {
+                jobsContainer.innerHTML =
+                    `<div style="grid-column:1/-1;text-align:center;padding:2rem;color:#6b7280;"><p style="font-size:18px;">No matching jobs found</p><p>Try adjusting your filters or verify more skills.</p></div>`;
+                return;
+            }
+
+            jobsContainer.innerHTML = filtered.map(job => {
+                const matchColor = job.compatibility >= 70 ? '#34d399' : job.compatibility >= 40 ? '#fbbf24' :
+                '#9ca3af';
+                return `<div class="job-card">
+                        <div class="job-info">
+                            <h4>${job.job_title || 'Untitled Role'}</h4>
+                            <div class="job-meta">${job.country || 'Global'} · ${formatSalary(job.salary)}</div>
+                            <div class="job-skills">
+                                ${(job.required_skills || '').split(',').map(s => {
+                                    const trimmed = s.trim();
+                                    const isMatched = job.matched_skills && job.matched_skills.includes(trimmed);
+                                    return `<span class="${isMatched ? 'matched' : ''}">${trimmed} ${isMatched ? '✓' : ''}</span>`;
+                                }).join('')}
+                            </div>
+                            ${job.missing_skills && job.missing_skills.length > 0 ? 
+                                `<div style="font-size:12px;color:#6b7280;margin-top:4px;">Missing: ${job.missing_skills.join(', ')}</div>` : 
+                                ''
+                            }
+                        </div>
+                        <div class="job-compatibility">
+                            <div class="match-score" style="color:${matchColor}">${job.compatibility}%</div>
+                            <div class="match-label">Match</div>
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        function formatSalary(salary) {
+            if (!salary) return 'Competitive';
+            if (salary >= 1000000) return `₹${(salary / 100000).toFixed(0)}L`;
+            if (salary >= 100000) return `₹${(salary / 1000).toFixed(0)}K`;
+            return `₹${salary}`;
+        }
+
+        applyFiltersBtn.addEventListener('click', renderJobs);
+
+        // ============================================
+        // PASSPORT
+        // ============================================
+        function loadPassport() {
+            showSection('passportSection');
+
+            const verifiedSkills = state.detectedSkills
+                .filter(s => s.assessment_required === false && s.confidence >= 50);
+
+            let totalCourses = 0,
+                totalProjects = 0;
+            state.detectedSkills.forEach(s => {
+                if (s.evidence) {
+                    totalCourses += s.evidence.courses?.length || 0;
+                    totalProjects += s.evidence.projects?.length || 0;
+                }
+            });
+
+            passportCourses.textContent = totalCourses;
+            passportProjects.textContent = totalProjects;
+            passportVerified.textContent = verifiedSkills.length;
+
+            if (verifiedSkills.length === 0) {
+                passportSkillsContainer.innerHTML =
+                    `<div style="grid-column:1/-1;text-align:center;padding:1.5rem;color:#6b7280;"><p>No verified skills yet. Complete assessments to build your passport.</p></div>`;
+            } else {
+                passportSkillsContainer.innerHTML = verifiedSkills.map(skill => {
+                    const confidence = skill.confidence || 0;
+                    const proficiency = getProficiency(confidence);
+                    return `<div class="skill-card" style="border-color:#34d399;">
+                            <div class="skill-top">
+                                <div><div class="skill-name">${skill.skill}</div><div class="confidence-label">VERIFIED</div></div>
+                                <div class="confidence" style="color:#34d399;">${Math.round(confidence)}%</div>
+                            </div>
+                            <div class="progress"><div class="progress-bar" style="width:${Math.round(confidence)}%;background:#34d399;"></div></div>
+                            <div style="margin-top:6px;">
+                                <span class="proficiency-badge ${proficiency.toLowerCase()}">${proficiency}</span>
+                                <span style="margin-left:8px;color:#34d399;font-weight:700;">✓ Verified</span>
+                            </div>
+                        </div>`;
+                }).join('');
+            }
+        }
+
+        // ============================================
+        // PASSPORT ACTIONS
+        // ============================================
+        document.getElementById('downloadPassportBtn').addEventListener('click', () => {
+            alert('📄 Passport PDF download will be available in the next phase.');
+        });
+        document.getElementById('sharePassportBtn').addEventListener('click', () => {
+            alert('🔗 Passport sharing will be available in the next phase.');
+        });
+
+        document.getElementById('backToJobs').addEventListener('click', () => loadJobs());
+
+        // ============================================
+        // INIT
+        // ============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const firstDemo = document.querySelector('.demo-btn');
+                if (firstDemo) firstDemo.click();
+            }, 300);
+        });
+    </script>
+</body>
+</html>
